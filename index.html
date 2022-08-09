@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <svg style="display: none">
+        <symbol id="face" viewBox="0 0 19 18">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5147 9.50731C18.5147 4.7675 14.5237 0.924316 9.60158 0.924316C4.67948 0.924316 0.688477 4.7675 0.688477 9.50731C0.688477 13.7911 3.94733 17.342 8.20891 17.9865V11.9891H5.94522V9.50731H8.20891V7.61637C8.20891 5.46564 9.53991 4.27666 11.5756 4.27666C12.5509 4.27666 13.5711 4.44449 13.5711 4.44449V6.5569H12.4466C11.34 6.5569 10.9939 7.21825 10.9939 7.898V9.50731H13.4657L13.0709 11.9891H10.9943V17.9872C15.2558 17.3431 18.5147 13.7923 18.5147 9.50731Z"/>
+        </symbol>
+        <symbol id="twit" viewBox="0 0 20 17">
+            <path d="M19.4765 2.65911C18.76 2.97042 18.002 3.17551 17.2263 3.26791C18.0415 2.79057 18.6545 2.03224 18.9504 1.13513C18.1797 1.5858 17.3379 1.90201 16.4611 2.07021C16.0919 1.68326 15.6479 1.37543 15.156 1.16543C14.6641 0.955431 14.1346 0.847651 13.5998 0.84864C11.4344 0.84864 9.682 2.57555 9.682 4.70435C9.68046 5.00046 9.71439 5.29569 9.78306 5.58373C8.23031 5.51093 6.70984 5.11483 5.31894 4.42075C3.92805 3.72667 2.69734 2.7499 1.70556 1.55293C1.35762 2.1395 1.17361 2.80874 1.17277 3.49074C1.17277 4.8277 1.8703 6.00949 2.92355 6.70184C2.29953 6.68703 1.68829 6.52187 1.14173 6.22038V6.26813C1.14173 8.13829 2.49461 9.6941 4.28519 10.0482C3.94848 10.138 3.6015 10.1835 3.25302 10.1835C3.00575 10.184 2.75905 10.16 2.5165 10.1119C3.01428 11.6438 4.46306 12.758 6.17923 12.7898C4.78471 13.8645 3.07262 14.4454 1.31203 14.4411C0.999525 14.4407 0.687306 14.4221 0.376953 14.3854C2.168 15.5291 4.24995 16.134 6.375 16.1282C13.5914 16.1282 17.5339 10.2512 17.5339 5.15399C17.5339 4.98687 17.5295 4.81975 17.5215 4.6566C18.2868 4.11229 18.9488 3.43587 19.4765 2.65911Z"/>
+        </symbol>
+        <symbol id="print" viewBox="0 0 19 19">
+            <path d="M9.39535 0C4.394 0 0.338745 4.05345 0.338745 9.05256C0.338745 12.7585 2.57055 15.943 5.76058 17.3454C5.73632 16.7149 5.75654 15.9551 5.91826 15.2681C6.09212 14.5326 7.08268 10.3337 7.08268 10.3337C7.08268 10.3337 6.79158 9.75575 6.79158 8.90304C6.79158 7.56132 7.56786 6.55907 8.53821 6.55907C9.36301 6.55907 9.75923 7.17739 9.75923 7.91695C9.75923 8.74542 9.22958 9.98207 8.95869 11.1298C8.73228 12.0916 9.43983 12.8716 10.39 12.8716C12.1042 12.8716 13.2606 10.6691 13.2606 8.0584C13.2606 6.07411 11.9223 4.59094 9.49239 4.59094C6.7471 4.59094 5.03282 6.63989 5.03282 8.92728C5.03282 9.71534 5.26732 10.273 5.6312 10.7014C5.79697 10.8994 5.82123 10.9803 5.76058 11.2066C5.7161 11.3723 5.61907 11.7724 5.5746 11.934C5.51395 12.1644 5.32796 12.2452 5.12177 12.1603C3.85627 11.6431 3.26597 10.2609 3.26597 8.70097C3.26597 6.13069 5.43713 3.04716 9.73902 3.04716C13.1959 3.04716 15.4722 5.54874 15.4722 8.23217C15.4722 11.7845 13.4951 14.4356 10.584 14.4356C9.60559 14.4356 8.6878 13.9062 8.37244 13.3081C8.37244 13.3081 7.84683 15.3934 7.73363 15.7975C7.5436 16.4967 7.16759 17.1918 6.82392 17.7374C7.65757 17.9832 8.52214 18.1084 9.39131 18.1092C14.3927 18.1092 18.4479 14.0557 18.4479 9.05661C18.4479 4.05749 14.3967 0 9.39535 0Z"/>
+        </symbol>
+        <symbol id="inst" viewBox="0 0 18 19">
+            <path d="M12.6268 2.35469C13.6109 2.35752 14.5539 2.73524 15.2498 3.40535C15.9456 4.07546 16.3379 4.98351 16.3408 5.93119V13.0834C16.3379 14.0311 15.9456 14.9392 15.2498 15.6093C14.5539 16.2794 13.6109 16.6571 12.6268 16.6599H5.19944C4.21532 16.6571 3.27234 16.2794 2.57645 15.6093C1.88057 14.9392 1.48832 14.0311 1.48539 13.0834V5.93119C1.48832 4.98351 1.88057 4.07546 2.57645 3.40535C3.27234 2.73524 4.21532 2.35752 5.19944 2.35469H12.6268ZM12.6268 0.924316H5.19944C2.33969 0.924316 0 3.17735 0 5.93119V13.0834C0 15.8373 2.33969 18.0903 5.19944 18.0903H12.6268C15.4865 18.0903 17.8262 15.8373 17.8262 13.0834V5.93119C17.8262 3.17735 15.4865 0.924316 12.6268 0.924316Z"/>
+            <path d="M13.7409 5.93139C13.5205 5.93139 13.3051 5.86847 13.1219 5.75058C12.9387 5.63269 12.7959 5.46513 12.7116 5.26909C12.6272 5.07305 12.6052 4.85733 12.6482 4.64921C12.6912 4.44109 12.7973 4.24993 12.9531 4.09988C13.1089 3.94984 13.3074 3.84766 13.5235 3.80626C13.7397 3.76486 13.9637 3.78611 14.1673 3.86731C14.3708 3.94852 14.5448 4.08603 14.6673 4.26246C14.7897 4.4389 14.855 4.64632 14.855 4.85852C14.8553 4.9995 14.8267 5.13914 14.7709 5.26945C14.715 5.39975 14.6329 5.51815 14.5294 5.61783C14.4259 5.71752 14.3029 5.79653 14.1676 5.85034C14.0323 5.90415 13.8873 5.9317 13.7409 5.93139ZM8.9131 6.64639C9.50074 6.64639 10.0752 6.81419 10.5638 7.12857C11.0524 7.44296 11.4332 7.8898 11.6581 8.41261C11.883 8.93541 11.9418 9.51069 11.8272 10.0657C11.7125 10.6207 11.4296 11.1305 11.014 11.5306C10.5985 11.9308 10.0691 12.2033 9.49274 12.3137C8.91639 12.4241 8.31899 12.3674 7.77608 12.1508C7.23317 11.9343 6.76914 11.5676 6.44266 11.0971C6.11619 10.6266 5.94193 10.0734 5.94193 9.50751C5.94277 8.74894 6.25608 8.02168 6.81309 7.48529C7.37011 6.9489 8.12535 6.6472 8.9131 6.64639ZM8.9131 5.21602C8.03167 5.21602 7.17005 5.46771 6.43717 5.93926C5.70429 6.41082 5.13309 7.08106 4.79578 7.86523C4.45847 8.6494 4.37022 9.51227 4.54218 10.3447C4.71413 11.1772 5.13858 11.9419 5.76184 12.5421C6.3851 13.1422 7.17918 13.551 8.04367 13.7165C8.90815 13.8821 9.80422 13.7972 10.6185 13.4723C11.4329 13.1475 12.1289 12.5975 12.6186 11.8917C13.1083 11.186 13.3696 10.3563 13.3696 9.50751C13.3696 8.36934 12.9001 7.27778 12.0644 6.47297C11.2286 5.66815 10.095 5.21602 8.9131 5.21602Z"/>
+        </symbol>
+        <symbol id="intro" viewBox="0 0 30 29">
+            <path d="M30 14.0729C29.9903 13.8973 29.9172 13.7307 29.7936 13.6026C29.6701 13.4746 29.504 13.3934 29.325 13.3733L27.476 13.0813C27.3928 13.068 27.3163 13.0288 27.2578 12.9695C27.1993 12.9103 27.162 12.8342 27.1514 12.7526C27.1161 12.5309 27.0793 12.3008 27.0288 12.0826C27.0126 12.0033 27.0221 11.9209 27.0561 11.8471C27.0901 11.7733 27.1469 11.7117 27.2185 11.6709L28.8613 10.7806C29.0244 10.6995 29.1513 10.5627 29.2178 10.3962C29.2843 10.2297 29.2857 10.0452 29.2219 9.87768L28.937 9.11057C28.8745 8.94253 28.7508 8.80288 28.5894 8.71835C28.428 8.63381 28.2403 8.61034 28.0623 8.65241L26.2197 9.0043C26.1373 9.01867 26.0524 9.00729 25.977 8.97178C25.9017 8.93626 25.8397 8.87844 25.8 8.80654C25.6926 8.61018 25.5757 8.41031 25.4538 8.21396C25.4096 8.144 25.3888 8.06229 25.3945 7.98026C25.4002 7.89823 25.4321 7.81999 25.4856 7.7565L26.7115 6.37428C26.8361 6.2438 26.9076 6.0735 26.9128 5.89526C26.918 5.71702 26.8564 5.54305 26.7397 5.40589L26.2046 4.77882C26.0882 4.64119 25.9236 4.5506 25.7427 4.5246C25.5617 4.4986 25.3774 4.53903 25.2252 4.63807L23.612 5.58324C23.5405 5.62506 23.4571 5.64333 23.3741 5.63534C23.2911 5.62736 23.213 5.59355 23.1512 5.5389C22.9731 5.38618 22.7906 5.23909 22.6197 5.10326C22.5541 5.05275 22.5067 4.98314 22.4844 4.90455C22.4621 4.82596 22.4661 4.74247 22.4957 4.66622L23.1635 2.949C23.2362 2.78516 23.2447 2.60094 23.1874 2.43137C23.1301 2.26179 23.011 2.11866 22.8526 2.02917L22.125 1.61464C21.9666 1.52548 21.78 1.4965 21.601 1.53325C21.422 1.57 21.2632 1.6699 21.1551 1.81381L19.976 3.25937C19.9336 3.3222 19.87 3.36865 19.7963 3.39074C19.7226 3.41283 19.6434 3.40918 19.5721 3.38042C19.5281 3.36282 19.156 3.21433 18.8668 3.12002C18.7875 3.09479 18.7185 3.04546 18.67 2.97923C18.6215 2.913 18.5959 2.83336 18.5971 2.75195L18.6252 0.917201C18.6353 0.738048 18.5781 0.561464 18.4643 0.420516C18.3505 0.279569 18.188 0.183924 18.0072 0.151492L17.1815 0.0107369C17.0016 -0.0195951 16.8165 0.0148439 16.6607 0.107654C16.5048 0.200465 16.3888 0.345335 16.3341 0.515345L15.7212 2.26141C15.6933 2.33892 15.6408 2.40569 15.5712 2.45192C15.5016 2.49815 15.4187 2.52141 15.3346 2.51829H14.6315C14.548 2.51997 14.4662 2.4959 14.3975 2.44953C14.3289 2.40315 14.277 2.33683 14.2493 2.26001L13.6392 0.52379C13.5855 0.352539 13.4697 0.206255 13.3135 0.112333C13.1572 0.0184107 12.9713 -0.0167085 12.7904 0.0135521L11.9632 0.154307C11.7836 0.186483 11.622 0.281192 11.5084 0.420848C11.3949 0.560505 11.3372 0.735621 11.3459 0.913682L11.3748 2.75476C11.3753 2.83739 11.3486 2.918 11.2984 2.98457C11.2482 3.05115 11.1774 3.10014 11.0964 3.12424C10.9313 3.18688 10.5728 3.3206 10.4099 3.37972C10.2656 3.43039 10.1084 3.37479 9.9815 3.23192L8.8089 1.82437C8.70132 1.67958 8.54268 1.57871 8.3635 1.54117C8.18432 1.50362 7.99724 1.53205 7.83823 1.62098L7.11275 2.03128C6.95268 2.12094 6.83228 2.26524 6.77476 2.43639C6.71724 2.60753 6.72666 2.79339 6.80121 2.95815L7.46828 4.67114C7.49738 4.74756 7.5012 4.83096 7.47921 4.90961C7.45722 4.98826 7.41052 5.0582 7.34568 5.1096C7.17044 5.25035 6.99088 5.39111 6.81203 5.54735C6.75062 5.60157 6.67304 5.63519 6.59065 5.64329C6.50825 5.6514 6.42536 5.63356 6.3541 5.59239L4.75963 4.62892C4.60652 4.53173 4.42233 4.4924 4.24163 4.51831C4.06092 4.54423 3.89612 4.6336 3.77814 4.76967L3.2452 5.39533C3.12682 5.53156 3.06409 5.7056 3.06902 5.88415C3.07394 6.0627 3.14617 6.23321 3.27189 6.36302L4.50362 7.74383C4.55828 7.80605 4.59095 7.8838 4.5968 7.96556C4.60264 8.04732 4.58135 8.12874 4.53607 8.19777C4.41275 8.3892 4.2952 8.59048 4.18847 8.79176C4.14855 8.86416 4.08615 8.92237 4.01023 8.95802C3.93431 8.99367 3.84877 9.00495 3.76588 8.99022L1.92621 8.64326C1.7481 8.60132 1.56039 8.62484 1.39891 8.70935C1.23743 8.79385 1.11349 8.93342 1.05073 9.10142L0.762272 9.86713C0.698513 10.0348 0.700003 10.2195 0.766461 10.3862C0.832919 10.5529 0.959726 10.69 1.12285 10.7715L2.76564 11.6618C2.83951 11.7015 2.89812 11.7637 2.93259 11.8389C2.96707 11.914 2.97554 11.9981 2.95674 12.0784L2.93943 12.1678C2.90193 12.3641 2.86732 12.5499 2.83415 12.7477C2.82268 12.8283 2.78539 12.9032 2.72763 12.9619C2.66986 13.0205 2.59456 13.0599 2.51251 13.0742L0.659868 13.3663C0.47869 13.388 0.311803 13.4733 0.190375 13.6063C0.0689462 13.7394 0.00127967 13.9109 1.22962e-05 14.0891V14.9041C-0.00104353 15.0829 0.0659291 15.2557 0.187962 15.3891C0.309996 15.5225 0.478408 15.607 0.660589 15.6261L2.51251 15.9175C2.59573 15.9307 2.67233 15.9699 2.73083 16.0291C2.78933 16.0884 2.82659 16.1645 2.83703 16.2462C2.87237 16.4686 2.90915 16.698 2.95963 16.9162C2.97589 16.9955 2.96636 17.0778 2.93236 17.1516C2.89835 17.2255 2.84158 17.2871 2.76996 17.3279L1.1279 18.2195C0.964773 18.3007 0.837904 18.4375 0.77142 18.604C0.704937 18.7705 0.703477 18.955 0.76732 19.1225L1.05578 19.8896C1.11839 20.0576 1.2422 20.1971 1.40356 20.2816C1.56492 20.3661 1.75252 20.3897 1.93054 20.3478L3.77309 19.9994C3.85549 19.9848 3.94051 19.9961 4.01592 20.0316C4.09134 20.0672 4.15326 20.1251 4.1928 20.1972C4.30097 20.3942 4.41708 20.5934 4.53895 20.7897C4.58343 20.8596 4.60429 20.9414 4.5986 21.0235C4.59291 21.1055 4.56094 21.1838 4.50722 21.2472L3.28126 22.6287C3.15526 22.7582 3.08206 22.9281 3.07542 23.1066C3.06878 23.2851 3.12916 23.4597 3.2452 23.5978L3.77958 24.2249C3.89589 24.3626 4.0605 24.4533 4.24146 24.4793C4.42242 24.5053 4.60683 24.4648 4.7589 24.3656L6.37212 23.4205C6.44365 23.3786 6.52706 23.3604 6.61004 23.3684C6.69301 23.3763 6.77116 23.4101 6.83294 23.4648C7.01179 23.6175 7.19352 23.7646 7.36443 23.9004C7.42997 23.951 7.47737 24.0206 7.49979 24.0991C7.52221 24.1777 7.5185 24.2611 7.48919 24.3375L6.82068 26.0547C6.74796 26.2185 6.73944 26.4028 6.79674 26.5723C6.85404 26.7419 6.97317 26.885 7.1315 26.9745L7.86059 27.3855C8.01894 27.4748 8.20547 27.5039 8.38444 27.4672C8.56341 27.4306 8.72224 27.3309 8.83054 27.1871L10.024 25.7549C10.125 25.6331 10.2837 25.5789 10.4012 25.6254C10.6522 25.7267 10.8202 25.7837 11.118 25.8809C11.1974 25.9062 11.2664 25.9555 11.315 26.0217C11.3636 26.0879 11.3894 26.1675 11.3885 26.2489L11.3596 28.0823C11.3499 28.2614 11.4072 28.4378 11.5209 28.5787C11.6346 28.7196 11.797 28.8153 11.9777 28.848L12.8034 28.9887C12.9833 29.0194 13.1685 28.9851 13.3245 28.8922C13.4804 28.7994 13.5964 28.6543 13.6507 28.4841L14.2637 26.7409C14.2914 26.6633 14.344 26.5965 14.4136 26.5502C14.4832 26.504 14.5661 26.4808 14.6502 26.484H15.3534C15.4368 26.4822 15.5188 26.5062 15.5874 26.5526C15.6561 26.599 15.7079 26.6654 15.7356 26.7423L16.3464 28.4785C16.3937 28.6292 16.4893 28.7612 16.6191 28.855C16.7488 28.9489 16.906 28.9997 17.0676 29C17.1106 29.0001 17.1536 28.9963 17.1959 28.9887L18.0231 28.848C18.2028 28.8158 18.3644 28.7211 18.4779 28.5814C18.5914 28.4418 18.6492 28.2667 18.6404 28.0886L18.6115 26.2475C18.611 26.1664 18.6369 26.0872 18.6855 26.0214C18.7341 25.9556 18.8029 25.9067 18.882 25.8816C19.1589 25.7908 19.3536 25.7176 19.5245 25.6528L19.5678 25.6366C19.7914 25.5613 19.8995 25.6528 19.9623 25.7288L21.1702 27.1807C21.2785 27.3244 21.4372 27.424 21.616 27.4606C21.7948 27.4972 21.9811 27.4682 22.1394 27.3792L22.8656 26.9689C23.0245 26.8794 23.144 26.7359 23.2013 26.5658C23.2586 26.3957 23.2498 26.211 23.1764 26.047L22.5101 24.334C22.4807 24.2576 22.4766 24.1742 22.4985 24.0955C22.5204 24.0168 22.5671 23.9469 22.632 23.8955C22.8072 23.7548 22.9868 23.614 23.1656 23.4578C23.2274 23.4034 23.3055 23.3698 23.3883 23.3619C23.4711 23.3541 23.5543 23.3724 23.6257 23.4141L25.2404 24.3572C25.3934 24.4545 25.5777 24.4939 25.7584 24.468C25.9392 24.4421 26.104 24.3526 26.2219 24.2164L26.7555 23.5901C26.8739 23.4538 26.9366 23.2798 26.9317 23.1012C26.9268 22.9227 26.8546 22.7522 26.7288 22.6224L25.4986 21.238C25.4439 21.1758 25.4112 21.0981 25.4054 21.0163C25.3995 20.9346 25.4208 20.8531 25.4661 20.7841C25.5894 20.5934 25.707 20.3921 25.8137 20.1901C25.8538 20.1179 25.9162 20.0598 25.9921 20.0242C26.068 19.9885 26.1534 19.9772 26.2363 19.9917L28.0738 20.3414C28.2519 20.3834 28.4396 20.3599 28.6011 20.2753C28.7626 20.1908 28.8865 20.0513 28.9493 19.8833L29.2341 19.1176C29.2979 18.95 29.2963 18.7654 29.2299 18.5988C29.1634 18.4323 29.0366 18.2953 28.8736 18.2139L27.2293 17.3222C27.1565 17.282 27.0988 17.22 27.0649 17.1454C27.031 17.0707 27.0227 16.9874 27.0411 16.9077L27.0584 16.8183C27.0959 16.622 27.1305 16.4362 27.1637 16.2384C27.1752 16.1578 27.2125 16.0829 27.2702 16.0242C27.328 15.9656 27.4033 15.9262 27.4853 15.9119L29.338 15.6205C29.5196 15.5991 29.687 15.5138 29.8089 15.3807C29.9307 15.2475 29.9987 15.0756 30 14.897V14.0729ZM9.63102 20.6884C9.54115 20.8409 9.41549 20.9704 9.26435 21.0663C9.11322 21.1622 8.94093 21.2217 8.76164 21.24C8.58235 21.2583 8.40118 21.2348 8.233 21.1714C8.06483 21.1081 7.91446 21.0067 7.79424 20.8756C6.16958 19.1225 5.27253 16.8416 5.27813 14.4778C5.28373 12.1141 6.19158 9.83724 7.82453 8.0915C7.94537 7.96046 8.09639 7.85932 8.26514 7.79642C8.43389 7.73351 8.61554 7.71063 8.79512 7.72966C8.97471 7.7487 9.14709 7.80911 9.29806 7.90592C9.44903 8.00272 9.57428 8.13314 9.66347 8.28645L12.9555 13.9413C13.0544 14.1099 13.1064 14.3009 13.1064 14.4952C13.1064 14.6895 13.0544 14.8804 12.9555 15.049L9.63102 20.6884ZM15 24.0088C14.3137 24.009 13.6294 23.9382 12.9584 23.7977C12.7836 23.7596 12.6205 23.6818 12.4822 23.5707C12.344 23.4596 12.2345 23.3182 12.1626 23.1581C12.0908 22.998 12.0586 22.8236 12.0687 22.6491C12.0788 22.4746 12.1308 22.3049 12.2207 22.1537L15.538 16.5234C15.6378 16.3538 15.7817 16.2128 15.9551 16.1149C16.1286 16.0169 16.3255 15.9653 16.526 15.9654H23.1707C23.3497 15.9651 23.5262 16.006 23.686 16.0847C23.8458 16.1634 23.9843 16.2778 24.0903 16.4185C24.1964 16.5592 24.267 16.7223 24.2964 16.8946C24.3258 17.0669 24.3132 17.2435 24.2596 17.4102C22.9983 21.2331 19.3269 24.0088 15 24.0088ZM15.5416 12.4739L12.2596 6.83385C12.1707 6.6824 12.1195 6.51265 12.1102 6.33832C12.1009 6.16399 12.1338 5.98998 12.2062 5.83034C12.2786 5.67071 12.3884 5.52994 12.5269 5.4194C12.6653 5.30886 12.8285 5.23167 13.0031 5.19405C13.6597 5.05901 14.329 4.99108 15 4.99136C19.3269 4.99136 22.9983 7.76706 24.2575 11.5921C24.311 11.7587 24.3236 11.9354 24.2942 12.1077C24.2648 12.28 24.1942 12.4431 24.0882 12.5838C23.9821 12.7245 23.8436 12.8389 23.6838 12.9176C23.524 12.9963 23.3475 13.0372 23.1685 13.0369H16.5339C16.3322 13.0373 16.134 12.9854 15.9597 12.8865C15.7853 12.7875 15.641 12.6452 15.5416 12.4739Z" fill="#FFB342"/>
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+            <header class="header">
+                <div class="header__top">
+                    <div class="header__container">
+                        <div class="top-header">
+                            <div class="top-header__left">Opening Hours: 06:00 to 20:00</div>
+                            <div class="top-header__social header__social">
+                                <div class="header__social-item">
+                                    <svg>
+                                        <use xlink:href="#face"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__social-item">
+                                    <svg>
+                                        <use xlink:href="#twit"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__social-item">
+                                    <svg>
+                                        <use xlink:href="#print"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__social-item">
+                                    <svg>
+                                        <use xlink:href="#inst"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__container">
+                    <div class="header__main">
+                        <div class="header__main-logo">
+                            <img src="assets/img/header/logo.svg" alt="">
+                        </div>
+                        <div class="header__main-contact main-contact">
+                            <div class="main-contact__item">
+                                <div class="main-contact__icon">
+                                    <img src="assets/img/header/contact/1.svg" alt="">
+                                </div>
+                                <div class="main-contact__info contact__info">
+                                    <div class="contact__info-title">Mail Us</div>
+                                    <div class="contact__info-subtitle">Info@bluecollar.com</div>
+                                </div>
+                            </div>
+                            <div class="main-contact__item">
+                                <div class="main-contact__icon">
+                                    <img src="assets/img/header/contact/2.svg" alt="">
+                                </div>
+                                <div class="main-contact__info contact__info">
+                                    <div class="contact__info-title">Call Us</div>
+                                    <div class="contact__info-subtitle">+01 569 896 654</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__block">
+                    <div class="header__container">
+                        <div class="header__bottom">
+                            <nav class="header__nav nav">
+                                <ul class="nav__inner">
+                                    <li><a href="" class="nav__link">Home</a></li>
+                                    <li><a href="" class="nav__link">About Us</a></li>
+                                    <li><a href="" class="nav__link">Pages</a></li>
+                                    <li><a href="" class="nav__link">Blog</a></li>
+                                    <li><a href="" class="nav__link">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                            <button class="header__btn">Have Any Questions?</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="intro">
+                    <div class="intro__container">
+                        <div class="intro__content">
+                            <div class="intro__subtitle">
+                                <div class="intro__subtitle-icon">
+                                    <svg>
+                                        <use xlink:href="#intro"></use>
+                                    </svg>
+                                </div>
+                                <div class="intro__subtitle-text">Improve our customers’ lives by providing effective solutions.</div>
+                            </div>
+                            <div class="intro__title">A recognized leader in services industry</div>
+                            <div class="intro__btn">
+                                <button class="btn">View Services</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="future">
+                    <div class="future__container">
+                        <div class="future__page">
+                            <div class="future__photo">
+                                <img src="assets/img/future/1.png" alt="">
+                            </div>
+                            <div class="future__body">
+                                <div class="future__content content-block">
+                                    <div class="content-block__subtitle">
+                                        <div class="content-block__subtitle-icon">
+                                            <img src="assets/img/future/icon.svg" alt="">
+                                        </div>
+                                        <div class="content-block__subtitle-text">Welcome BlueCollar</div>
+                                    </div>
+                                    <div class="content-block__title">We Provide Your Future</div>
+                                    <div class="content-block__text">
+                                        <p>Bluecollar Electrical services was established in 2008. We are trusted and reliable electricians who serve customers in the city as well as throughout United States Of America.</p>
+                                        <p>We have extensive experience of domestic and business electrical installations and no job is too small. Our customers value our professionalism, work ethic and our competitive prices.</p>
+                                    </div>
+                                </div>
+                                <div class="future__inner">
+                                    <div class="future__info">
+                                        <div class="future__value">35</div>
+                                        <div class="future__left-text">Years Of Experience</div>
+                                    </div>
+                                    <ul class="future__list">
+                                        <li>- For all your system requirements</li>
+                                        <li>- All work undertaken by qualified</li>
+                                        <li>- Experienced office staff on hand</li>
+                                        <li>- A Full Guarantee On Workmanship</li>
+                                        <li>- Properties at a reasonable price.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="services__container">
+                        <div class="services__content content-block">
+                            <div class="content-block__subtitle block__subtitle-services">
+                                <div class="content-block__subtitle-icon">
+                                    <img src="assets/img/future/icon.svg" alt="">
+                                </div>
+                                <div class="content-block__subtitle-text">What We Offer</div>
+                            </div>
+                            <div class="content-block__title">Professional Main Services</div>
+                            <div class="block__text-services">
+                                <p>We have extensive experience of domestic and business electrical installations and no job is too small. Our customers value our professionalism, work ethic and our competitive prices.</p>
+                            </div>
+                        </div>
+                        <div class="services__inner">
+                            <div class="services__item">
+                                <div class="services__icon">
+                                    <img src="assets/img/services/1.png" alt="">
+                                </div>
+                                <div class="services__item-text">Commercial</div>
+                            </div>
+                            <div class="services__item">
+                                <div class="services__icon">
+                                    <img src="assets/img/services/2.png" alt="">
+                                </div>
+                                <div class="services__item-text">Residential</div>
+                            </div>
+                            <div class="services__item">
+                                <div class="services__icon">
+                                    <img src="assets/img/services/3.png" alt="">
+                                </div>
+                                <div class="services__item-text">Industrial</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="electric">
+                    <div class="electric__container">
+                        <div class="electric__page">
+                            <div class="electric__body">
+                                <div class="future__content content-block">
+                                    <div class="content-block__subtitle">
+                                        <div class="content-block__subtitle-icon">
+                                            <img src="assets/img/electric/icon.png" alt="">
+                                        </div>
+                                        <div class="content-block__subtitle-text">Electrical installation</div>
+                                    </div>
+                                    <div class="content-block__title">Commercial</div>
+                                    <div class="content-block__text">
+                                        <p>Electrical & Maintenance Services Ltd offers a full range of electrical services to suit your needs – from moving a light switch to complete house rewires.</p>
+                                        <p>In addition to providing fully qualified, competent electricians in and around London, the company also runs an electrical wholesale shop.</p>
+                                    </div>
+                                </div>
+                                <button class="btn">Read More</button>
+                            </div>
+                            <div class="electric__photo">
+                                <img src="assets/img/electric/1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area">
+                    <div class="area__container">
+                        <div class="area__page">
+                            <div class="area__content content-block">
+                                <div class=" block__subtitle-area">
+                                    <div class="content-block__subtitle-icon">
+                                        <img src="assets/img/future/icon.svg" alt="">
+                                    </div>
+                                    <div class="content-block__subtitle-text">Area Of Service</div>
+                                </div>
+                                <div class="content-block__title">Our Services</div>
+                                <div class="content-block__text">
+                                    <p>We offers a comprehensive range of electrical services for domestic and commercial properties at a reasonable price.</p>
+                                </div>
+                            </div>
+                            <div class="area__inner">
+                                <div class="area__col">
+                                    <div class="area__item">
+                                        <div class="area__icon">
+                                            <img src="assets/img/area/1.png" alt="">
+                                        </div>
+                                        <div class="area__item-title">Air condition service</div>
+                                        <div class="area__item-text">Services are able to service your entire electrical infrastructure from Thermal Imaging of your air condition from switch boards.</div>
+                                        <a href="#" class="area__item-link">View More</a>
+                                    </div>
+                                </div>
+                                <div class="area__col">
+                                    <div class="area__item">
+                                        <div class="area__icon">
+                                            <img src="assets/img/area/2.png" alt="">
+                                        </div>
+                                        <div class="area__item-title">Electrical installation</div>
+                                        <div class="area__item-text">The art electrical installations that provide all the necessary electrical solutions to suit your business, home or industrial premises.</div>
+                                        <a href="#" class="area__item-link">View More</a>
+                                    </div>
+                                </div>
+                                <div class="area__col">
+                                    <div class="area__item">
+                                        <div class="area__icon">
+                                            <img src="assets/img/area/3.png" alt="">
+                                        </div>
+                                        <div class="area__item-title">General Builder</div>
+                                        <div class="area__item-text">We provide impeccable safety assessments to both commercial, residential properties. Our adept & knowledgeable electricians.</div>
+                                        <a href="#" class="area__item-link">View More</a>
+                                    </div>
+                                </div>
+                                <div class="area__col">
+                                    <div class="area__item">
+                                        <div class="area__icon">
+                                            <img src="assets/img/area/4.png" alt="">
+                                        </div>
+                                        <div class="area__item-title">Security System</div>
+                                        <div class="area__item-text">Utilized for measuring flow, temperature level & pressure in the manufacturing industry array of technology is ensure productivity.</div>
+                                        <a href="#" class="area__item-link">View More</a>
+                                    </div>
+                                </div>
+                                <div class="area__col">
+                                    <div class="area__item">
+                                        <div class="area__icon">
+                                            <img src="assets/img/area/5.png" alt="">
+                                        </div>
+                                        <div class="area__item-title">Service & maintenance</div>
+                                        <div class="area__item-text">Electrical Services are able to service your entire electrical infrastructure from Thermal Imaging of your switch boards.</div>
+                                        <a href="#" class="area__item-link">View More</a>
+                                    </div>
+                                </div>
+                                <div class="area__col">
+                                    <div class="area__item">
+                                        <div class="area__icon">
+                                            <img src="assets/img/area/6.png" alt="">
+                                        </div>
+                                        <div class="area__item-title">House Extensions</div>
+                                        <div class="area__item-text">Traditionally, electricity is supplied through overhead network poles, where the cable is connected to your building.</div>
+                                        <a href="#" class="area__item-link">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose">
+                    <div class="choose__page">
+                        <div class="choose__left">
+                            <div class="choose__inner">
+                                <div class="choose__item">
+                                    <div class="choose__value">3956</div>
+                                    <div class="choose__item-text">Project Done</div>
+                                </div>
+                                <div class="choose__item">
+                                    <div class="choose__value">854</div>
+                                    <div class="choose__item-text">People Working</div>
+                                </div>
+                                <div class="choose__item">
+                                    <div class="choose__value">265</div>
+                                    <div class="choose__item-text">Business Partners</div>
+                                </div>
+                                <div class="choose__item">
+                                    <div class="choose__value">845+</div>
+                                    <div class="choose__item-text">Happy Customers</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose__right">
+                            <div class="choose__content content-block">
+                                <div class="content-block__subtitle">
+                                    <div class="content-block__subtitle-icon">
+                                        <img src="assets/img/choose/icon.svg" alt="">
+                                    </div>
+                                    <div class="content-block__subtitle-text">Why Choose Us</div>
+                                </div>
+                                <div class="content-block__title">Few Reasons Why You Should Choose Us</div>
+                                <div class="content-block__text">
+                                    <p>We are offering the following information's about us that what we actually do in the electrical sector. To Improve our customers’ lives by providing creative and cost-effective solutions to their needs.</p>
+                                </div>
+                            </div>
+                            <div class="choose__list">
+                                <div class="choose__list-item">
+                                    <div class="choose__list-icon">
+                                        <img src="assets/img/choose/arrow.svg" alt="">
+                                    </div>
+                                    <div class="choose__list-content">
+                                        <div class="choose__list-title">35 Years Experience</div>
+                                        <div class="choose__list-text">Effective communication is the key to success for any business. From our office staff, to our field.</div>
+                                    </div>
+                                </div>
+                                <div class="choose__list-item">
+                                    <div class="choose__list-icon">
+                                        <img src="assets/img/choose/arrow.svg" alt="">
+                                    </div>
+                                    <div class="choose__list-content">
+                                        <div class="choose__list-title">Excellence Certificate</div>
+                                        <div class="choose__list-text">We understand fully that your time is of extreme value. We are committed to meeting deadlines.</div>
+                                    </div>
+                                </div>
+                                <div class="choose__list-item">
+                                    <div class="choose__list-icon">
+                                        <img src="assets/img/choose/arrow.svg" alt="">
+                                    </div>
+                                    <div class="choose__list-content">
+                                        <div class="choose__list-title">Affordable Price</div>
+                                        <div class="choose__list-text">We adhere strictly to the current National Electrical Code, and we conduct regular in-house sessions.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gallery__container">
+                        <div class="gallery__page">
+                            <div class="gallery__content content-block">
+                                <div class="content-block__subtitle block__subtitle-gallery">
+                                    <div class="content-block__subtitle-icon">
+                                        <img src="assets/img/future/icon.svg" alt="">
+                                    </div>
+                                    <div class="content-block__subtitle-text">Welcome BlueCollar</div>
+                                </div>
+                                <div class="block__title-gallery">We Provide Your Future</div>
+                            </div>
+                            <div class="gallery__inner">
+                                <div class="gallery__col">
+                                    <div class="gallery__item">
+                                        <div class="gallery__photo">
+                                            <img src="assets/img/gallery/1.png" alt="">
+                                        </div>
+                                        <div class="gallery__content">
+                                            <div class="gallery__content-title">Fiber cable change</div>
+                                            <div class="gallery__content-text">Commercial</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__col">
+                                    <div class="gallery__item">
+                                        <div class="gallery__photo">
+                                            <img src="assets/img/gallery/2.png" alt="">
+                                        </div>
+                                        <div class="gallery__content">
+                                            <div class="gallery__content-title">Industry machine issue</div>
+                                            <div class="gallery__content-text">Industry</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__col">
+                                    <div class="gallery__item">
+                                        <div class="gallery__photo">
+                                            <img src="assets/img/gallery/3.png" alt="">
+                                        </div>
+                                        <div class="gallery__content">
+                                            <div class="gallery__content-title">Wheel Alloy Change</div>
+                                            <div class="gallery__content-text">Residential</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__col">
+                                    <div class="gallery__item">
+                                        <div class="gallery__photo">
+                                            <img src="assets/img/gallery/4.png" alt="">
+                                        </div>
+                                        <div class="gallery__content">
+                                            <div class="gallery__content-title">Roof Cleaning</div>
+                                            <div class="gallery__content-text">Commercial</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <div class="reviews__container">
+                        <div class="reviews__content content-block">
+                            <div class="content-block__subtitle">
+                                <div class="content-block__subtitle-icon">
+                                    <img src="assets/img/future/icon.svg" alt="">
+                                </div>
+                                <div class="content-block__subtitle-text">Testimonial</div>
+                            </div>
+                            <div class="content-block__title">Customers Says</div>
+                        </div>
+                        <div class="reviews__slider slider">
+                            <div class="slider__inner">
+                                <div class="slider__item">
+                                    <div class="slider__col">
+                                        <div class="slider__item-block">
+                                            <div class="slider__item-top">
+                                                <div class="slider__item-author">
+                                                    <div class="slider__item-photo">
+                                                        <img src="assets/img/reviews/author.png" alt="">
+                                                    </div>
+                                                    <div class="slider__item-info">
+                                                        <div class="slider__item-name">Nancy luther</div>
+                                                        <div class="slider__item-place">NewYork</div>
+                                                    </div>
+                                                </div>
+                                                <div class="slider__item-cov">
+                                                    <img src="assets/img/reviews/cov.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="slider__text">We have had several good experiences with Blue Collar team. Most recently, they replaced our 20-year-old HVAC system with a new, modern, and more efficient system & it worked fine. </div>
+                                        </div>
+                                        <div class="slider__item-block">
+                                            <div class="slider__item-top">
+                                                <div class="slider__item-author">
+                                                    <div class="slider__item-photo">
+                                                        <img src="assets/img/reviews/author.png" alt="">
+                                                    </div>
+                                                    <div class="slider__item-info">
+                                                        <div class="slider__item-name">Nancy luther</div>
+                                                        <div class="slider__item-place">NewYork</div>
+                                                    </div>
+                                                </div>
+                                                <div class="slider__item-cov">
+                                                    <img src="assets/img/reviews/cov.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="slider__text">We have had several good experiences with Blue Collar team. Most recently, they replaced our 20-year-old HVAC system with a new, modern, and more efficient system & it worked fine. </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__question quiestion">
+                                        <div class="content-block__subtitle">
+                                            <div class="content-block__subtitle-icon">
+                                                <img src="assets/img/future/icon.svg" alt="">
+                                            </div>
+                                            <div class="content-block__subtitle-text block__subtitle-slider">Any Question</div>
+                                        </div>
+                                        <div class="quiestion__title">99.9% Customer Satisfaction Based</div>
+                                        <div class="quiestion__text">If you have any questions or need help contact with our team, or call</div>
+                                        <div class="quiestion__contact">
+                                            <div class="quiestion__icon">
+                                                <img src="assets/img/reviews/icon.svg" alt="">
+                                            </div>
+                                            <div class="quiestion__phone">(003) 123 456 7890</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__content content-block">
+                                        <div class="content-block__subtitle">
+                                            <div class="content-block__subtitle-icon">
+                                                <img src="assets/img/future/icon.svg" alt="">
+                                            </div>
+                                            <div class="content-block__subtitle-text">Meet Us</div>
+                                        </div>
+                                        <div class="content-block__title">Appointment Form</div>
+                                    </div>
+                                    <div class="slider__form form">
+                                        <form action="/">
+                                            <input type="text" placeholder="Your name">
+                                            <input type="text" placeholder="Your email">
+                                            <input type="text" placeholder="Phone Number">
+                                            <input type="text" placeholder="Date">
+                                            <textarea name="" placeholder="Service Description"></textarea>
+                                        </form>
+                                        <div class="reviews__btn">
+                                            <button class="btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clients">
+                    <div class="clients__container">
+                        <div class="clients__page">
+                            <div class="clients__content content-block">
+                                <div class="content-block__subtitle block__subtitle-clients">
+                                    <div class="content-block__subtitle-icon">
+                                        <img src="assets/img/future/icon.svg" alt="">
+                                    </div>
+                                    <div class="content-block__subtitle-text">Clients</div>
+                                </div>
+                                <div class="content-block__title">Our Trusted Big Clients!</div>
+                            </div>
+                            <div class="clients__inner">
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/1.svg" alt="">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/2.svg" alt="">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/3.svg" alt="">
+                                </div>
+                                <div class="clients__item">
+                                    <img src="assets/img/clients/4.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price__container">
+                        <div class="price__page">
+                            <div class="price__content content-block">
+                                <div class="price__content-body">
+                                    <div class="block__subtitle-price">
+                                        <div class="content-block__subtitle-icon">
+                                            <img src="assets/img/future/icon.svg" alt="">
+                                        </div>
+                                        <div class="content-block__subtitle-text">Price Plan</div>
+                                    </div>
+                                    <div class="content-block__title">Let’s Customize Work With Affordable Price</div>
+                                </div>
+                                <div class="price__content-text">This is passionate about delivering growth and the new possibilities in the field of electrical services. We have extensive experience of domestic and business electrical installations and no job is too small.</div>
+                            </div>
+                            <div class="price__inner">
+                                <div class="price__col">
+                                    <div class="price__item">
+                                        <div class="price__item-top top-item">
+                                            <div class="top-item__suptitle">
+                                                <div class="top-item__suptitle-left">Basic Plan</div>
+                                            </div>
+                                            <div class="top-item__title">
+                                                <div class="top-item__cost">$ 599.00</div>
+                                                <div class="top-item__per">Per Visit Charge</div>
+                                            </div>
+                                        </div>
+                                        <ul class="price__list">
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Electrical Service</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Distribution Power Systemss</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">High & Medium Voltages</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Industrial Control Systems</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Switch Installation</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Generator Installations</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Innovative Construction</div>
+                                            </li>
+                                        </ul>
+                                        <div class="price__btn">
+                                            <button class="btn">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price__col">
+                                    <div class="price__item">
+                                        <div class="price__item-top top-item">
+                                            <div class="top-item__suptitle">
+                                                <div class="top-item__suptitle-left">Standard</div>
+                                                <div class="top-item__suptitle-right">Popular</div>
+                                            </div>
+                                            <div class="top-item__title">
+                                                <div class="top-item__cost">$ 699.00</div>
+                                                <div class="top-item__per">Per Visit Charge</div>
+                                            </div>
+                                        </div>
+                                        <ul class="price__list">
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">PLC Controls</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Conveyor systems</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Wiring renovations</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Electric Water Heater Repair</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Service And Panel Upgrades</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Efficient Lighting Solutions</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Site lighting</div>
+                                            </li>
+                                        </ul>
+                                        <div class="price__btn">
+                                            <button class="btn">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price__col">
+                                    <div class="price__item">
+                                        <div class="price__item-top top-item">
+                                            <div class="top-item__suptitle">
+                                                <div class="top-item__suptitle-left">Professional</div>
+                                            </div>
+                                            <div class="top-item__title">
+                                                <div class="top-item__cost">$ 799.00</div>
+                                                <div class="top-item__per">Per Visit Charge</div>
+                                            </div>
+                                        </div>
+                                        <ul class="price__list">
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Cable Tray Installations</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Wiring Upgrades</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Energy Efficient Lighting</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Emergency Generating</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Pools And Hot Tubs</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Air Conditioning Units</div>
+                                            </li>
+                                            <li>
+                                                <div class="price__list-icon">
+                                                    <img src="assets/img/price/icon.svg" alt="">
+                                                </div>
+                                                <div class="price__list-service">Generating Systems</div>
+                                            </li>
+                                        </ul>
+                                        <div class="price__btn">
+                                            <button class="btn">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__bottom">
+                                <div class="price__bottom-item">
+                                    <div class="price__bottom-icon">
+                                        <img src="assets/img/price/icon_2.svg" alt="">
+                                    </div>
+                                    <div class="price__bottom-content">
+                                        <div class="price__bottom-title">Affordable Price</div>
+                                        <div class="price__bottom-text">We adhere strictly to the current National Electrical Code, and we conduct regular in-house sessions with our technicians to review any code changes and applications.</div>
+                                    </div>
+                                </div>
+                                <div class="price__bottom-item">
+                                    <div class="price__bottom-icon">
+                                        <img src="assets/img/price/icon_2.svg" alt="">
+                                    </div>
+                                    <div class="price__bottom-content">
+                                        <div class="price__bottom-title">Fixed Plan</div>
+                                        <div class="price__bottom-text">We understand fully that your time is of extreme value. You will never have to worry about waiting around for our trained technicians.24/7 Service Providers Affordable Price.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles">
+                    <div class="articles__container">
+                        <div class="articles__page">
+                            <div class="articles__content content-block">
+                                <div class="content-block__subtitle block__subtitle-articles">
+                                    <div class="content-block__subtitle-icon">
+                                        <img src="assets/img/future/icon.svg" alt="">
+                                    </div>
+                                    <div class="content-block__subtitle-text">Stay Updated</div>
+                                </div>
+                                <div class="content-block__title">Latest News & Articles</div>
+                            </div>
+                            <div class="articles__inner">
+                                <div class="articles__item">
+                                    <div class="articles__photo">
+                                        <img src="assets/img/articles/photo_1.png" alt="">
+                                    </div>
+                                    <div class="articles__body">
+                                        <div class="articles__data">
+                                            <div class="articles__icon">
+                                                <img src="assets/img/articles/icon_1.svg" alt="">
+                                            </div>
+                                            <div class="articles__info">Alex Louis</div>
+                                        </div>
+                                        <div class="articles__data">
+                                            <div class="articles__icon">
+                                                <img src="assets/img/articles/icon_2.svg" alt="">
+                                            </div>
+                                            <div class="articles__info">April 16, 2022</div>
+                                        </div>
+                                    </div>
+                                    <div class="articles__item-content">
+                                        <div class="articles__title">How Outside Lighting can Transform Your Summer Garden</div>
+                                        <div class="articles__text">Capitalize on low-hanging fruit to identify a ballpark value added matrix economically activity to beta test override the multiple touchpoints for offshoring the digital divide with DevOps.</div>
+                                        <a href="#" class="articles__btn">
+                                            <div class="articles__btn-link">View More</div>
+                                            <div class="articles__btn-icon">
+                                                <img src="assets/img/articles/arrow.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="articles__item">
+                                    <div class="articles__photo">
+                                        <img src="assets/img/articles/photo_1.png" alt="">
+                                    </div>
+                                    <div class="articles__body">
+                                        <div class="articles__data">
+                                            <div class="articles__icon">
+                                                <img src="assets/img/articles/icon_1.svg" alt="">
+                                            </div>
+                                            <div class="articles__info">Alex Louis</div>
+                                        </div>
+                                        <div class="articles__data">
+                                            <div class="articles__icon">
+                                                <img src="assets/img/articles/icon_2.svg" alt="">
+                                            </div>
+                                            <div class="articles__info">April 16, 2022</div>
+                                        </div>
+                                    </div>
+                                    <div class="articles__item-content">
+                                        <div class="articles__title">How Outside Lighting can Transform Your Summer Garden</div>
+                                        <div class="articles__text">Capitalize on low-hanging fruit to identify a ballpark value added matrix economically activity to beta test override the multiple touchpoints for offshoring the digital divide with DevOps.</div>
+                                        <a href="#" class="articles__btn">
+                                            <div class="articles__btn-link">View More</div>
+                                            <div class="articles__btn-icon">
+                                                <img src="assets/img/articles/arrow.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact__container">
+                        <div class="contact__page">
+                            <div class="contact__content">
+                                <div class="contact__title">Subscribe Our Newsletter</div>
+                                <div class="contact__text">Stay in touch with us to get latest news. We are here to fit the needs of your electrical services for your dream building.</div>
+                            </div>
+                            <form action="/" class="contact__form">
+                                <input type="text" placeholder="Enter your email address">
+                                <div class="contact__btn">
+                                    <button>Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__page">
+                        <div class="footer__top">
+                            <div class="footer__top-logo">
+                                <img src="assets/img/footer/logo.svg" alt="">
+                            </div>
+                            <div class="footer__top-inner top-inner">
+                                <div class="top-inner__item">
+                                    <div class="top-inner__icon">
+                                        <img src="assets/img/footer/1.svg" alt="">
+                                    </div>
+                                    <div class="top-inner__info">
+                                        <div class="top-inner__title">Mail Us</div>
+                                        <div class="top-inner__text">Info@bluecollar.com</div>
+                                    </div>
+                                </div>
+                                <div class="top-inner__item">
+                                    <div class="top-inner__icon">
+                                        <img src="assets/img/footer/2.svg" alt="">
+                                    </div>
+                                    <div class="top-inner__info">
+                                        <div class="top-inner__title">Call Us</div>
+                                        <div class="top-inner__text">+01 569 896 654</div>
+                                    </div>
+                                </div>
+                                <div class="top-inner__item">
+                                    <div class="top-inner__icon">
+                                        <img src="assets/img/footer/3.svg" alt="">
+                                    </div>
+                                    <div class="top-inner__info">
+                                        <div class="top-inner__title">Location</div>
+                                        <div class="top-inner__text">Amsterdam, 109-74</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div class="footer__bottom-left">
+                                <div class="footer__bottom-text">We are here to fit the needs of your basic services for your dream building whether its a commercial, residential or industry.</div>
+                                <div class="footer__bottom-social social">
+                                    <div class="social__item">
+                                        <img src="assets/img/footer/social/1.svg" alt="">
+                                    </div>
+                                    <div class="social__item">
+                                        <img src="assets/img/footer/social/2.svg" alt="">
+                                    </div>
+                                    <div class="social__item">
+                                        <img src="assets/img/footer/social/3.svg" alt="">
+                                    </div>
+                                    <div class="social__item">
+                                        <img src="assets/img/footer/social/4.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__bottom-right bottom-right">
+                                <div class="bottom-right__item">
+                                    <div class="footer__bottom-title">Explore</div>
+                                    <div class="footer__bottom-list list">
+                                        <ul class="list__inner">
+                                            <li><a href="" class="footer__link">About Us</a></li>
+                                            <li><a href="" class="footer__link">Pricing</a></li>
+                                            <li><a href="" class="footer__link">Team</a></li>
+                                            <li><a href="" class="footer__link">Blog</a></li>
+                                            <li><a href="" class="footer__link">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bottom-right__item">
+                                    <div class="footer__bottom-title">Quick Links</div>
+                                    <div class="footer__bottom-list list">
+                                        <ul class="list__inner">
+                                            <li><a href="" class="footer__link">Home</a></li>
+                                            <li><a href="" class="footer__link">Services</a></li>
+                                            <li><a href="" class="footer__link">Service Single</a></li>
+                                            <li><a href="" class="footer__link">Projects</a></li>
+                                            <li><a href="" class="footer__link">Projects Single</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bottom-right__item">
+                                    <div class="footer__bottom-title">Utility Pages</div>
+                                    <div class="footer__bottom-list list">
+                                        <ul class="list__inner">
+                                            <li><a href="" class="footer__link">Style Guide</a></li>
+                                            <li><a href="" class="footer__link">Changelog</a></li>
+                                            <li><a href="" class="footer__link">Licenses</a></li>
+                                            <li><a href="" class="footer__link">Protected Page</a></li>
+                                            <li><a href="" class="footer__link">404 Page</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/slick.min.js"></script>
+    
+</body>
+</html>
