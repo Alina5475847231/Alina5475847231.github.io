@@ -1,0 +1,15 @@
+.header {
+    background-color: #F5627C;
+    width: 100%;
+}
+
+.header__logo {
+
+    @media (max-width: 483px) {
+        width: 150px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
