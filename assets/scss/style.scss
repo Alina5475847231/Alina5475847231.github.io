@@ -1,0 +1,105 @@
+/*# sourceMappingURL=main.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Montserrat', sans-serif;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}p {margin: 0; padding: 0}.main {flex: 1 1 auto;}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Helvetica-Light.woff2') format('woff2'),
+        url('Helvetica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Helvetica-Regular.woff2') format('woff2'),
+        url('Helvetica-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* IMPORT */
+
+@import "blocks/intro";
+@import "blocks/block";
+@import "blocks/sidebar";
+@import "blocks/btn";
+@import "blocks/help";
+
+/* CONTAINER */
+
+.container__content {
+    width: 100%;
+    max-width: 790px;
+    margin-left: auto;
+}
+
+.container__block {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    padding-left: 40px;
+}
+
+/* --------------------------------------------------------- */
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.content {
+    flex-basis: 70%;
+    height: 150vh;
+    margin-top: 8rem;
+}
+/*------------------------------------------------- */
+.state__inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1000px;
+}
+.state__block {
+    width: 50%;
+    position: relative;
+
+    &:first-child {
+        &:before {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: #000;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:after {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: #000;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &:last-child {
+        &:after {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: #000;
+
+            position: absolute;
+            top: 0;
+            right: -2px;
+        }
+    }
+}
