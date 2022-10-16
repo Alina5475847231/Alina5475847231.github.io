@@ -1,0 +1,22 @@
+/*# sourceMappingURL=main.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Poppins', sans-serif; font-weight: 700; background-color: #02050E;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}p {margin: 0; padding: 0}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}
+
+/* Контейнер */
+
+[class*="__container"] {
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: auto;
+    max-width: 123rem;
+}
+
+/* IMPORT */
+
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/projects";
+@import "blocks/cost";
+@import "blocks/our";
+@import "blocks/steps";
+@import "blocks/contact";
+@import "blocks/footer";
