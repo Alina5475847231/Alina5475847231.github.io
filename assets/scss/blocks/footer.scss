@@ -1,0 +1,144 @@
+.footer {
+    padding: 5rem 0 10rem;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 400px;
+        height: 400px;
+        background: rgba(30, 80, 255, 0.5);
+        filter: blur(250px);
+
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+        z-index: -1;
+    }
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 628px) {
+        flex-direction: column;
+        align-items: center;
+
+        .footer__copy {
+            display: block;
+            margin-top: 2rem;
+        }
+    }
+
+    @media (max-width: 411px) {
+        max-width: 250px;
+        align-items: stretch;
+        margin: auto;
+    }
+
+    @media (min-width: 628px) {
+        .footer__copy {
+            display: none;
+        }
+    }
+}
+.footer__left {
+    max-width: 218px;
+
+    @media (max-width: 628px) {
+        margin-bottom: 3rem;
+
+        .footer__copy {
+            display: none;
+        }
+    }
+}
+.footer__logo {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 256%;
+    color: #FFFFFF;
+
+    span {
+        color: #1E50FF;
+    }
+}
+.footer__text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 200%;
+    color: #ADB9C7;
+    margin-bottom: 4.3rem;
+}
+.footer__copy {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 171%;
+    color: #FFFFFF;    
+}
+.footer__right {
+    display: flex;
+
+    @media (max-width: 411px) {
+        flex-direction: column;
+    }
+}
+.footer__col {
+    margin-right: 8rem;
+
+    &:last-child {
+        margin-right: 0;
+
+        .footer__item {
+            .footer__item-link {
+                text-align: center;
+
+                @media (max-width: 411px) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 769px) {
+        margin-right: 4rem;
+    }
+
+    @media (max-width: 411px) {
+        margin-bottom: 3rem;
+    }
+}
+.footer__item {
+    margin-bottom: 1.2rem;  
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.footer__item-link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 200%;
+    color: #ADB9C7; 
+}
+
+.footer__social {
+}
+.social {
+    display: flex;
+    align-items: center;
+}
+.social__item {
+    cursor: pointer;
+    margin-right: 1.5rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        transition: all .2s linear;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
