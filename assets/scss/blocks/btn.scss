@@ -1,0 +1,45 @@
+.btn {
+    min-height: 5.6rem;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(32 / 18);
+    color: #FFFFFF;
+    border-radius: 1.6rem;
+    cursor: pointer;
+
+    &--border {
+        border: 1px solid #1E50FF;
+        background: none;
+        transition: all .2s linear;
+
+        &:hover {
+            background-color: #1E50FF;
+        }
+    }
+
+    &--header {
+        padding: 0 4.4rem;
+
+        @media (max-width: 993px) {
+            padding: 0 2.2rem;
+        }
+
+        @media (max-width: 769px) {
+            font-size: 1.4rem;
+        }
+
+        @media (max-width: 641px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &--blue {
+        background-color: #1E50FF;
+        transition: all .2s linear;
+
+        &:hover {
+            background-color: darken(#1E50FF, 10%);
+        }
+    }
+}
