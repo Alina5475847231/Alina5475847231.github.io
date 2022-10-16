@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Urbanist:700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+            <header class="header" id="header">
+                <div class="header__container">
+                    <div class="header__logo">DEV<span>it</span></div>
+                    <div class="header__nav nav">
+                        <nav class="nav__inner">
+                            <ul class="nav__list">
+                                <li><a href="" class="nav__link" data-scroll="#intro">Главная</a></li>
+                                <li><a href="" class="nav__link" data-scroll="#portfolio">Портфолио</a></li>
+                                <li><a href="" class="nav__link" data-scroll="#cost">Стоимость</a></li>
+                                <li><a href="" class="nav__link" data-scroll="#contacts">Контакты</a></li>
+                                <li><a href="" class="nav__link" data-scroll="#about">О компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__btn">
+                        <button class="btn btn--border btn--header" data-modal="#modal">Заказать </button>
+                    </div>
+                    <button class="header__burger">
+                        <div class="header__menu">
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro" id="intro">
+                    <div class="intro__container">
+                        <div class="intro__content _anim-items _anim-no-hide">
+                            <h1 class="intro__title">Закажите 
+                                Удобный сайт 
+                                Под ключ</h1>
+                            <div class="intro__text">Разработаем качественный и быстрый
+                                сайт за короткие сироки, при заказе
+                                SEO-оптимизация в подарок!</div>
+                            <div class="intro__btn">
+                            <button class="btn btn--blue" data-modal="#modal">Заказать сайт</button>
+                            </div>
+                        </div>
+                        <div class="intro__photo _anim-items _anim-no-hide">
+                            <img src="assets/img/intro/intro.webp" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="projects" id="portfolio">
+                    <div class="projects__container">
+                        <h2 class="projects__title _anim-items _anim-no-hide">Последние проекты</h2>
+                        <div class="projects__inner">
+                            <div class="projects__col _anim-items _anim-no-hide">
+                                <div class="projects__item">
+                                    <div class="projects__item-body">
+                                        <div class="projects__content">
+                                            <h5 class="projects__content-title">приложение проигрыватель </h5>
+                                            <div class="projects__content-text">Приложение написано на JavaScript и фреймворке React. Также были использованы html и css.</div>
+                                            <div class="projects__content-btn">
+                                                <button class="btn btn--border">Смотреть полностью</button>
+                                            </div>
+                                        </div>
+                                        <div class="projects__photo">
+                                            <img src="assets/img/projects/1.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__col _anim-items _anim-no-hide">
+                                <div class="projects__item">
+                                    <div class="projects__item-body">
+                                        <div class="projects__content">
+                                            <h5 class="projects__content-title">таймер помодорро</h5>
+                                            <div class="projects__content-text">Приложение написано на  чистом JavaScript. Также были использованы html и css.</div>
+                                            <div class="projects__content-btn">
+                                                <button class="btn btn--border">Смотреть полностью</button>
+                                            </div>
+                                        </div>
+                                        <div class="projects__photo _anim-no-hide">
+                                            <img src="assets/img/projects/2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__col _anim-items _anim-no-hide">
+                                <div class="projects__item">
+                                    <div class="projects__item-body">
+                                        <div class="projects__content">
+                                            <h5 class="projects__content-title">landing Page для компании 
+                                                Dubai luxary</h5>
+                                            <div class="projects__content-text">При разработке сайта мы использовали только html и css.</div>
+                                            <div class="projects__content-btn">
+                                                <button class="btn btn--border">Смотреть полностью</button>
+                                            </div>
+                                        </div>
+                                        <div class="projects__photo">
+                                            <img src="assets/img/projects/3.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__col _anim-items _anim-no-hide">
+                                <div class="projects__item">
+                                    <div class="projects__item-body">
+                                        <div class="projects__content">
+                                            <h5 class="projects__content-title">landing page для  дизайнерской компании</h5>
+                                            <div class="projects__content-text">При разработке сайта мы использовали только html и css.</div>
+                                            <div class="projects__content-btn">
+                                                <button class="btn btn--border">Смотреть полностью</button>
+                                            </div>
+                                        </div>
+                                        <div class="projects__photo">
+                                            <img src="assets/img/projects/4.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__col _anim-items _anim-no-hide hide">
+                                <div class="projects__item">
+                                    <div class="projects__item-body">
+                                        <div class="projects__content">
+                                            <h5 class="projects__content-title">Конструктор бургеров</h5>
+                                            <div class="projects__content-text">При разработке приложения мы использовали javaScript, react,
+                                                html и css.</div>
+                                            <div class="projects__content-btn">
+                                                <button class="btn btn--border">Смотреть полностью</button>
+                                            </div>
+                                        </div>
+                                        <div class="projects__photo">
+                                            <img src="assets/img/projects/5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__col _anim-items _anim-no-hide hide">
+                                <div class="projects__item">
+                                    <div class="projects__item-body">
+                                        <div class="projects__content">
+                                            <h5 class="projects__content-title">Сайт компании dream home</h5>
+                                            <div class="projects__content-text">При разработке приложения мы использовали javaScript, react,
+                                                html и css.</div>
+                                            <div class="projects__content-btn">
+                                                <button class="btn btn--border">Смотреть полностью</button>
+                                            </div>
+                                        </div>
+                                        <div class="projects__photo">
+                                            <img src="assets/img/projects/6.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__btn">
+                            <button class="btn btn--white btn-show">показать больше</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="cost" id="cost">
+                    <div class="cost__container">
+                        <h2 class="cost__title _anim-items">стоимость сайтов</h2>
+                        <div class="cost__inner">
+                            <div class="cost__col _anim-items _anim-no-hide">
+                                <div class="cost__item">
+                                        <div class="cost__item-icon">
+                                            <img src="assets/img/cost/icon.svg" alt="">
+                                        </div>
+                                        <h5 class="cost__item-title">landing page</h5>
+                                        <div class="cost__item-text">Одностраничный сайт, обычно
+                                            направленный на презентаию
+                                    </div>
+                                    <div class="cost__item-cost">от 14000 ₽</div>
+                                </div>
+                            </div>
+                            <div class="cost__col _anim-items _anim-no-hide">
+                                <div class="cost__item">
+                                        <div class="cost__item-icon">
+                                            <img src="assets/img/cost/icon.svg" alt="">
+                                        </div>
+                                        <h5 class="cost__item-title">многостраничник</h5>
+                                        <div class="cost__item-text">Сайт, имеющий множество
+                                            дочерних страниц, подходи для
+                                            многих типов бизнеса </div>
+                                    <div class="cost__item-cost">от 26000 ₽</div>
+                                </div>
+                            </div>
+                            <div class="cost__col _anim-items _anim-no-hide">
+                                <div class="cost__item">
+                                        <div class="cost__item-icon">
+                                            <img src="assets/img/cost/icon.svg" alt="">
+                                        </div>
+                                        <h5 class="cost__item-title">Сайт, имеющий возможность
+                                            покупки товаров онлайн</h5>
+                                        <div class="cost__item-text">Сайт, имеющий возможность
+                                            покупки товаров онлайн</div>
+                                    <div class="cost__item-cost">от 33000 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="our" id="about">
+                    <div class="our__container">
+                        <div class="our__content">
+                            <h2 class="our__title _anim-items _anim-no-hide">Наш подход 
+                                к разработке</h2>
+                            <div class="our__text">
+                                <p class="_anim-items _anim-no-hide">мы создаем уникальные сайты, основываясь
+                                    на пожеланиях клиента и современных
+                                    трендах Web-дизайна и маркетинга</p>
+                                <p class="_anim-items _anim-no-hide">в нашей команде опытные дизайнеры
+                                    и разработчики, готовые воплотить любую
+                                    вашу идею в качественный сайт.</p>
+                                <p class="_anim-items _anim-no-hide">мы заботимся о ваших проектах, ваших
+                                    сроках и ваших нервах, несмотря ни на что,
+                                    и это-обещание.</p>
+                            </div>
+                        </div>
+                        <div class="our__photo _anim-items _anim-no-hide">
+                            <img src="assets/img/our/photo.svg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="steps">
+                    <div class="steps__container">
+                        <h2 class="steps__title _anim-items _anim-no-hide">Этапы Разработки</h2>
+                        <div class="steps__inner">
+                            <div class="steps__col _anim-items _anim-no-hide">
+                                <div class="steps__item">
+                                    <div class="steps__item-title">№1 интервью</div>
+                                    <div class="steps__item-text">узнаем важную информацию
+                                        о проекте, основных целях и
+                                        задачах. проводим анализ
+                                        ниши и UX-анализ.</div>
+                                </div>
+                            </div>
+                            <div class="steps__col _anim-items _anim-no-hide">
+                                <div class="steps__item">
+                                    <div class="steps__item-title">№2 структкра сайта</div>
+                                    <div class="steps__item-text">составляем структуру сайта
+                                        на основе анализа и исследований
+                                        каждый пункт согласовываем
+                                        с заказчиком.</div>
+                                </div>
+                            </div>
+                            <div class="steps__col _anim-items _anim-no-hide">
+                                <div class="steps__item">
+                                    <div class="steps__item-title">№3 создание мудборда</div>
+                                    <div class="steps__item-text">составляем карту настроения 
+                                        сайта, показываем работы
+                                        конкурентови определяемся
+                                        со стилем дизайна.</div>
+                                </div>
+                            </div>
+                            <div class="steps__col _anim-items _anim-no-hide">
+                                <div class="steps__item">
+                                    <div class="steps__item-title">№4 прототип сайта</div>
+                                    <div class="steps__item-text">разрабатываем черновики
+                                        вариант сайта на основе
+                                        структуры, презентуем 
+                                        и согласовываем с заказчиком.</div>
+                                </div>
+                            </div>
+                            <div class="steps__col _anim-items _anim-no-hide">
+                                <div class="steps__item">
+                                    <div class="steps__item-title">№5 дизайн сайта</div>
+                                    <div class="steps__item-text">разрабатываем дизайн сайта
+                                        на основе мудборда и прототипа,
+                                        весь дизайн согласовываем
+                                        с заказчиком.</div>
+                                </div>
+                            </div>
+                            <div class="steps__col _anim-items _anim-no-hide">
+                                <div class="steps__item">
+                                    <div class="steps__item-title">№6 верстка</div>
+                                    <div class="steps__item-text">переносним готовый дизайн в
+                                        код, адаптируем сайт под все 
+                                        устройства и базовое SEO-
+                                        продвижение.</div>
+                                </div>
+                            </div>
+                            <div class="steps__col _anim-items _anim-no-hide">
+                                <div class="steps__item">
+                                    <div class="steps__item-title">№7  хостинг+домен</div>
+                                    <div class="steps__item-text">загружаем сайт на платный
+                                        хостинг, покупаем домен на
+                                        основе пожеланий заказчика.</div>
+                                </div>
+                            </div>
+                            <div class="steps__col _anim-items _anim-no-hide">
+                                <div class="steps__item">
+                                    <div class="steps__item-title">№8 защита проекта</div>
+                                    <div class="steps__item-text">представляем сайт заказчику,
+                                        обьясняем все рабочие
+                                        моменты и причины выбора
+                                        конкретных дизайн решений.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact" id="contacts">
+                    <div class="contact__container">
+                        <h2 class="contact__title _anim-items _anim-no-hide">Свяжитесь с  Нами </h2>
+                        <div class="contact__body">
+                            <div class="contact__block">
+                                <div class="contact__block-text _anim-items _anim-no-hide">заполните заявку, наш менеджер
+                                    свяжется с вами в ближайшее время</div>
+                                <div class="contact__block-body _anim-items _anim-no-hide">
+                                    <form class="contact__form">
+                                        <div class="contact__form-item">
+                                            <div class="contact__form-text">Имя</div>
+                                            <input type="text" placeholder="введите свое имя">
+                                        </div>
+                                        <div class="contact__form-item">
+                                            <div class="contact__form-text">Телефон</div>
+                                            <input type="text" placeholder="введите свой номер телефона">
+                                        </div>
+                                        <div class="contact__form-item">
+                                            <div class="contact__form-text">мессенджер(необязательно)</div>
+                                            <input type="text" placeholder="например телеграм">
+                                        </div>
+                                        <div class="contact__form-item">
+                                            <div class="contact__form-text">email(необязательно)</div>
+                                            <input type="text" placeholder="введите свой email">
+                                        </div>
+                                    </form>
+                                    <div class="contact__block-btn">
+                                        <button class="btn btn--blue">Заказать сайт</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact__block">
+                                <div class="contact__block-text _anim-items _anim-no-hide">Или напишите сейчас в личные
+                                    сообщения любой изданных соцсетей.</div>
+                                <div class="contact__block-item _anim-items _anim-no-hide">
+                                    <div class="contact__block-item-text">телефон: +7 950 679 74 84</div>
+                                </div>
+                                <div class="contact__block-item _anim-items _anim-no-hide">
+                                    <div class="contact__block-item-text">Telegram: @vldslv25</div>
+                                </div>
+                                <div class="contact__block-item _anim-items _anim-no-hide">
+                                    <div class="contact__block-item-text">вКонтакте: @vldslv25</div>
+                                </div>
+                                <div class="contact__block-item _anim-items _anim-no-hide">
+                                    <div class="contact__block-item-text">WhatsApp: +7 950 679 74 84</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="modal" id="modal">
+                    <div class="modal__dialog">
+                        <div class="modal__content">
+                            <div class="modal__logo">DEV<span>it</span></div>
+                            <div class="modal__body">
+                                <div class="modal__title">Заказать сайт</div>
+                                <form action="#" class="modal__form">
+                                    <div class="modal__form-item">
+                                        <div class="modal__form-main">Ваше имя</div>
+                                        <input type="text" placeholder="введите свое имя">
+                                    </div>
+                                    <div class="modal__form-item">
+                                        <div class="modal__form-main">ваш телефон</div>
+                                        <input type="tel" placeholder="введите номер телефона">
+                                    </div>
+                                    <div class="modal__form-item">
+                                        <div class="modal__form-main">ваш telegram/email</div>
+                                        <input type="email" placeholder="введите telegram/email">
+                                    </div>
+                                </form>
+                                <div class="modal__btn">
+                                    <button class="btn btn--blue">Отправить</button>
+                                </div>
+                            </div>
+                            <button class="modal__close"></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__left">
+                        <div class="footer__logo">DEVit</div>
+                        <div class="footer__text">Мы заботимся о ваших проектах, сроках, нервах, несмотря ни на что.</div>
+                        <div class="footer__copy">2022 All Right Reserved</div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__col">
+                            <div class="footer__item">
+                                <a href="" class="footer__item-link">Главная</a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="" class="footer__item-link">Заказать</a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="" class="footer__item-link">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__item">
+                                <a href="" class="footer__item-link">Стоимость </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="" class="footer__item-link">Портфолио</a>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__item">
+                                <div class="footer__item-link">Россия 2022 </div>
+                            </div>
+                            <div class="footer__social social">
+                                <a href="#" class="social__item">
+                                    <img src="assets/img/footer/1.svg" alt="">
+                                </a>
+                                <a href="#" class="social__item">
+                                    <img src="assets/img/footer/2.svg" alt="">
+                                </a>
+                                <a href="#" class="social__item">
+                                    <img src="assets/img/footer/3.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copy">2022 All Right Reserved</div>
+                </div>
+            </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
