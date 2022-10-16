@@ -1,0 +1,211 @@
+.contact {
+    margin-top: 12rem;
+    margin-bottom: 20rem;
+
+    @media (max-width: 993px) {
+        margin-bottom: 10rem;
+    }
+}
+.contact__title {
+    font-size: 6.4rem;
+    line-height: calc(70 / 64);
+    color: #FFFFFF;   
+    
+    text-align: center;
+
+    margin-bottom: 4.4rem;
+    opacity: 0;
+    transition: all .7s linear;
+
+    @media (max-width: 577px) {
+        font-size: 3.5rem;
+    }
+
+    &._active {
+        opacity: 1;
+    }
+}
+.contact__body {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 993px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.contact__block {
+    max-width: 420px;
+
+    @media (max-width: 993px) {
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 461px) {
+        max-width: 350px;
+    }
+}
+.contact__block-text {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 133%;
+    text-transform: capitalize;
+    color: #FFFFFF;    
+
+    margin-bottom: 5.1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .4s linear;
+
+    @media (max-width: 461px) {
+        font-size: 2rem;
+    }
+
+    &._active {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.contact__block-body {
+    background: #36414C;
+    box-shadow: 5px 4px 70px rgba(14, 9, 66, 0.25);
+    border-radius: 25px;
+    padding: 2.7rem 2.2rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all .5s linear;
+
+    &._active {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.contact__form {
+    max-width: 405px;
+    position: relative;
+    z-index: 100;
+
+    input {
+        width: 100%;
+        min-height: 6rem;
+        color: #505050;
+        background-color: #D9D9D9;
+        border: 0;
+        border-radius: 1.6rem;
+        padding: 0 2rem;
+
+        &::placeholder {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 160%;
+            letter-spacing: 0.075em;
+            text-transform: capitalize;
+            color: #505050;
+
+            @media (max-width: 461px) {
+                font-size: 1.4rem;
+            }
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    @media (max-width: 461px) {
+        max-width: 300px;
+    }
+}
+.contact__form-item {
+    margin-bottom: 1.3rem;
+}
+.contact__form-text {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 160%;
+    letter-spacing: 0.075em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+    margin-bottom: 1.3rem;
+
+    @media (max-width: 461px)  {
+        font-size: 1.6rem;
+    }
+}
+.contact__block-btn {
+    margin-top: 4.4rem;
+    button {
+        width: 100%;
+    }
+}
+.contact__block-item {
+    margin-bottom: 2.1rem;
+
+    background: #D9D9D9;
+    box-shadow: -4px 4px 25px rgba(30, 80, 255, 0.4);
+    border-radius: 16px;
+    padding: 1.4rem 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all .2s ease 0s;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &._active {
+        transform: translateX(0);
+        opacity: 1;
+
+        &:first-child {
+            transition: all .4s ease .1s;
+        }
+        &:nth-child(2) {
+            transition: all .4s ease .3s;
+        }
+        &:nth-child(3) {
+            transition: all .4s ease .5s;
+        }
+        &:last-child {
+            transition: all .4s ease .7s;
+        }
+    }
+}
+.contact__block-item-text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: calc(32 / 20);
+    letter-spacing: 0.075em;
+    text-transform: capitalize;
+    color: #505050;
+    max-width: 370px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: "";
+        display: inline-flex;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #1E50FF;
+        border-radius: 50%;
+        margin-right: 1.8rem;
+    }
+
+    @media (max-width: 401px) {
+        font-size: 1.6rem;
+    }
+}

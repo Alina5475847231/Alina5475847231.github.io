@@ -1,0 +1,154 @@
+.projects {
+    margin: 23.6rem 0;
+    position: relative;
+
+    @media (max-width: 576px) {
+        margin: 10rem 0;
+    }
+
+    &:after {
+        content: "";
+        width: 400px;
+        height: 400px;
+        background: rgba(30, 80, 255, 0.5);
+        filter: blur(200px);
+
+        position: absolute;
+        bottom: -200px;
+        left: -100px;
+        z-index: -1;
+    }
+}
+.projects__title {
+    font-size: 5rem;
+    line-height: 128%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;   
+    
+    margin-bottom: 5.5rem;
+    opacity: 0;
+    transition: all 1s linear;
+
+    @media (max-width: 576px) {
+        font-size: 3.5rem;
+    }
+
+    &._active {
+        opacity: 1;
+    }
+}
+.projects__col {
+    width: 100%;
+    margin-bottom: 3.2rem;
+    transition: all .5s ease 0s;
+    opacity: 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:first-child {
+        transform: translateX(-100%);
+    }
+
+    &:nth-child(2) {
+        transform: translateX(100%);
+    }
+
+    &:nth-child(3) {
+        transform: translateX(-100%);
+    }
+
+    &:last-child {
+        transform: translateX(100%);
+    }
+
+    &._active {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all .5s ease .4s;
+    }
+}
+.projects__item {
+    background: #0F182E;
+    border-radius: 24px;
+    padding: 3.5rem 2rem 1.8rem;
+}
+.projects__item-body {
+    max-width: 829px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+    }
+}
+.projects__content {
+    width: 44%;
+    *:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 769px) {
+        width: 49%;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        text-align: center;
+        max-width: 45rem;
+        margin: 0 auto 3rem;
+    }
+}
+.projects__content-title {
+    font-size: 2.4rem;
+    line-height: 117%;
+    text-transform: capitalize;
+    color: #FFFFFF;    
+}
+.projects__content-text {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 156%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+    @media (max-width: 576px) {
+        font-size: 1.4rem;
+    }
+}
+.projects__content-btn {
+    max-width: 216px;
+
+    button {
+        width: 100%;
+    }
+
+    @media (max-width: 576px) {
+        margin: auto;
+    }
+}
+
+.projects__photo {
+    width: 36%;
+
+    img {
+        width: 100%;
+        border-radius: 2.4rem;
+    }
+
+    @media (max-width: 769px) {
+        width: 46%;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+}
