@@ -1,0 +1,52 @@
+/*# sourceMappingURL=main.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Poppins', sans-serif;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}
+
+.header-block {
+}
+.header-block__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FF8A63;
+}
+.header-block__title {
+    font-size: 36px;
+    line-height: 43px;
+    color: #45525B;
+    margin-bottom: 1.3rem;
+}
+.header-block__text {
+    font-size: 18px;
+    line-height: 22px;
+    color: #6F7278;
+}
+
+/* */
+
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/intro";
+@import "blocks/goal";
+@import "blocks/requirements";
+@import "blocks/photo";
+@import "blocks/list";
+@import "blocks/people";
+@import "blocks/newsroom";
+@import "blocks/slider";
+@import "blocks/touch";
+@import "blocks/footer";
+@import "blocks/book";
+
+
+.slider__item {
+}
+.slider__content {
+}
+.slider__stars {
+}
+.slider__item-title {
+}
+.slider__item-text {
+}
+.slider__item-author {
+}

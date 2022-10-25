@@ -1,0 +1,31 @@
+.book {
+    padding: 60px 0;
+}
+.book__title {
+    text-align: center;
+}
+.book__form {
+    max-width: 500px;
+    margin: auto;
+}
+.book__form-block {
+    width: 100%;
+}
+.book__form-block input {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border: 3px solid rgb(105, 105, 105);
+    padding: 0 30px;
+}
+.book__form-block input:focus::placeholder {
+    color: transparent;
+}
+.book__form-item {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(48, 47, 47);
+    font-weight: 700;
+}
