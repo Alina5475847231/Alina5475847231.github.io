@@ -1,0 +1,173 @@
+.team {
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+
+    @media (max-width: 535px) {
+        padding: 2rem 1rem;
+    }
+}
+.team__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 15px;
+    
+    background: rgba(242, 237, 223, 0.1);
+    border-radius: 33px;
+}
+.team__body {
+    position: relative;
+    max-width: 1274px;
+    margin: auto;
+    padding: 41px 1rem 71px;
+}
+.team__header {
+    position: absolute;
+    top: 4.7rem;
+    left: 0;
+
+    @media (max-width: 992px) {
+        top: 6rem;
+        left: 2rem;
+    }
+
+    @media (max-width: 880px) {
+        margin: auto;
+        max-width: 300px;
+    }
+
+    @media (max-width: 535px) {
+        top: 6rem;
+    }
+}
+.header-block {
+}
+.header-block__suptitle {
+}
+.header-block__title {
+}
+.team__inner {
+    display: flex;
+    margin-top: 100px;
+
+    @media (max-width: 992px) {
+        margin-top: 25rem;
+    }
+
+    @media (max-width: 600px)  {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 535px) {
+        margin-top: 15rem;
+    }
+}
+.team__item {
+    width: 25%;
+    margin-right: 2rem;
+
+    &:nth-child(odd){
+        margin-top: 15rem;
+    }
+
+    @media (max-width: 600px) {
+        width: 50%;
+
+        &:nth-child(1){
+            margin-top: -15rem;
+        }
+    }
+}
+.team__preview {
+    max-width: 272px;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: #D9D9D9;
+        mix-blend-mode: color;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
+.team__worker {
+}
+.team__worker-name {
+    font-size: 4rem;
+    line-height: calc(47 / 40);
+    color: #FFFFFF; 
+    
+    &:after {
+        content: "";
+        display: block;
+        width: 15%;
+        background-color: #EA6419;
+        height: 1px;
+        margin: 1.5rem 0;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 535px) {
+        font-size: 2rem;
+    }
+}
+.team__worker-prof {
+    font-size: 2rem;
+    line-height: calc(24 / 20);
+    color: #FFFFFF;
+
+    @media (max-width: 600px) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 535px) {
+        font-size: 1.2rem;
+    }
+}
+
+.team__inner .slick-track {
+    padding-bottom: 10rem;
+}
+
+/* Точки (булиты) */
+.team__inner .slick-dots{
+    display: flex;
+    font-size: 0;
+    position: absolute;
+    top: -220px;
+    right: 0;
+
+    @media (max-width: 535px) {
+        top: -130px;
+    }
+}
+.team__inner .slick-dots li{
+    width: 7px;
+    height: 7px;
+    font-size: 0;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #EA6419;
+}
+/* Активная точка */
+.team__inner .slick-dots li.slick-active{
+    background-color: #EA6419;
+}
+/* Элемент точки */
+.team__inner .slick-dots li button{
+    font-size: 0;
+    margin-right: 8px;
+}

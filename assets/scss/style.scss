@@ -1,0 +1,142 @@
+/*# sourceMappingURL=main.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'TT Norms', sans-serif; background-color: #1C1C1C;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0; font-weight: 400;}a {text-decoration: none;}p {margin: 0; padding: 0}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}
+
+/* Контейнер */
+
+[class*="__container"] {
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    max-width: 1470px;
+}
+
+body {
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+/* Шрифты
+
+@font-face {
+    font-family: 'TT Norms', sans-serif;
+    src: url('fonts/TTNorms-Regular.ttf') format('truetype'),
+        url('fonts/TTNorms-Regular.woff') format('woff')
+        url('fonts/TTNorms-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms', sans-serif;
+    src: url('fonts/TTNorms-Bold.ttf') format('truetype'),
+        url('fonts/TTNorms-Bold.woff') format('woff'),
+        url('fonts/TTNorms-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('/fonts/TTNorms-Medium.ttf') format('truetype'),
+        url('/fonts/TTNorms-Medium.woff') format('woff'),
+        url('/fonts/TTNorms-Medium.woff2') format('woff2');
+    font-weight: 500;
+} */
+
+@font-face {
+    font-family: 'TT Norms';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/TTNorms/TTNorms-Regular.eot');
+    src: url('/fonts/TTNorms/TTNorms-Regular.ttf') format('truetype'), url('/fonts/TTNorms/TTNorms-Regular.woff') format('woff'), url('/fonts/TTNorms/TTNorms-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    font-weight: 500;
+    font-style: normal;
+    src: url('/fonts/TTNorms/TTNorms-Medium.eot');
+    src: url('/fonts/TTNorms/TTNorms-Medium.ttf') format('truetype'), url('/fonts/TTNorms/TTNorms-Medium.woff') format('woff'), url('/fonts/TTNorms/TTNorms-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    font-weight: 700;
+    font-style: normal;
+    src: url('/fonts/TTNorms/TTNorms-Bold.eot');
+    src: url('/fonts/TTNorms/TTNorms-Bold.ttf') format('truetype'), url('/fonts/TTNorms/TTNorms-Bold.woff') format('woff'), url('/fonts/TTNorms/TTNorms-Bold.woff2') format('woff2');
+}
+
+/* IMPORT */
+
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/service";
+@import "blocks/projects";
+@import "blocks/ideas";
+@import "blocks/brif";
+@import "blocks/us";
+@import "blocks/team";
+@import "blocks/clients";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/form";
+
+/* */
+
+.header-block {
+
+}
+.header-block__suptitle {
+    display: inline;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: calc(18 / 15);
+    text-transform: uppercase;
+    color: #EA6419;
+    border-bottom: 1px solid #EA6419;
+    padding-bottom: 4px;
+    opacity: 0;
+    transition: all .5s linear;
+
+    @media (max-width: 535px) {
+        font-size: 1.4rem;
+    }
+
+    &._active {
+        opacity: 1;
+    }
+}
+.header-block__title {
+    font-size: 53px;
+    line-height: calc(63 / 53);
+    color: #FFFFFF;   
+    margin-top: 1.2rem; 
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all .5s linear;
+
+    @media (max-width: 535px) {
+        font-size: 2.4rem;
+    }
+
+    &._active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* */
+
+.slick-list {
+    display: flex;
+}
+.slick-track{
+    display: flex;
+}
+.slick-arrow{
+    font-size: 0;
+}
