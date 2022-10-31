@@ -1,0 +1,338 @@
+.team {
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+
+    @media (max-width: 535px) {
+        padding: 2rem 1rem;
+    }
+}
+.team__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 15px;
+    
+    background: rgba(242, 237, 223, 0.1);
+    border-radius: 33px;
+
+    @media (max-width: 600px) {
+        padding: 0 5px;
+    }
+}
+.team__body {
+    position: relative;
+    max-width: 1274px;
+    margin: auto;
+    padding: 41px 1rem 5rem;
+
+    @media (max-width: 992px) {
+    }
+}
+.team__header {
+    position: absolute;
+    top: 4.7rem;
+    left: 0;
+
+    @media (max-width: 992px) {
+        top: 6rem;
+        left: 2rem;
+
+        .header-block__title {
+            font-size: 4rem;
+
+            @media (max-width: 600px) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .header-block__suptitle {
+        @media (max-width: 600px) {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 880px) {
+        margin: auto;
+        max-width: 300px;
+    }
+
+    @media (max-width: 768px) {
+        top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        top: 2rem;
+    }
+}
+.header-block {
+}
+.header-block__suptitle {
+}
+.header-block__title {
+}
+
+.team__inner {
+    display: flex;
+    margin-top: 80px;
+    margin: 110px -2rem 0;
+
+    @media (max-width: 992px) {
+        margin-top: 10rem;
+    }
+
+    @media (max-width: 768px) {
+        margin: 80px -1rem 0;
+    }
+
+    @media (max-width: 600px)  {
+        width: 0;
+        height: 0;
+    }
+}
+.team__col {
+}
+.team__item {
+    width: 100%;
+    padding: 10rem 2rem 0;
+
+    @media (max-width: 768px) {
+        padding: 10rem 1rem 0;
+    }
+}
+.team__preview {
+    max-width: 270px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+    img {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: -1;
+
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
+.team__worker {
+}
+.team__worker-name {
+    font-size: 4rem;
+    line-height: calc(47 / 40);
+    color: #FFFFFF; 
+    display: block;
+    
+    &:after {
+        content: "";
+        display: block;
+        width: 15%;
+        background-color: #EA6419;
+        height: 1px;
+        margin: 1.5rem 0;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 2.2rem;
+
+        &:after {
+            margin: .4rem 0;
+        }
+    }
+}
+.team__worker-prof {
+    font-size: 2rem;
+    line-height: calc(24 / 20);
+    color: #838383;
+
+    @media (max-width: 992px) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 535px) {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .team__inner .slick-slide {
+        width: 20%;
+    }
+}
+
+/* Точки (булиты) */
+.mob__slide .slick-dots{
+    display: flex;
+    font-size: 0;
+    position: absolute;
+    top: -105px;
+    right: 0;
+    opacity: 0;
+
+    @media (max-width: 600px) {
+        opacity: 1;
+    }
+}
+.mob__slide .slick-dots li{
+    width: 7px;
+    height: 7px;
+    font-size: 0;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #EA6419;
+}
+/* Активная точка */
+.mob__slide .slick-dots li.slick-active{
+    background-color: #EA6419;
+}
+/* Элемент точки */
+.mob__slide .slick-dots li button{
+    font-size: 0;
+    margin-right: 8px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__item {
+    width: 35%;
+    margin: auto;
+    margin-bottom: 2rem;
+    
+    &:nth-child(even) {
+        margin-top: -10rem;
+    }
+}
+
+/* ----------------------------------- */
+
+.mob__slide {
+    display: flex;
+    margin: 1rem 0 0;
+    width: 0;
+    height: 0;
+
+    @media (max-width: 600px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+.mob__slide-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+    &:nth-child(even) {
+        margin-top: 70px;
+    }
+}
+.mob__slide-item {
+    margin-bottom: 2.3rem;
+
+    &:nth-child(even) {
+        margin-bottom: 0;
+    }
+}
+.mob__slide-photo {
+    max-width: 200px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+    img {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: -1;
+
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
+.mob__slide-content {
+}
+.mob__slide-name {
+    font-size: 4rem;
+    line-height: calc(47 / 40);
+    color: #FFFFFF; 
+    display: block;
+    
+    &:after {
+        content: "";
+        display: block;
+        width: 15%;
+        background-color: #EA6419;
+        height: 1px;
+        margin: 1.5rem 0;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 3rem;
+        display: block;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1.5rem;
+
+        &:after {
+            margin: .4rem 0;
+        }
+    }
+}
+.mob__slide-prof {
+    font-size: 2rem;
+    line-height: calc(24 / 20);
+    color: #838383;
+
+    @media (max-width: 600px) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 535px) {
+        font-size: 1rem;
+    }
+}
+
+/* Слайдер */
+.slick-slider {}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) 
+*/.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
