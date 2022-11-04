@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,regular,700" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/96a433284b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="js/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__logo"></div>
+                    <nav class="header__nav nav">
+                        <ul class="nav__inner">
+                            <li><a href="index.html" class="nav__link">Главная</a></li>
+                            <li><a href="form.html" class="nav__link">Заявка на ремонт</a></li>
+                            <li><a href="reviews.html" class="nav__link">Отзывы</a></li>
+                            <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                            <li><a href="company.html" class="nav__link">О компании</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__btn">
+                        <a href="form.html" class="btn">Заказать</a>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="form">
+                    <div class="form__container">
+                        <h1 class="form__title">Оформить заказ</h1>
+                        <form action="#" class="form__inner">
+                            <div class="form__item">
+                                <label for="">Фамилия<span>*</span></label>
+                                <input type="text">
+                            </div>
+                            <div class="form__item">
+                                <label for="">Имя<span>*</span></label>
+                                <input type="text">
+                            </div>
+                            <div class="form__item">
+                                <label for="">Отчество</label>
+                                <input type="text">
+                            </div>
+                            <div class="form__item">
+                                <label for="">Тип помещения<span>*</span></label>
+                                <select name="" id="">
+                                    <option value="1">жилое</option>
+                                    <option value="2">нежилое</option>
+                                </select>
+                            </div>
+                            <div class="form__item">
+                                <label for="">Тип ремонта<span>*</span></label>
+                                <select name="" id="">
+                                    <option value="1">косметический</option>
+                                    <option value="2">капитальный</option>
+                                    <option value="2">дизайнерский</option>
+                                </select>
+                            </div>
+                            <div class="form__item">
+                                <label for="">Под ключ?<span>*</span></label>
+                                    <p class="form__item-block">
+                                        <input type="radio" value="yes">
+                                        Да
+                                    </p>
+                                    <p class="form__item-block">
+                                        <input type="radio" value="no">
+                                        Нет
+                                    </p>
+                            </div>
+                            <div class="form__item">
+                                <label for="">Адрес<span>*</span></label>
+                                <input type="text">
+                            </div>
+                            <div class="form__item">
+                                <label for="">Площадь<span>*</span></label>
+                                <input type="number">
+                            </div>
+                            <div class="form__item">
+                                <label for="">Базовая стоимость</label>
+                                <input disabled type="number">
+                            </div>
+                            <div class="form__item">
+                                <label for="">Телефон</label>
+                                <input type="tel" id="phone" placeholder="+7 (99) 999-99-99"> 
+                            </div>
+                            <div class="form__item">
+                                <label for="">Телефон</label>
+                                <input type="email" name="contactsForm" id="contactsForm" placeholder="Ваш E-mail"> 
+                            </div>
+                        </form>
+                        <div class="form__btn">
+                            <a href="order.html" class="btn">Отправить заявку</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__copy">© 2022 All rights reserved.</div>
+                </div>
+            </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#phone').mask("+7 (99) 999-99-99");
+        });
+    </script>
+    
+</body>
+</html>
