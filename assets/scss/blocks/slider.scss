@@ -1,0 +1,69 @@
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.reviews__inner .slick-track{
+    display: flex !important;
+}
+/* Слайд */
+.reviews__inner .slick-slide{
+    height: inherit !important;
+}
+/* Стрелка */
+.docs__inner .slick-arrow {
+    position: absolute;
+    right: 0;
+    top: -25%;
+    font-size: 0;
+    width: 5rem;
+    height: 5rem;
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+.reviews__inner .slick-arrow{
+    position: absolute;
+    right: 0;
+    top: -30%;
+    font-size: 0;
+    width: 5rem;
+    height: 5rem;
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+.slider-block {
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+/* Стрелка влево */
+.slider-block .slick-arrow.slick-prev{
+    background: url("/assets/img/header/arrow.svg") center no-repeat;
+    transform: rotate(90deg);
+    border: 1px solid #D5D5D5;
+    padding: 2.1rem 2.5rem;
+    margin-right: 7rem;
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: darken(#fff, 4%);
+    }
+}
+/* Стрелка вправо */
+.slider-block .slick-arrow.slick-next{
+    background: url("/assets/img/header/arrow.svg") center no-repeat;
+    transform: rotate(-90deg);
+    border: 1px solid #D5D5D5;
+    padding: 2.1rem 2.5rem;
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: darken(#fff, 4%);
+    }
+}
