@@ -1,1 +1,0 @@
-function outputUpdate(e){var l=document.querySelector("#volume");l.value=e,l.style.left=e-20+"px",l.value>9&&(l.style.left=e-30+"px"),l.value>99&&(l.style.left=e-40+"px"),l.value>240&&(l.style.left=e-45+"px"),l.value>430&&(l.style.left=e-50+"px")}

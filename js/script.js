@@ -1,1 +1,0 @@
-$(document).ready(function(){$.each($(".export__form-check"),function(c,t){1==$(this).find("input").prop("checked")&&$(this).addClass("active")}),$(document).on("click",".export__form-check",function(c){return $(this).hasClass("active")?$(this).find("input").prop("checked",!1):$(this).find("input").prop("checked",!0),$(this).toggleClass("active"),!1})});
