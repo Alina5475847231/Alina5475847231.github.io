@@ -1,0 +1,1 @@
+$(document).ready(function(){let o=$("#header"),e=$("#intro").innerHeight(),l=$(window).scrollTop();$(window).on("scroll load resize",function(){(l=$(this).scrollTop())>e?o.addClass("fixed"):o.removeClass("fixed")}),$("[data-scroll]").on("click",function(o){o.preventDefault();let e=$(this).data("scroll"),l=$(e).offset().top;$("html, body").animate({scrollTop:l-150},2e3)})});

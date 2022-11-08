@@ -1,0 +1,1 @@
+$(document).ready(function(){let e=$(".header__menu"),l=$(".header__mobile");e.on("click",function(){l.toggleClass("active"),$(this).toggleClass("active"),$("body").toggleClass("no-scroll")})});
