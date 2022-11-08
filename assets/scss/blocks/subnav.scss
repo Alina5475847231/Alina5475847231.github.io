@@ -1,0 +1,27 @@
+.subnav__body {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1rem;
+    width: 20rem;
+    z-index: 100;
+}
+.subnav {
+    background-color: #098FCF;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    li {
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: #fff;
+            font-size: 1.4rem;
+        }
+    }
+}
