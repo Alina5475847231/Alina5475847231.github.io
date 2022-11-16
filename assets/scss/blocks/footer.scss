@@ -1,0 +1,16 @@
+.footer {
+    background-color: #fff;
+    min-height: 22.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__container {
+}
+.footer__copy {
+    font-size: 2rem;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.2px;
+    color: #6B6B6B;
+}

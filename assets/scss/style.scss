@@ -1,0 +1,183 @@
+/*# sourceMappingURL=main.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Jost', sans-serif;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;background: none;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}input {border: 0; background: none;} p {margin: 0; padding: 0}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}address {font-style: normal;}
+
+/* Container */
+
+[class*="__container"] {
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    max-width: 1470px;
+}
+
+/* Import */
+
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/why";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/catalog";
+
+
+
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+.intro__main {
+    position: relative;
+}
+
+/* Слайдер */
+.slick-slider {}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {}
+/* Лента слайдов */
+.slick-track{}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) 
+*/.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.intro__main .slick-dots{
+    max-width: 1400px;
+    margin: auto;
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+    padding-left: 1.5rem;
+
+    display: flex;
+
+    @media (max-width: 480px) {
+        margin-top: -30px;
+    }
+}.intro__main .slick-dots li{
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+/* Активная точка */
+.intro__main .slick-dots li.slick-active{
+    background-color: #DBA237;
+    opacity: 1;
+}
+/* Элемент точки */
+.intro__main .slick-dots li button{
+    font-size: 0;
+}
+
+/* BEM */
+
+.title-block {
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: calc(69 / 48);
+    letter-spacing: 0.2px;
+    color: #333333;
+
+    @media (max-width: 480px) {
+        font-size: 3.5rem;
+    }
+}
+
+.form-block {
+    background: rgba(35, 35, 35, 0.7);
+    backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+
+    padding: 3rem 2.5rem;
+}
+.form-block__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: calc(35 / 24);
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+.form-block__body {
+}
+.form-block__item {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    label {
+        display: block;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 0.6rem;
+        min-height: 5rem;
+        padding: 0 1rem;
+        border-radius: 5px;
+
+        font-family: 'Jost';
+        font-weight: 300;
+        line-height: 100%;
+        color: #6B6B6B;
+        outline: 0;
+        resize: none;
+
+        &::placeholder {
+            font-family: 'Jost';
+            font-weight: 300;
+            line-height: 100%;
+            color: #6B6B6B;
+        }
+
+        &:focus {
+            &::placeholder {
+                font-size: 0;
+            }
+        }
+    }
+
+    textarea {
+        padding: 1.7rem 1rem;
+        min-height: 186px;
+    }
+}
+.form-block__btn {
+    button {
+        width: 100%;
+    }
+}
