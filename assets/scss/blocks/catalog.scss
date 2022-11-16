@@ -1,0 +1,427 @@
+.catalog {
+    padding-bottom: 10rem;
+}
+.catalog__container {
+}
+.catalog__header {
+    margin-bottom: 3rem;
+    transform: translateY(50%);
+    transition: all .2s linear;
+    opacity: 0;
+
+    &._active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.catalog__title {
+}
+.catalog__subtitle {
+    font-size: 2.4rem;
+    line-height: 100%;
+    color: #3A3A3A;
+
+    margin: 2rem 0 4rem;
+}
+.catalog__filter {
+    display: flex;
+
+    @media (max-width: 650px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.catalog__filter-btn {
+    margin-right: 1rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 650px) {
+        width: 40%;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        button {
+            width: 100%;
+        }
+
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+    }
+}
+
+.catalog__slide {
+    position: relative;
+}
+
+.catalog__inner {
+    display: flex;
+
+    .catalog__item {
+
+        &:last-child {
+            margin-left: 1rem;
+
+            @media (max-width: 650px) {
+                margin-left: 0;
+            }
+        }
+
+        .catalog__item-body {
+            .catalog__item-content {
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+.catalog__item-content {
+    @media (max-width: 650px) {
+        margin-top: 2rem;
+    }
+}
+.catalog__col {
+    padding: 0 1rem;
+    &:first-child {
+        flex: 0 1 40%;
+
+        @media (max-width: 992px) {
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+
+        .catalog__item {
+            height: 100%;
+            margin-left: 0;
+            .catalog__item-photo {
+                width: 100%;
+                height: 99.5%;
+                background: url("/assets/img/catalog/card-1.png") center no-repeat;
+                background-size: cover;
+                -webkit-background-size: cover;
+                border-radius: 2rem;
+
+                img {
+                    display: none;
+
+                    @media (max-width: 992px) {
+                        display: block;
+                    }
+                }
+
+                @media (max-width: 992px) {
+                    background: none;
+                }
+
+                @media (max-width: 650px) {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &:last-child {
+        flex: 0 1 60%;
+
+        .catalog__item {
+            .catalog__item-body {
+                .catalog__item-content {
+                    left: 2rem;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+    
+}
+.content-last {
+    width: 40%;
+}
+.catalog__item {
+    border-radius: 2rem;
+    width: 100%;
+    position: relative;
+
+    @media (max-width: 650px) {
+        margin-bottom: 2rem;
+    }
+}
+.catalog__block {
+    flex: 1 1 100%;
+    margin-bottom: 2rem;
+
+}
+.catalog__col-inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 650px) {
+        flex-wrap: wrap;
+    }
+}
+.catalog__col-inner-block {
+    flex: 0 1 49%;
+
+    @media (max-width: 650px) {
+        flex: 1 1 100%;
+    }
+}
+.catalog__item-photo {
+    img {
+        width: 100%;
+        border-radius: 2rem;
+    }
+}
+
+.catalog__col-inner-block {
+    .catalog__item-photo {
+
+    }
+}
+.catalog__item-body {
+    max-width: 553px;
+}
+.catalog__item-content {
+    background: rgba(35, 35, 35, 0.7);
+    backdrop-filter: blur(6.5px);
+    border-radius: 1rem;
+    border: 1px solid #fff;
+
+    padding: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    &--sm {
+        width: 92%;
+
+        @media (max-width: 650px) {
+            width: 100%;
+        }
+    }
+
+    &--bg {
+        width: 60%;
+
+        @media (max-width: 650px) {
+            width: 92%;
+        }
+
+        @media (max-width: 650px) {
+            width: 100%;
+        }
+    }
+
+    &--first {
+        @media (max-width: 650px) {
+            bottom: 4rem;
+            transform: translate(0);
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 650px) {
+        position: static;
+    }
+}
+.catalog__item-content-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog__item-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 7rem;
+
+}
+.catalog__item-title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media (max-width: 1061px) {
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.2rem;
+    }
+}
+.catalog__item-cost {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 100%;
+    color: #E9E9E9;
+}
+.catalog__item-arrow {
+    background: #D4B478;
+    opacity: 0.3;
+    border-radius: 10px;
+    min-height: 6.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.7rem;
+    transition: all .2s linear;
+
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+        background-color: #DBA237;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 1.5rem;
+        min-height: 5rem;
+    }
+}
+.catalog__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        justify-self: stretch;
+        align-items: start;
+    }
+}
+.catalog__item-rate {
+    display: flex;
+    align-items: center;
+
+    &:after {
+        content: "4.8/5.0";
+        font-size: 1.4rem;
+        line-height: 100%;
+        color: #FFFFFF;
+        margin-left: 1rem;
+
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+.catalog__item-text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-top: 2rem;
+
+    @media (max-width: 480px) {
+        font-size: 1.3rem;
+    }
+}
+.catalog__item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalog__item-bottom-cost {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 100%;
+    color: #E9E9E9;
+
+    @media (max-width: 480px) {
+        font-size: 2.2rem;
+    }
+}
+
+/* ------------------------- */
+
+/* Слайдер */
+.slick-slider {}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {}
+/* Лента слайдов */
+.slick-track{}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) 
+*/.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.catalog__slide .slick-arrow{
+    bottom: -100px;
+    left: 0;
+    font-size: 0;
+    width: 5.5rem;
+    height: 5.5rem;
+    position: absolute;
+}
+
+.appartment-slide .slick-arrow {
+    left: 2rem;
+    @media (min-width: 1600px) {
+        left: 15%;
+    }
+}
+
+/* Стрелка влево */
+.catalog__slide .slick-arrow.slick-prev{
+    background: url("/assets/img/catalog/arrow-l.svg") center no-repeat;
+    background-color: #DBA237;
+    border-radius: 50%;
+    opacity: 1;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#DBA237, 5%);
+    }
+}
+/* Стрелка вправо */
+.catalog__slide .slick-arrow.slick-next{
+    background: url("/assets/img/catalog/arrow-r.svg") center no-repeat;
+    margin-left: 12rem;
+    background-color: #DBA237;
+    border-radius: 50%;
+    opacity: 1;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#DBA237, 5%);
+    }
+}
+/* Стрелка не активная */
+.catalog__slide .slick-arrow.slick-disabled{
+    background-color: #DBA237;
+    border-radius: 50%;
+    opacity: .5;
+}
+/* Точки (булиты) */
+.slick-dots{}.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}

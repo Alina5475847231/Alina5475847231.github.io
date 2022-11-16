@@ -1,0 +1,38 @@
+.btn {
+    min-height: 4.4rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    padding: 0 5.1rem;
+    cursor: pointer;
+    transition: all .2s linear;
+    white-space: nowrap;
+
+    &--yellow {
+        color: #3A3A3A;
+        font-weight: 600;
+        background: #DBA237;
+
+        &:hover {
+            background-color: darken(#DBA237, 5%);
+        }
+    }
+
+    &--white {
+        background-color: #fff;
+        border: 1px solid #333333;
+
+        &:hover {
+            background: #DBA237;
+            border: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 3rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.3rem;
+        padding: 0 1.5rem;
+    }
+}
