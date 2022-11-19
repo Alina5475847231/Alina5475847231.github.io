@@ -1,0 +1,69 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 990;
+}
+.modal.show {
+  display: block;
+}
+
+.modal__dialog {
+  width: 100%;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.modal__body {
+  top: 15%;
+  position: absolute;
+}
+
+.modal__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.modal__item {
+  margin-bottom: 1.7rem;
+  flex: 0 1 40%;
+}
+
+.modal__link {
+  font-family: "Commissioner";
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 114%;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: #868686;
+}
+.modal__link:hover {
+  color: #006937;
+}
+
+.modal__back {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.modal__photo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+}
+.modal__photo img {
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .modal__photo {
+    width: 30%;
+  }
+}

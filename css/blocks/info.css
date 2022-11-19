@@ -1,0 +1,18 @@
+.info__container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.info__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__top-photo {
+  width: 20%;
+}
+
+.info__top-text {
+  width: 80%;
+}
