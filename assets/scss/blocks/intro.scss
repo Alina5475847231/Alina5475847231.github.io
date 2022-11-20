@@ -1,0 +1,149 @@
+.page__main-block {
+}
+.intro {
+    position: relative;
+}
+.main-block__container {
+}
+.intro__body {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    max-width: 1126px;
+    padding-top: 3rem;
+    transform: translateX(100%, -50%);
+    opacity: 0;
+    transition: all .2s linear;
+
+    &._active {
+        transform: translate(0, -50%);
+        opacity: 1;
+    }
+
+    @media (max-width: 1430px) {
+        max-width: 600px;
+    }
+
+    @media (max-width: 992px) {
+        max-width: 400px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 20rem;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 2%;
+    }
+}
+.intro__title {
+    font-size: 10rem;
+    line-height: calc(110 / 100);
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 40px #553930;
+
+    @media (max-width: 1430px) {
+        font-size: 5rem;
+    }
+
+    @media (max-width: 1200px) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 2.8rem;
+    }
+
+    margin-bottom: 5rem;
+
+    @media (max-width: 992px) {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        
+    }
+}
+.intro__text {
+    font-size: 4.8rem;
+    line-height: calc(60 / 48);
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 40px #553930;
+
+    @media (max-width: 1430px) {
+        font-size: 2.4rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.4rem;
+    }
+}
+.main-block__buttons {
+}
+
+.intro__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+            width: 150%;
+        }
+    }
+}
+.intro__button {
+    max-width: 321px;
+
+    button {
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 192px;
+        margin: auto;
+    }
+}
+
+.intro__btn {
+    min-height: 5.8rem;
+    background-color: #006937;
+    font-family: 'Circe';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 175%;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+
+    background: #006937;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(134, 134, 134, 0.25);
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 480px) {
+        min-height: 3.4rem;
+        font-size: 1.4rem;
+    }
+}
