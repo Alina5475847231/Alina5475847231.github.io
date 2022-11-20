@@ -1,0 +1,422 @@
+.popup__thanks {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  position: none;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0 2rem;
+}
+
+.popup__enter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0 2rem;
+}
+.popup__enter.active {
+  display: flex;
+}
+.popup__enter.hide {
+  display: none;
+}
+
+.popup__regiter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0 2rem;
+}
+.popup__regiter.active {
+  display: flex;
+}
+
+.popup__dialog {
+  width: 100%;
+  max-width: 866px;
+  margin: auto;
+  padding: 5.3rem 2rem;
+  background-color: #006937;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.popup__enter-content {
+  max-width: 616px;
+  margin: auto;
+}
+
+.popup__title {
+  font-family: "Commissioner";
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+@media (max-width: 520px) {
+  .popup__title {
+    font-size: 1.4rem;
+  }
+}
+
+.popup__text {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  max-width: 471px;
+  margin: 5rem auto 5rem;
+}
+@media (max-width: 520px) {
+  .popup__text {
+    font-size: 1.1rem;
+  }
+}
+
+.popup__button {
+  max-width: 280px;
+  margin: auto;
+}
+.popup__button button {
+  width: 100%;
+}
+
+.popup__btn {
+  font-family: "Commissioner";
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: #006937;
+  min-height: 5.2rem;
+  background: #FFFFFF;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.popup__btn:hover {
+  background-color: #e6e6e6;
+}
+
+.popup__close {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.popup__close:hover {
+  transform: translateY(-5px);
+}
+
+.popup__form {
+  max-width: 616px;
+  margin: 3.8rem auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 520px) {
+  .popup__form {
+    flex-wrap: wrap;
+  }
+}
+
+.popup__item {
+  width: 48%;
+}
+.popup__item input {
+  width: 100%;
+  min-height: 4.4rem;
+  background: #008747;
+  border-radius: 50px;
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  padding: 0 2.7rem;
+}
+.popup__item input::-moz-placeholder {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}
+.popup__item input:-ms-input-placeholder {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}
+.popup__item input::placeholder {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  .popup__item input::-moz-placeholder {
+    font-size: 1.2rem;
+  }
+  .popup__item input:-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .popup__item input::placeholder {
+    font-size: 1.2rem;
+  }
+}
+.popup__item input:focus {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  outline: 0;
+}
+@media (max-width: 992px) {
+  .popup__item input:focus {
+    font-size: 1.2rem;
+  }
+}
+.popup__item input:focus::-moz-placeholder {
+  font-size: 0;
+}
+.popup__item input:focus:-ms-input-placeholder {
+  font-size: 0;
+}
+.popup__item input:focus::placeholder {
+  font-size: 0;
+}
+@media (max-width: 520px) {
+  .popup__item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .popup__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.popup__link {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 125%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #fff;
+}
+
+.popup__block {
+  text-align: right;
+  margin: 1.2rem 0 5.3rem;
+}
+
+.popup__link {
+  text-align: center;
+}
+.popup__link:hover {
+  border-bottom: 0;
+}
+
+.popup__regist {
+  text-align: center;
+  margin-top: 2.4rem;
+}
+
+.popup__register-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.popup__regiter-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.popup__regiter-item {
+  width: 32%;
+  margin-top: 1.5rem;
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 133%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}
+.popup__regiter-item input {
+  width: 100%;
+  min-height: 4.4rem;
+  background: #008747;
+  border-radius: 50px;
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  padding: 0 2.7rem;
+}
+@media (max-width: 992px) {
+  .popup__regiter-item input {
+    font-size: 1.4rem;
+  }
+}
+.popup__regiter-item input::-moz-placeholder {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}
+.popup__regiter-item input:-ms-input-placeholder {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}
+.popup__regiter-item input::placeholder {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  .popup__regiter-item input::-moz-placeholder {
+    font-size: 1.4rem;
+  }
+  .popup__regiter-item input:-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .popup__regiter-item input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+.popup__regiter-item input:focus {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  outline: 0;
+}
+.popup__regiter-item input:focus::-moz-placeholder {
+  font-size: 0;
+}
+.popup__regiter-item input:focus:-ms-input-placeholder {
+  font-size: 0;
+}
+.popup__regiter-item input:focus::placeholder {
+  font-size: 0;
+}
+@media (max-width: 992px) {
+  .popup__regiter-item input:focus {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .popup__regiter-item {
+    width: 48%;
+  }
+}
+@media (max-width: 520px) {
+  .popup__regiter-item {
+    width: 100%;
+    text-align: right;
+    color: #57F2A8;
+  }
+}
+
+.form__radiobutton {
+  font-family: "Commissioner";
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 133%;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  max-width: 400px;
+  margin: 3.2rem auto 0;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+  position: relative;
+  flex-wrap: nowrap;
+  display: flex;
+  cursor: pointer;
+}
+.form__radiobutton.active:after {
+  opacity: 1;
+}
+@media (max-width: 560px) {
+  .form__radiobutton {
+    font-size: 1.5rem;
+  }
+}
+
+.form__radiobutton:before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.form__radiobutton:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  left: 5px;
+  top: 10%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  opacity: 0;
+}
+@media (max-width: 332px) {
+  .form__radiobutton:after {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.radio__input {
+  display: none;
+}
