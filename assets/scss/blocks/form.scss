@@ -1,0 +1,204 @@
+.form {
+    margin-top: -13rem;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 992px) {
+        margin-top: -18rem;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: -22rem;
+    }
+
+    @media (max-width: 700px) {
+        margin-top: -28rem;
+    }
+
+    @media (max-width: 650px) {
+        margin-top: -23rem;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: -6rem;
+    }
+}
+.form__bottom {
+    position: relative;
+    width: 100%;
+    min-height: 25.7rem;
+    background: #FFFFFF;
+    box-shadow: -18px 18px 36px rgba(230, 230, 230, 0.2), 18px -18px 36px rgba(230, 230, 230, 0.2), -18px -18px 36px rgba(255, 255, 255, 0.9), 18px 18px 45px rgba(195, 195, 195, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(230, 230, 230, 0.5);
+    border-radius: 22px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        padding: 3rem 1rem;
+    }
+}
+.form__bottom-title {
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666666;
+
+    @media (max-width: 550px) {
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.3rem;
+    }
+}
+.form__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.1rem;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+}
+.form__form-col {
+    padding: 0 1rem;
+    width: 30%;
+
+    @media (max-width: 992px)  {
+        width: 33.333%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.form__form-item {
+    background: linear-gradient(121.64deg, #F1F1F1 27.66%, #D4D4D4 91.92%);
+    box-shadow: -5px 5px 10px rgba(212, 212, 212, 0.2), 5px -5px 10px rgba(212, 212, 212, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(212, 212, 212, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(212, 212, 212, 0.5);
+    border-radius: 15px;
+    min-height: 11.4rem;
+    padding: 2.4rem 4.6rem;
+
+    label {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 90%;
+        color: #666666;
+
+        @media (max-width: 480px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        min-height: 3rem;
+        padding: 1rem 2.5rem;
+    }
+}
+.form__form-input {
+    max-width: 28rem;
+    margin: auto;
+    position: relative;
+    margin-top: 2rem;
+    opacity: 0.5;
+
+    input {
+        width: 100%;
+        outline: 0;
+        border-bottom: 1px solid rgba(102, 102, 102, 1);
+
+        &:focus {
+            padding-left: 3rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        max-width: 70rem;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 1rem;
+    }
+}
+.form__form-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        @media (max-width: 480px) {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+}
+.form__form-button {
+    background: linear-gradient(183.64deg, #F97B61 10.83%, #EE5E3F 91.05%);
+    border-radius: 1.1rem;
+    min-height: 11.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:active {
+        background: darken(#F97B61, 5%);
+    }
+
+    @media (max-width: 480px) {
+        min-height: 7rem;
+    }
+}
+.form__form-btn {
+    width: 100%;
+    font-size: 2.4rem;
+    line-height: 90%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+
+    @media (max-width: 480px) {
+        font-size: 2.2rem;
+    }
+}
+.form__decor {
+    position: absolute;
+    top: -8rem;
+    left: -13rem;
+    z-index: 3;
+
+    @media (max-width: 1735px) {
+        left: -7rem;
+        width: 20rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        width: 10rem;
+        top: -4rem;
+        left: -5rem;
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}

@@ -1,0 +1,120 @@
+.team {
+    padding-top: 28.1rem;
+    position: relative;
+
+    @media (max-width: 768px) {
+        padding-top: 5rem;
+    }
+}
+.container__one {
+}
+.team__title {
+    margin-bottm: 7.4rem;
+    background: rgba(217, 217, 217, 0.63);
+    backdrop-filter: blur(42.5px);
+    border-radius: 20px;
+
+    max-width: 78rem;
+    margin: 0 auto 7.5rem;
+}
+.title-block {
+}
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -1rem;
+}
+.team__col {
+    flex: 0 1 33.333%;
+    padding: 0 1rem;
+    margin-bottom: 7.5rem;
+
+    @media (max-width: 992px) {
+        flex: 0 1 50%;
+    } 
+
+    @media (max-width: 550px) {
+        flex: 1 1 100%;
+    }
+}
+.team__item {
+}
+.team__item-photo {
+    img {
+        border-radius: 1rem 1rem 0 0;
+        width: 100%;
+    }
+}
+.team__item-content {
+    background: #FFFFFF;
+    box-shadow: -18px 18px 36px rgba(230, 230, 230, 0.2), 18px -18px 36px rgba(230, 230, 230, 0.2), -18px -18px 36px rgba(255, 255, 255, 0.9), 18px 18px 45px rgba(230, 230, 230, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(230, 230, 230, 0.5);
+    border-radius: 0px 0px 20px 20px;
+
+    display: flex;
+    min-height: 200px;
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+.team__item-content-body {
+    max-width: 271px;
+    margin: auto;
+
+    @media (max-width: 550px) {
+        max-width: 400px;
+    }
+}
+.team__item-prof {
+    background: linear-gradient(183.64deg, #F97B61 10.83%, #EE5E3F 91.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: calc(60 / 20);
+}
+.team__item-name {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 125%;
+    letter-spacing: -1px;
+    color: #000000;
+}
+.team__item-text {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 130%;
+    color: #000000;
+}
+
+.team__decor {
+    position: absolute;
+    top: -10rem;
+    left: 0;
+
+    @media (max-width: 1300px) {
+        display: none;
+    }
+}
+.team__bg-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.team__bg-2 {
+    position: absolute;
+    bottom: -65rem;
+    left: 0;
+    z-index: -1;
+}
+.team__decor-2 {
+    position: absolute;
+    bottom: -30rem;
+    right: 0;
+
+    @media (max-width: 1300px) {
+        display: none;
+    }
+}

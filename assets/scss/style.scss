@@ -1,0 +1,49 @@
+/*# sourceMappingURL=main.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Montserrat', sans-serif; font-weight: 500;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;background: none;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}input {border: 0; background: none;} p {margin: 0; padding: 0}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}address {font-style: normal;}
+
+.container__one {
+    width: 100%;
+    max-width: 1210px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+.container__main {
+    width: 100%;
+    max-width: 1610px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/form";
+@import "blocks/service";
+@import "blocks/kviz";
+@import "blocks/team";
+@import "blocks/order";
+@import "blocks/certificate";
+@import "blocks/can";
+@import "blocks/zona";
+@import "blocks/contact";
+@import "blocks/footer";
+
+/* --------------------------------- */
+
+.title-block {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: calc(60 / 48);
+    text-align: center;
+    letter-spacing: -1px;
+    color: #1B344B;
+
+    position: relative;
+    padding: 1.5rem 0;
+    border-radius: 2rem;
+
+    @media (max-width: 480px) {
+        font-size: 3rem;
+    }
+}
