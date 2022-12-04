@@ -1,0 +1,148 @@
+.order {
+    margin-top: 25.4rem;
+
+    @media (max-width: 992px) {
+        margin-top: 10rem;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 0;
+    }
+}
+.container__main {
+}
+.order__body {
+    display: flex;
+    align-items: center;
+
+    .order__prof {
+        display: none;
+    }
+
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+
+        .order__prof {
+            display: block;
+        }
+    }
+}
+.order__photo {
+    width: 60%;
+
+    img {
+        width: 100%;
+
+        @media (max-width: 480px) {
+            width: 130%;
+            margin-left: -20%;
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+}
+.order__content {
+    width: 40%;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        margin-top: 4rem;
+
+        .order__prof {
+            display: none;
+        }
+    }
+}
+.order__prof {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2E363E;
+
+    background: #F2F6FA;
+    border-radius: 5px;
+    max-width: 21.6rem;
+    text-align: center;
+
+    margin-bottom: 2.4rem;
+
+    @media (max-width: 992px) {
+        display: flex;
+        margin: 0 auto 2.4rem;
+        justify-content: center;
+        font-size: 1.4rem;
+        max-width: 30rem;
+    }
+}
+.order__name {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 125%;
+    letter-spacing: -1px;
+    color: #2E363E;
+
+    margin-bottom: 2.4rem;
+
+    @media (max-width: 480px) {
+        font-size: 3rem;
+    }
+}
+.order__text {
+    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 143%;
+    letter-spacing: -0.2px;
+    color: #434B53;
+
+    margin-bottom: 4rem;
+
+    p {
+        margin-bottom: 4rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+    }
+}
+.order__btn {
+    max-width: 39.7rem;
+
+    @media (max-width: 480px) {
+        max-width: 200px;
+        margin: auto;
+    }
+}
+.order__button {
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 90%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    background: linear-gradient(183.64deg, #F97B61 10.83%, #EE5E3F 91.05%);
+    box-shadow: inset 0px 4px 17px rgba(0, 0, 0, 0.04);
+    min-height: 8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(#EE5E3F, #F97B61);
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.6rem;
+        min-height: 4rem;
+    }
+}
