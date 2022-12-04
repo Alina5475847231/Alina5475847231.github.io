@@ -1,0 +1,245 @@
+.contact {
+    margin-top: 23.1rem;
+    position: relative;
+    margin-bottom: 18rem;
+
+    @media (max-width: 1230px) {
+        margin-bottom: 13rem;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 5rem;
+    }
+}
+.container__one {
+}
+.contact__body {
+    width: 100%;
+    background: #FFFFFF;
+    border: 8px solid #292D32;
+    border-radius: 20px;
+    padding: 7rem 2rem;
+}
+.contact__content {
+    max-width: 88rem;
+    margin: auto;
+}
+.contact__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 133%;
+    color: #2E363E;
+
+    @media (max-width: 650px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2.5rem;
+    }
+}
+.contact__subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #2E363E;
+
+    margin-top: 1.2rem;
+    margin-bottom: 3.6rem;
+
+    @media (max-width: 650px) {
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+    }
+}
+.contact__form {
+    max-width: 78rem;
+    margin: auto;
+}
+.contact__form-top {
+    display: flex;
+    margin: 0 -1rem 2.4rem;
+
+    @media (max-width: 650px) {
+        flex-wrap: wrap;
+    }
+}
+.contact__form-item {
+    position: relative;
+    width: 50%;
+    padding: 0 1rem;
+    input {
+        width: 100%;
+        background: #F2F6FA;
+        border-radius: 8px;
+        min-height: 8.5rem;
+
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 160%;
+        color: #7E868E;
+        outline: 0;
+        padding: 0 5.8rem;
+
+        &::placeholder {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 160%;
+            color: #7E868E;
+        }
+
+        @media (max-width: 480px) {
+            min-height: 4rem;
+        }
+    }
+
+    @media (max-width: 650px) {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.contact__form-icon {
+    position: absolute;
+    top: 50%;
+    left: 3.1rem;
+    transform: translateY(-50%);
+}
+.contact__form-btn {
+}
+.contact__form-button {
+    background: #EE775E;
+    border-radius: 8px;
+    border-radius: 8px;
+    min-height: 8.5rem;
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 152%;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    &:hover {
+        background: darken(#EE775E, 5%);
+    }
+
+    @media (max-width: 480px) {
+        min-height: 4rem;
+    }
+}
+.contact__form-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 53rem;
+    margin: auto;
+
+    &.active {
+        &:after {
+            display: block;
+        }
+
+        &:before {
+            border: 0;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    &:before {
+        content: "";
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 1px solid #000;
+        border-radius: 2px;
+        margin-right: 7px;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    &:after {
+        content: "";
+        width: 1.2rem;
+        height: 1.2rem;
+        background-image: url("/assets/img/contact/check.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        position: absolute; 
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        display: none;
+    }
+
+    @media (max-width: 650px) {
+        margin: 0;
+        display: block;
+    }
+}
+.contact__form-text {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 130%;
+    color: #7E868E;
+
+    @media (max-width: 650px) {
+        max-width: 30rem;
+        padding-left: 2rem;
+    }
+}
+.contact__form-photo {
+    position: absolute;
+    bottom: -18rem;
+    right: -7rem;
+    width: 600px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 1450px) {
+        width: 50rem;
+        right: -10rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1230px) {
+        width: 40rem;
+        bottom: -13rem;
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+.contact__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
