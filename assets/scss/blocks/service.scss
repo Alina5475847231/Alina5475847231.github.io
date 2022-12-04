@@ -1,0 +1,124 @@
+.service {
+    margin-top: 15.4rem;
+    position: relative;
+    margin-bottom: 28.6rem;
+
+    @media (max-width: 768px) {
+        margin-bottom: 7rem;
+    }
+}
+.container__main {
+}
+.service__title {
+    background: rgba(217, 217, 217, 0.63);
+    max-width: 68.2rem;
+    margin: auto;
+}
+.service__inner {
+    display: flex;
+    margin: 7.5rem -1rem 0;
+
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+    }
+}
+.service__col {
+    flex: 0 1 25%;
+    padding: 0 1rem;
+
+    @media (max-width: 992px) {
+        flex: 0 1 50%;
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: 600px) {
+        flex: 1 1 100%;
+    }
+}
+.service__item {
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 54.5rem;
+    border-radius: 1rem;
+
+    @media (max-width: 1200px) {
+        min-height: 50rem;
+    }
+
+    @media (max-width: 992px) {
+        min-height: 60rem;
+    }
+
+    @media (max-width: 768px) {
+        min-height: 48rem;
+    }
+}
+.service__item-photo {
+    img {
+        width: 100%;
+    }
+}
+.service__item-body {
+    
+}
+.service__item-content {
+    padding: 5rem 4.4rem;
+    background: #FFFFFF;
+    border: 1px solid #F2F6FA;
+    border-radius: 0px 0px 10px 10px;
+
+    height: 100%;
+}
+.service__item-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 143%;
+    color: #2E363E;
+    flex: 1 1 auto;
+    display: flex;
+    padding-top: 5rem;
+    padding-left: 4.4rem;
+
+    max-width: 24.7rem;
+
+    @media (max-width: 1200px) {
+        padding-left: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 3rem;
+    }
+}
+.service__item-btn {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 152%;
+    color: #FFFFFF;
+
+    background: #3F5C78;
+    border-radius: 8px;
+    width: 16.3rem;
+    padding: 2rem 0;
+    cursor: pointer;
+    margin-bottom: 5rem;
+    margin-left: 4.4rem;
+
+    &:hover {
+        background: lighten(#3F5C78, 5%);
+    }
+
+    @media (max-width: 1200px) {
+        margin-left: 2rem;
+    }
+}
+.service__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
