@@ -1,0 +1,122 @@
+.header {
+    padding: 2.1rem 0;
+    border-bottom: 1px solid rgba(126, 134, 142, .1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    @media (max-width: 768px) {
+        padding: 5rem 0 2.1rem;
+    }
+
+    &.fixed {
+        position: fixed;
+        background-color: #fff;
+        padding: 2rem 0;
+    }
+}
+.container__one {
+}
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 480px) {
+        align-items: flex-start;
+    }
+}
+.header__logo {
+    @media (max-width: 992px) {
+        width: 20rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 25rem;
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: 480px) {
+        width: 20rem;
+        margin: 0 auto 3rem;
+    }
+}
+.header__info {
+    display: flex;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+}
+.header__item {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 7.2rem;
+
+    &:last-child {
+       margin-right: 9rem;
+    } 
+
+    @media (max-width: 992px) {
+        margin-right: 4rem;
+    }
+
+    @media (max-width: 480px){
+        margin-right: 0;
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:first-child {
+            display: none;
+        }
+    }
+}
+.header__item-icon {
+    height: 1rem;
+    svg {
+        width: 2rem;
+        height: 2rem;
+
+        @media (max-width: 480px) {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+.header__item-content {
+    margin-left: 2.2rem;
+
+    @media (max-width: 992px) {
+        margin-left: 1.5rem;
+    }
+}
+.header__item-name {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2F2F2F;
+    opacity: 0.8;
+
+    @media (max-width: 480px) {
+        font-size: 1.6rem;
+    }
+}
+.header__item-subtitle {
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #2E363E;
+
+    margin-top: 1rem;
+}
