@@ -1,0 +1,122 @@
+.repair {
+    margin-top: 5rem;
+}
+.repair__container {
+    display: flex;
+    justify-content: space-between;
+}
+.repair__left {
+    width: 32%;
+}
+.repair__left-photo {
+    img {
+        border-radius: 1rem 1rem 0 0;
+        width: 100%;
+    }
+}
+.repair__left-content {
+    background: #FFFFFF;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 2rem 3.2rem 2rem;
+}
+.repair__left-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.repair__left-item {
+}
+.repair__left-title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: calc(24 / 20);
+    color: #253238;
+
+    margin-bottom: 1rem;
+}
+.repair__left-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #455B66;
+
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.repair__left-block {
+    display: flex;
+    align-items: center;
+}
+.repair__left-btn {
+    background: #2B74B9;
+    border-radius: .3rem;
+    width: 5rem;
+    height: 5rem;
+
+    margin-right: 0.6rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background: darken(#2B74B9, 5%);
+    }
+}
+.repair__left-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 0 0 .5rem .5rem;
+    min-height: 3.9rem;
+    width: 14.1rem;
+    margin: auto;
+}
+.repair__left-link-text {
+    font-size: 1.4rem;
+    line-height: calc(16 / 14);
+    color: #90A4AF;
+    margin-right: 1rem;
+}
+.repair__left-link-arrow {
+    display: flex;
+    align-items: center;
+}
+.repair__right {
+    width: 66%;
+}
+
+.repair__right-top {
+}
+.repair__right-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #455B66;
+    border-radius: .5rem;
+    width: 100%;
+    min-height: 5.5rem;
+    padding: 0 2.4rem;
+}
+.repair__right-block-text {
+    font-size: 1.6rem;
+    line-height: calc(19 / 16);
+    color: #FFFFFF;
+}
+.repair__right-item-arrow {
+}
+.repair__right-form {
+}
+.repair__right-btn {
+}
+.repair__right-search {
+}
