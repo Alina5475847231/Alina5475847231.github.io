@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!--Sprite-->
+
+    <svg style="display: none">
+        <symbol viewBox="0 0 47 47" id="headerSetting">
+            <path d="M18.8827 23.5001C18.8827 20.9078 20.9492 18.8015 23.4967 18.8015C26.0442 18.8015 28.1107 20.9078 28.1107 23.5001C28.1107 26.0924 26.0441 28.1989 23.4967 28.1989C20.9493 28.1989 18.8827 26.0924 18.8827 23.5001Z" fill="#617E8C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4476 0H29.5437L30.056 2.62159L30.0578 2.63055L30.9005 6.81489C32.1023 7.35507 33.2168 8.02388 34.2475 8.78087L38.4601 7.34522L40.9569 6.55676L42.2609 8.83539L45.6673 14.6453L46.9999 16.9746L45.0154 18.7379L41.8558 21.4774C41.955 22.0923 42.047 22.7865 42.047 23.4999C42.047 24.2133 41.955 24.9076 41.8558 25.5226L45.0295 28.2744L47 30.0255L45.659 32.3689L42.2613 38.164L40.9569 40.449L38.4278 39.6441L34.2475 38.2191C33.2167 38.9761 32.1022 39.6448 30.9005 40.1849L30.0578 44.3692L30.056 44.3782L29.5437 47H17.4476L16.94 44.3725L16.0942 40.1852C14.8922 39.645 13.7775 38.9762 12.7466 38.2191L8.53699 39.6538L6.03485 40.4497L4.73518 38.1628L1.32533 32.352L0 30.0255L1.97871 28.262L5.13943 25.5216C5.04057 24.9083 4.94713 24.2115 4.94713 23.4999C4.94713 22.7883 5.04057 22.0916 5.13942 21.4784L1.9629 18.7241L6.67376e-05 16.9745L1.33543 14.6303L4.73561 8.83649L6.03487 6.55602L8.56632 7.35584L12.7466 8.78087C13.7775 8.02376 14.8922 7.35487 16.0942 6.81464L16.94 2.62722L17.4476 0ZM23.4967 15.6662C19.2523 15.6662 15.8067 19.1743 15.8067 23.5001C15.8067 27.8258 19.2523 31.3342 23.4967 31.3342C27.7411 31.3342 31.1868 27.8258 31.1868 23.5001C31.1868 19.1743 27.7411 15.6662 23.4967 15.6662Z" fill="#617E8C"/>
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__left">
+                        <div class="header__logo">Подбор 99</div>
+                        <div class="header__text">Сервис автоматического подбора запчастей на ваш автомобиль</div>
+                        <div class="header__info info-header">
+                            <div class="info-header__icon">
+                                <svg>
+                                    <use xlink:href="#headerSetting"></use>
+                                </svg>
+                            </div>
+                            <div class="info-header__text">Как это работает?</div>
+                        </div>
+                    </div>
+                    <div class="header__info info-header">
+                        <div class="info-header__icon">
+                            <svg>
+                                <use xlink:href="#headerSetting"></use>
+                            </svg>
+                        </div>
+                        <div class="info-header__text">Как это работает?</div>
+                    </div>
+                    <div class="header__buttons">
+                        <div class="header__button">
+                            <button class="btn btn--gray">Войти</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro">
+                    <div class="intro__container">
+                        <h1 class="intro__title title-block">Поиск деталей на автомобиль</h1>
+                        <div class="intro__body">
+                            <form action="#" class="intro__form">
+                                <div class="intro__form-col">
+                                    <div class="intro__form-item">
+                                        <input type="text" placeholder="VIN или номер кузова">
+                                        <div class="intro__form-btn">
+                                            <img src="assets/img/intro/search.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="intro__form-col">
+                                    <div class="intro__form-title">Или выберите автомобиль из списка</div>
+                                    <div class="intro__form-item">
+                                        <input type="text" placeholder="Марка">
+                                        <div class="intro__form-btn">
+                                            <img src="assets/img/intro/arrow.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                    <div class="intro__form-list">
+                                        <div class="intro__form-list-item">Выберите модель</div>
+                                        <div class="intro__form-list-item">Выберите модель</div>
+                                        <div class="intro__form-list-item">Выберите модель</div>
+                                        <div class="intro__form-list-item">Выберите модель</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="intro__decor">
+                            <img class="intro__decor-1" src="assets/img/intro/decor.png" alt="cover">
+                            <img class="intro__decor-2" src="assets/img/intro/decor-2.png" alt="cover">
+                        </div>
+                        <div class="intro__tel">
+                            <img src="assets/img/intro/call.svg" alt="cover">
+                        </div>
+                    </div>
+                    <div class="intro__call">
+                        <div class="intro__call-icon">
+                            <img src="assets/img/intro/call.svg" alt="cover">
+                        </div>
+                        <div class="intro__call-text">Обратный звонок</div>
+                    </div>
+                </section>
+                <div class="footer">
+                    <div class="footer__body">
+                        <div class="footer__main">
+                            <div class="footer__main-block">
+                                <div class="footer__item">
+                                    <div class="footer__item-icon">
+                                        <img src="assets/img/footer/footer-1.svg" alt="cover">
+                                    </div>
+                                    <div class="footer__item-text">Баланс</div>
+                                </div>
+                                <div class="footer__item">
+                                    <div class="footer__item-icon">
+                                        <img src="assets/img/footer/footer-2.svg" alt="cover">
+                                    </div>
+                                    <div class="footer__item-text">Иван И</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    </div>
+    
+</body>
+</html>
