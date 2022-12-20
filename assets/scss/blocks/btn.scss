@@ -1,0 +1,33 @@
+.btn {
+    min-height: 4.3rem;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: calc(16 / 13);
+    text-transform: uppercase;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &--blue {
+        background: #3E9CDC;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+
+        &:hover {
+            background: darken(#3E9CDC, 5%);
+        }
+    }
+
+    &--white {
+        background: #FFFFFF;
+        border: 1px solid #6F6D7B;
+        color: #2A2B30;
+
+        &:hover {
+            background: darken(#FFFFFF, 5%);
+        }
+    }
+}
