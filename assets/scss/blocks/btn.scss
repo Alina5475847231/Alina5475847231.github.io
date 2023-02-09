@@ -1,0 +1,21 @@
+.btn {
+    color: rgb(67, 140, 250);
+    background-color: #fff;
+    min-height: 4rem;
+    border-radius: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: rgb(67, 140, 250);
+        color: #fff;
+    }
+
+    @media (max-width: 550px) {
+        min-height: 3rem;
+    }
+}
