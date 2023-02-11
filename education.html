@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/scss/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+
+    <svg style="display: none">
+        <symbol id="search" viewBox="0 0 32 32">
+            <path d="M16.906 20.188l5.5 5.5-2.25 2.281-5.75-5.781c-1.406 0.781-3.031 1.219-4.719 1.219-5.344 0-9.688-4.344-9.688-9.688s4.344-9.688 9.688-9.688 9.719 4.344 9.719 9.688c0 2.5-0.969 4.781-2.5 6.469zM3.219 13.719c0 3.594 2.875 6.469 6.469 6.469s6.469-2.875 6.469-6.469-2.875-6.469-6.469-6.469-6.469 2.875-6.469 6.469z"></path>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="check">
+            <path id="primary" d="M20.94,11A8.26,8.26,0,0,1,21,12a9,9,0,1,1-9-9,8.83,8.83,0,0,1,4,1" style="fill: none; stroke: rgb(67, 140, 250); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"></path>
+            <polyline id="primary-2" data-name="primary" points="21 5 12 14 8 10" style="fill: none; stroke: rgb(67, 140, 250); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"></polyline>
+        </symbol>
+        <symbol viewBox="0 0 1920 1920" id="arrow">
+            <path d="M526.299 0 434 92.168l867.636 867.767L434 1827.57l92.299 92.43 959.935-960.065z" fill-rule="evenodd"/>
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+            <header class="header header__block">
+                <div class="header__container">
+                    <div class="header__top">
+                        <div class="header__left _anim-items">
+                            <div class="header__logo">
+                                <img src="https://via.placeholder.com/50x50" alt="logo">
+                            </div>
+                        </div>
+                        <form action="#" class="header__search _anim-items">
+                            <input type="search" placeholder="Поиск по брендам">
+                            <div class="header__search-icon">
+                                <svg>
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </div>
+                        </form>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="header__bottom">
+                        <ul class="header__list">
+                            <li><a href="#" class="header__link">Главная</a></li>
+                            <li><a href="#" class="header__link">Бренд</a></li>
+                            <li><a href="#" class="header__link">Меню</a></li>
+                            <li><a href="#" class="header__link">Меню</a></li>
+                            <li><a href="#" class="header__link">Меню</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="page__container">
+                    <div class="page__header">
+                        <a href="#" class="page__header-item">Главная</a>
+                        <span>|</span>
+                        <div class="page__header-item" style="color: #19a7cd">Обучение</div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="info__container">
+                        <div class="info__header">
+                            <div class="info__title">Обучение в Keratin-prof
+                            </div>
+                            <div class="info__subtitle">- это возможность...
+                            </div>
+                        </div>
+                        <div class="info__inner">
+                            <div class="info__item">
+                                <div class="info__icon">
+                                    <img src="assets/img/info/1.svg" alt="cover">
+                                </div>
+                                <div class="info__text">Пройти обучение у лучших <br> технологов - <span>авторов <br> собственных техник</span></div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__icon">
+                                    <img src="assets/img/info/2.svg" alt="cover">
+                                </div>
+                                <div class="info__text">Получить как сертификаты, <br> так и дипломы <br> <span>государственного образца</span></div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__icon">
+                                    <img src="assets/img/info/3.svg" alt="cover">
+                                </div>
+                                <div class="info__text">Получить востребованную <br> и интересную профессию с <br> <span>высоким уровнем дохода</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="offline">
+                    <div class="offline__container">
+                        <h2 class="offline__title">ВЫБЕРИТЕ УДОБНЫЙ ДЛЯ ВАС СПОСОБ ОБУЧЕНИЯ</h2>
+                        <div class="offline__inner">
+                            <div class="offline__content">
+                                <div class="offline__text">В всех этих городах компания Кератин Проф имеет собственные обучающие студии</div>
+                                <div class="offline__cities">Москва, Санкт-Петербург, Екатеринбург, Тюмень, Челябинск, Пермь, Краснодар, Сочи, Астрахань, Волгоград, Владивосток</div>
+                            </div>
+                            <div class="offline__photo">
+                                <img src="assets/img/offline/map.png" alt="cover">
+                            </div>
+                        </div>
+                        <h2 class="offline__title">КУРСЫ ГРУППОВОГО ОБУЧЕНИЯ
+                        </h2>
+                    </div>
+                </section>
+                <section class="online">
+                    <div class="online__container">
+                        <div class="online__title">
+                            <div class="online__five">5</div>
+                            <div class="online__head"><span>плюсов</span><br>обучения Online
+                            </div>
+                        </div>
+                        <div class="online__inner">
+                            <div class="online__item">
+                                <div class="online__value">01</div>
+                                <div class="online__content">
+                                    <div class="online__content-title">Доступность</div>
+                                    <div class="online__content-text">Online обучение часто называют будущим образования. Оно позволяет пройти обучение из любой точки мира.</div>
+                                </div>
+                            </div>
+                            <div class="online__item">
+                                <div class="online__value">02</div>
+                                <div class="online__content">
+                                    <div class="online__content-title">Большой выбор программ
+                                    </div>
+                                    <div class="online__content-text">Компания Keratin Prof предлагает широкий выбор программ для обучения. От коротких недорогих курсов до обучения на технолога.</div>
+                                </div>
+                            </div>
+                            <div class="online__item">
+                                <div class="online__value">03</div>
+                                <div class="online__content">
+                                    <div class="online__content-title">Комфорт
+                                    </div>
+                                    <div class="online__content-text">Вы проходите обучение из любого, комфортного для Вас места. Психологический комфорт позволяет более качественно усваивать информацию.</div>
+                                </div>
+                            </div>
+                            <div class="online__item">
+                                <div class="online__value">04</div>
+                                <div class="online__content">
+                                    <div class="online__content-title">Экономия
+                                    </div>
+                                    <div class="online__content-text">Повышая уровень знаний Online, Вы экономите на транспорте, проживании, питании, ведь нет необходимости ехать в другой город для обучения.</div>
+                                </div>
+                            </div>
+                            <div class="online__item">
+                                <div class="online__value">05</div>
+                                <div class="online__content">
+                                    <div class="online__content-title">Опытные тренеры
+                                    </div>
+                                    <div class="online__content-text">Наши тренеры ежедневно делятся своим многолетним опытом в сфере кератинового выпрямления с десятками людей</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="offline__title">КУРСЫ ONLINE ОБУЧЕНИЯ
+                        </h2>
+                        <div class="slider">
+                            <div class="slider__item">
+                                <img src="assets/img/slider/1.webp" alt="cover">
+                            </div>
+                            <div class="slider__item">
+                                <img src="assets/img/slider/1.webp" alt="cover">
+                            </div>
+                            <div class="slider__item">
+                                <img src="assets/img/slider/1.webp" alt="cover">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="personal">
+                    <div class="personal__container">
+                        <div class="personal__header">
+                            <div class="personal__title">Преимущества</div>
+                            <div class="personal__suptitle">индивидуального обучения
+                            </div>
+                        </div>
+                        <div class="personal__inner">
+                            <div class="personal__text">
+                                <p>100% внимания преподавателя уделяется одному ученику. Скорость рассмотрения учебного материала существенно возрастает.
+                                </p>
+                            </div>
+                            <div class="personal__text">
+                                <p>Преподаватель быстрее выявит ошибки в работе учащегося и поможет исправить их.
+                                </p>
+                            </div>
+                            <div class="personal__text">
+                                <p>Программа индивидуального обучения кератиновому выпрямлению, может корректироваться по ходу процесса, в зависимости от Вашего уровня знаний.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="personal__body">
+                            <div class="personal__info">Занимаясь индивидуально, Вы сможете в спокойной обстановке, не отвлекаясь на других учеников, четко сформулировать интересующие Вас вопросы. Не смотря на то, что курсы кератина в индивидуальной форме стоят дороже групповых, как показывает наша практика, люди в группе чаще отвлекаются и меньше усваивают информацию.</div>
+                            <div class="personal__block">В итоге, индивидуальное обучение на много выгоднее группового.
+                            </div>
+                            <div class="personal__body-title">Мы рекомендуем пройти индивидуальное обучение кератиновому выпрямлению и восстановлению волос, если Вы:
+                            </div>
+                            <ul class="personal__list">
+                                <li>- Индивидуально лучше усваиваете информацию.</li>
+                                <li>- Не можете выбрать подходящую дату обучения.</li>
+                                <li>- Не можете подобрать подходящий курс.</li>
+                                <li>- Хотите получить индивидуальный подход.</li>
+                                <li>- Просто привыкли к высокому, комфортному уровню обучения.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <section class="workers">
+                    <div class="workers__container">
+                        <h2 class="offline__title">ТЕХНОЛОГИ
+                        </h2>
+                        <div class="workers__inner">
+                            <div class="workers__item">
+                                <div class="workers__item-main">
+                                    <div class="workers__photo">
+                                        <img src="assets/img/workers/1.webp" alt="cover">
+                                        <div class="workers__name">Warren Norton</div>
+                                    </div>
+                                    <div class="workers__info">
+                                        <div class="workers__header">
+                                            <div class="workers__title">Warren Norton</div>
+                                            <div class="workers__prof">Ведущий технолог Felps Professional
+    
+                                            </div>
+                                        </div>
+                                        <div class="workers__body">
+                                            <div class="workers__block">
+                                                <div class="workers__head">Родной город:
+                                                </div>
+                                                <div class="workers__text">Сан-Паулу, Бразилия
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">Образование:
+                                                </div>
+                                                <div class="workers__text">- Закончил ведущие академии мира, такие как Vidal Sasoon, Toni & guy, Pivot Point, Llongueras и другие.
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">Опыт работы:
+                                                </div>
+                                                <div class="workers__text">- В индустрии эстетики волос с 2005 г. - В качестве технолога с 2010 г.
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">О себе:
+                                                </div>
+                                                <div class="workers__text">У меня есть возможность обучать специалистов по всему миру, что привело меня к тому, что я стал более сосредоточенным на технической области в каждом направлении. Любовь к обучению - это радость, которой можно поделиться. Знания, которые я получил исходя из своего опыта в профессиональной жизни, позволяют все чаще готовить новых профессионалов красоты.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="workers__item-bottom">
+                                    <div class="workers__block">
+                                        <div class="workers__head">Достижения:
+                                        </div>
+                                        <div class="workers__text">- Автор техники «Холодный кератин» - Создатель линейки «Keratin Color» - и др.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="workers__item">
+                                <div class="workers__item-main">
+                                    <div class="workers__photo">
+                                        <img src="assets/img/workers/2.webp" alt="cover">
+                                        <div class="workers__name">Damiao SilvaDamiao Silva</div>
+                                    </div>
+                                    <div class="workers__info">
+                                        <div class="workers__header">
+                                            <div class="workers__title">Damiao Silva
+                                            </div>
+                                            <div class="workers__prof">Ведущий технолог Let me Be
+                                            </div>
+                                        </div>
+                                        <div class="workers__body">
+                                            <div class="workers__block">
+                                                <div class="workers__head">Родной город:
+                                                </div>
+                                                <div class="workers__text">Пианко, Бразилия
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">Образование:
+                                                </div>
+                                                <div class="workers__text">- Международная парикмахерская школа Бразилии по направлениям (трихология, косметология, колориметрия).
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">Опыт работы:
+                                                </div>
+                                                <div class="workers__text">- В индустрии эстетики волос с 2008 г. - В качестве технолога с 2009 г.
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">О себе:
+                                                </div>
+                                                <div class="workers__text">Я родился в скромной семье и должен был работать резаком сахарного тростника. Когда я вырос, мне пришлось усердно учиться, чтобы добраться туда, где я сейчас. Многие мне говорили, что у меня ничего не получится. Я верил в свои мечты и никогда не сдавался. Это мой совет: верь в себя и никогда не сдавайся.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="workers__item-bottom">
+                                    <div class="workers__block">
+                                        <div class="workers__head">Достижения:
+                                        </div>
+                                        <div class="workers__text">- Лучший специалист Бразилии в сфере парикмахерской отрасли «Золотые ножницы» (2018 г.)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="workers__item">
+                                <div class="workers__item-main">
+                                    <div class="workers__photo">
+                                        <img src="assets/img/workers/3.webp" alt="cover">
+                                        <div class="workers__name">Филиппенко Елена
+                                        </div>
+                                    </div>
+                                    <div class="workers__info">
+                                        <div class="workers__header">
+                                            <div class="workers__title">Филиппенко Елена
+                                            </div>
+                                            <div class="workers__prof">Главный технолог Кератин-Проф
+                                            </div>
+                                        </div>
+                                        <div class="workers__body">
+                                            <div class="workers__block">
+                                                <div class="workers__head">Родной город:
+                                                </div>
+                                                <div class="workers__text">Волгоград
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">Образование:
+                                                </div>
+                                                <div class="workers__text">- Колледж ВТК. Кафедра парикмахерское искусство (2010 г.) - Высшее образование МФЮА. Бухгалтерский учёт (2014 г.)
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">Опыт работы:
+                                                </div>
+                                                <div class="workers__text">- В качестве технолога с 2012г. - В индустрии красоты с 2010 г.
+                                                </div>
+                                            </div>
+                                            <div class="workers__block">
+                                                <div class="workers__head">О себе:
+                                                </div>
+                                                <div class="workers__text">Я прошла длинную и сложную дорогу от мастера на дому до ведущего технолога компании Keratin-Prof. Но развитию нет предела, поэтому останавливаться на достигнутом я не собираюсь.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="workers__item-bottom">
+                                    <div class="workers__block">
+                                        <div class="workers__head">Достижения:
+                                        </div>
+                                        <div class="workers__text">- Мастер - технолог (с 2012 г.) <br>
+
+                                            - Спикер и судья на выставке «Красота на Волге» (2017, 2018 г.) <br>
+                                            
+                                            - Спикер и судья на международной выставке «Интершарм» (2017, 2018, 2019 г.) <br>
+                                            
+                                            - Автор техник «Холодная нанопластика», «Биопластика» и многие другие. <br>
+                                            
+                                            - Создатель авторских курсов : «Все до молекул», «Все о Блонде», «Уникальный курс 5в1». <br>
+                                            
+                                            - Основательница учебных центров в г. Волгоград, г. Москва и г. Астрахань. <br>
+                                            
+                                            - Выпустила больше 5000 учеников в г. Волгограде и г. Москве. <br> 
+                                            
+                                            - Совершила успешный тур по более 15 городам России и стран СНГ. <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="workers__item">
+                            <div class="workers__item-main">
+                                <div class="workers__photo">
+                                    <img src="assets/img/workers/4.webp" alt="cover">
+                                    <div class="workers__name">Тарасова Ксения
+                                    </div>
+                                </div>
+                                <div class="workers__info">
+                                    <div class="workers__header">
+                                        <div class="workers__title">Тарасова Ксения
+                                        </div>
+                                        <div class="workers__prof">ведущий технолог г. Санкт-Петербург
+                                        </div>
+                                    </div>
+                                    <div class="workers__body">
+                                        <div class="workers__block">
+                                            <div class="workers__head">Родной город:
+                                            </div>
+                                            <div class="workers__text">Екатеринбург
+                                            </div>
+                                        </div>
+                                        <div class="workers__block">
+                                            <div class="workers__head">Образование:
+                                            </div>
+                                            <div class="workers__text">- Средне специальное: Сестринское дело. СОМК №2 (2006 г.) <br>
+
+                                                - Школа парикмахеров Ольги Забоевой, под патронажем международной фирмы Wella (2006 г.) <br>
+                                                
+                                                - Основы Трихологии (2013 г., 2020 г., 2021г.) <br>
+                                                
+                                                - Тритментолог PRO (2020 г.)
+                                            </div>
+                                        </div>
+                                        <div class="workers__block">
+                                            <div class="workers__head">Опыт работы:
+                                            </div>
+                                            <div class="workers__text">- В индустрии красоты с 2006г. <br>
+
+                                                - Практикующий мастер Выпрямления и реконструкции волос с 2009г. <br>
+                                                
+                                                - В качестве технолога с 2013 г. <br>
+                                            </div>
+                                        </div>
+                                        <div class="workers__block">
+                                            <div class="workers__head">О себе:
+                                            </div>
+                                            <div class="workers__text">Иду по жизни с девизом: Ты всегда можешь стать лучшей версией себя!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="workers__item-bottom">
+                                <div class="workers__block">
+                                    <div class="workers__head">Достижения:
+                                    </div>
+                                    <div class="workers__text">- Спикер и Автор семинаров на выставках Индустрии красоты г. Екатеринбург (2013 – 2017 г.) <br>
+
+                                        - Автор статей и фотомастер классов в журнале «Anima time» (2013 – 2017 г.) <br>
+                                        
+                                        - Судья Всероссийского конкурса для Мастеров кератинового выпрямления на «InterCharm» г. Москва (2018 г.) <br>
+                                        
+                                        - Спикер на международной выставке «InterCharm» (2018 – 2019 г.) <br>
+                                        
+                                        - Судья ежегодной Международной премии «Keratin hair awards Top 50» (2018 г., 2020 г., 2021 г.) <br>
+                                        
+                                        - Спикер «Keratin Quest» (2020 г.) - Государственная аккредитация на педагогическую деятельность (2020 г.) <br>
+                                        
+                                        - Первый Тритментолог – Санкт-Петербурга и Ленинградской области (с правом преподавания) (2020 г.) <br>
+                                        
+                                        - Организатор Марафона «Понятно и по делу» 1, 2, 3 сезон (для парикмахеров и мастеров выпрямления и реконструкции волос) (2020 – 2021 г.) <br> 
+                                        
+                                        - Спикер Международного марафона Bless academy (для парикмахеров и мастеров выпрямления и реконструкции волос) (2020 г.) <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="education">
+                    <div class="education__container">
+                        <div class="education__body">
+                            <div class="education__content">
+                                <div class="education__suptitle">Технолог по обучению</div>
+                                <div class="education__text">это наивысшая ступень карьеры Мастера по кератиновому выпрямлению</div>
+                            </div>
+                            <div class="education__photo">
+                                <img src="assets/img/education/photo.png" alt="cover">
+                            </div>
+                        </div>
+                        <div class="education__block">
+                            <div class="education__title">Этот курс для тебя Если...</div>
+                            <ul class="education__list">
+                                <li>
+                                    <div class="education__icon">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="education__info">Доход мастера тебя
+                                        больше не устраивает</div>
+                                </li>
+                                <li>
+                                    <div class="education__icon">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="education__info">Хочешь перейти на
+                                        другой уровень</div>
+                                </li>
+                                <li>
+                                    <div class="education__icon">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="education__info">Ты чувствуешь, что
+                                        обладаешь уникальной информацией и готов поделиться ей</div>
+                                </li>
+                                <li>
+                                    <div class="education__icon">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="education__info">Любишь создавать
+                                        нестандартные технологии и искать новые подходы к привычным
+                                        продуктам</div>
+                                </li>
+                                <li>
+                                    <div class="education__icon">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="education__info">Готов стать технологом
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="education__block">
+                            <div class="education__title">Существуют минимальные требования для
+                                старта:</div>
+                            <ul class="education__list">
+                                <li>
+                                    <div class="education__icon">
+                                        <img src="assets/img/education/mark.svg" alt="cover">
+                                    </div>
+                                    <div class="education__info">Опыт работы мастером от
+                                        года</div>
+                                </li>
+                                <li>
+                                    <div class="education__icon">
+                                        <img src="assets/img/education/mark.svg" alt="cover">
+                                    </div>
+                                    <div class="education__info">Наличие студии/помещения
+                                        для обучения (арендованной или собственной)
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="education__icon">
+                                        <img src="assets/img/education/mark.svg" alt="cover">
+                                    </div>
+                                    <div class="education__info">Знание базовых техник процедур
+                                        реконструкции и модификации волос.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="education__icon">
+                                        <img src="assets/img/education/mark.svg" alt="cover">
+                                    </div>
+                                    <div class="education__info">Владение теоретической базы по
+                                        структуре волос и направлениям.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="education__icon">
+                                        <img src="assets/img/education/mark.svg" alt="cover">
+                                    </div>
+                                    <div class="education__info">Знание брендов и составов в сфере
+                                        реконструкции волос.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <div class="important">
+                    <div class="important__container">
+                        <div class="important__body">
+                            <div class="important__title">
+                                Важно!
+                            </div>
+                            <div class="important__content">
+                                <p>
+                                    Пройдя курс, вы не становитесь
+                                    штатными технологом компании Кератин Проф.
+                                </p>
+                                <p>Вы становитесь, прежде всего,
+                                    самостоятельным технологом, с правом преподавания, а
+                                    так же обладателем бесценного багажа знаний, накопленного нашими технологами за
+                                    долгие годы.
+                                </p>
+                                <p>
+                                    Как реализовать эти знания и воплотить в жизнь процесс преподавания решать
+                                    только
+                                    Вам.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__left">
+                        <div class="footer__top"></div>
+                        <div class="footer__bottom"></div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__item"></div>
+                        <div class="footer__item"></div>
+                        <div class="footer__item"></div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/slick.min.js"></script>
+    
+</body>
+</html>

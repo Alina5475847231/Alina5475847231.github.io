@@ -1,0 +1,29 @@
+.important {
+    margin-bottom: 5rem;
+}
+.important__container {
+}
+.important__body {
+    width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: -4px 4px 0 rgb(67, 140, 250);
+    padding: 3rem;
+}
+.important__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #142C4A;
+    margin-bottom: 3rem;
+}
+.important__content {
+    font-size: 1.6rem;
+
+    p {
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
