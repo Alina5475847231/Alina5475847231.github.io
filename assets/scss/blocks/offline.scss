@@ -1,0 +1,73 @@
+.offline {
+    margin-top: 6rem;
+}
+.offline__container {
+    position: relative;
+}
+.offline__title {
+    font-size: 3rem;
+    color: #142C4A;
+    border-bottom: 2px solid rgba(207, 206, 206, 0.5);
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -.3rem;
+        border-radius: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: .4rem;
+        width: 6rem;
+        background-color: #19a7cd;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2.5rem;
+    }
+}
+.offline__inner {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.offline__content {
+    width: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+.offline__text {
+    font-size: 1.8rem;
+}
+.offline__cities {
+    font-size: 1.4rem;
+    position: relative;
+    margin-top: 3rem;
+    padding-left: 1rem;
+
+    &:before {
+        content: "";
+        width: 0.1rem;
+        height: 100%;
+        background-color: #19a7cd;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.offline__photo {
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
