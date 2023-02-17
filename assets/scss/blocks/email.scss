@@ -1,0 +1,57 @@
+.email {
+    max-width: 54.7rem;
+    margin: 20rem auto 0;
+    text-align: center;
+}
+.email__container {
+}
+.email__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.email__text {
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 3rem;
+
+    margin-bottom: 6rem;
+}
+.email__form {
+    width: 100%;
+    max-width: 49.2rem;
+    position: relative;
+
+    input {
+        width: 100%;
+        background: #FFFFFF;
+        opacity: 0.25;
+        border-radius: 50px;
+
+        min-height: 4.4rem;
+        padding: 0 3rem;
+
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: rgba(255, 255, 255, .8);
+    }
+}
+.email__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.btn {
+}
+.btn--red {
+}
+.email__socials {
+}
+.email__social {
+}
