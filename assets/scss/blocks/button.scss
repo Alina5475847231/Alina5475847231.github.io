@@ -1,0 +1,47 @@
+.button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 133.9%;
+    text-transform: uppercase;
+    color: inherit;
+    position: relative;
+
+    max-width: 125px;
+    margin-left: auto;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+
+        position: absolute;
+        bottom: -0;
+        left: 0;
+        display: block;
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        display: block;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 10px;
+
+        &:before {
+            bottom: -0px;
+        }
+
+        &:after {
+            bottom: -4px;
+        }
+    }
+}
