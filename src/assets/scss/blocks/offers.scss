@@ -1,0 +1,146 @@
+.offers {
+    margin-top: 4rem;
+
+    @media (max-width: 769px) {
+        margin-top: 3.2rem;
+    }
+}
+.offers__container {
+}
+.offers__header {
+}
+.header-top {
+}
+.header-top__title {
+}
+.header-top__link {
+}
+.offers__inner {
+    display: flex;
+    margin: 2.4rem -.6rem 0;
+
+    @media (max-width: 769px) {
+        margin: 2.4rem 0 0;
+        flex-direction: column-reverse;
+    }
+}
+.offers__col {
+    flex: 0 1 50%;
+    padding: 0 .6rem;
+
+    min-height: 22.4rem;
+    
+    &:last-child {
+        filter: grayscale(100%); 
+
+        .offers__item-photo {
+            bottom: 50%;
+            transform: translateY(50%);
+            right: -2rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        min-height: 15rem;
+    }
+
+    @media (max-width: 769px) {
+        flex: 1 1 100%;
+        padding: 0;
+        margin-bottom: 0.8rem;
+        min-height: auto;
+    }
+}
+.offers__item {
+    border-radius: 1.2rem;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+
+    @media (max-width: 769px) {
+        min-height: 20rem;
+    }
+
+    @media (max-width: 490px) {
+        min-height: 11.7rem;
+    }
+}
+.offers__item-content {
+    background-color: #F7172C;
+    border-radius: 1.2rem 0 0 1.2rem;
+
+    padding: 2.1rem 0 0 2.8rem;
+    width: 60%;
+}
+.offers__item-text {
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 120%;
+    color: $white;
+
+    span {
+        display: block;
+    }
+
+    @media (min-width: 1230px) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: 769px) {
+        font-size: 3rem;
+        opacity: 0.5;
+    }
+
+    @media (max-width: 490px) {
+        font-size: 2rem;
+    }
+}
+.offers__item-right {
+    background: #FCA2AB;
+    width: 40%;
+    position: relative;
+
+    @media (max-width: 490px) {
+        background-color: #F7172C;
+    }
+}
+.offers__item-photo {
+    border-radius: 0 1.2rem 1.2rem 0;
+
+    position: absolute;
+    bottom: 0;
+    right: 8rem;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 769px) {
+        right: 4rem;
+    }
+
+    @media (max-width: 490px) {
+        right: 7rem;
+    }
+
+    @media (max-width: 390px) {
+        right: 4rem;
+    }
+}
+.offers__item-logo {
+    position: absolute;
+    top: 3.2rem;
+    right: 3.2rem;
+
+    @media (max-width: 490px) {
+        top: 1.6rem;
+        right: 1.6rem;
+        
+        width: 6rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}

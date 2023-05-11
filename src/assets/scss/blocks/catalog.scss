@@ -1,0 +1,136 @@
+.catalog {
+    position: absolute;
+    top: 10.6rem;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    height: 70rem;
+
+    &.active {
+        display: block;
+    }
+    
+    &:after {
+        content: "";
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+        border-radius: 12px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6.4rem;
+    }
+
+    @media (max-width: 900px) {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+    }
+}
+.catalog__container {
+    height: 100%;
+    border-radius: 1.2rem;
+    padding-top: 3.2rem;
+    padding-right: 6.5rem;
+    padding-left: 3.2rem;
+    background-color: #fff;
+    overflow-y: auto;
+    padding-bottom: 6rem;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    @media (max-width: 900px) {
+        border-radius: 0;
+        padding-right: 0;
+    }
+}
+.catalog__sidebar {
+}
+.catalog__list {
+    li {
+        width: 100%;
+        margin-bottom: 1.6rem;
+        
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            > .subnav {
+                display: block;
+
+                @media (max-width: 900px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.catalog__link {
+    display: flex;
+    align-items: center;
+    width: 22%;
+    justify-content: space-between;
+    padding-right: 2rem;
+
+    &:hover {
+        .catalog__link-arrow {
+            display: block;
+        }
+
+        .catalog__link-content {
+            .catalog__link-icon {
+                svg {
+                    stroke: $orange;
+                }
+            }
+
+            .catalog__link-text {
+                color: $orange;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}
+.catalog__link-content {
+    display: flex;
+    align-items: center;
+}
+.catalog__link-icon {
+    margin-right: 0.8rem;
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        stroke: $black;
+    }
+}
+.catalog__link-text {
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: $black;
+}
+.catalog__link-arrow {
+    display: none;
+    svg {
+        width: 1.6rem;
+        height: 1.8rem;
+        stroke: $orange
+    }
+
+    @media (max-width: 900px) {
+        display: block;
+
+        svg {
+            stroke: $black;
+        }
+    }
+}
+
