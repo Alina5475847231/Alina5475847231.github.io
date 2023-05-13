@@ -1,0 +1,22 @@
+.btn {
+    line-height: 120%;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0px 25px;
+    background: linear-gradient(360deg, #BE0000 0%, #EE0100 100%);
+    box-shadow: 0px 9px 21px rgb(76 76 76 / 10%), 0px 4px 0px #b70c00;
+    border-radius: 500px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+    min-height: 6rem;
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
