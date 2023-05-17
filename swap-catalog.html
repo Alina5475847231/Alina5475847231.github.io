@@ -1236,6 +1236,47 @@
 		</div>
 	</div>
 
+	<script>
+        for (let e of document.querySelectorAll('input[type="range"].zoom')) {
+        e.style.setProperty('--value', e.value);
+        e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+        e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+        e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+        }
+
+        let btns = document.querySelectorAll("*[data-modal]");
+let btn = document.querySelectorAll(".modal__close-arrow");
+
+for(let i = 0; i<btns.length; i++) {
+    btns[i].addEventListener('click', function() {
+        let name = btns[i].getAttribute('data-modal');
+        let popup = document.querySelector("[data-modal-window='"+name+"']");
+        let popupBlock = document.querySelectorAll('.modal__filter');
+        let body = document.querySelector('body');
+        popup.style.display = "block";
+        body.style.overflow = "hidden";
+
+        let close = document.querySelectorAll(".modal__close");
+        let arrowClose = document.querySelectorAll(".arrow__close");
+
+        close.forEach(item => {
+            item.addEventListener('click', event => {
+                popup.style.display = "none";
+                body.style.overflow = "auto";
+            });
+        });
+
+        arrowClose.forEach(item => {
+            item.addEventListener('click', event => {
+                popupBlock.forEach(item => {
+                    item.style.display = "none";
+                });
+            });
+        });
+    });
+}
+    </script>
+
 	<!--    <script src="./libs/jquery/jquery-3.6.0.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="./libs/slick/slick.min.js"></script>

@@ -1550,7 +1550,7 @@
           </div>
         </div>
       </div>
-      <div class="modal modal__redact">
+      <div class="modal modal__redact" style="display: flex;">
         <div class="modal__dialog">
           <div class="modal__close">
             <img src="/images/modal/close.svg" alt="cover">
@@ -1654,7 +1654,7 @@ for(let i = 0; i<btns.length; i++) {
         let popup = document.querySelector("[data-modal-window='"+name+"']");
         let popupBlock = document.querySelectorAll('.modal__filter');
         let body = document.querySelector('body');
-        popup.style.display = "flex";
+        popup.style.display = "block";
         body.style.overflow = "hidden";
 
         let close = document.querySelectorAll(".modal__close");
