@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="login-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__items">
+            <div class="header__burger">
+              <img src="images/burger.svg" alt="" />
+            </div>
+            <a href="#" class="header__logo">
+              <img src="images/logo.png" alt="" />
+            </a>
+            <div></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="drop-menu">
+        <div class="drop-menu__inner">
+          <div class="drop-menu__strong">
+            <img src="images/burger-strong.svg" alt="" />
+          </div>
+          <ul class="drop-menu__nav">
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Правила платформы</a></li>
+            <li><a href="#">Управление подпиской</a></li>
+            <li><a href="#">Условия оплаты</a></li>
+            <li><a href="#">Написать в поддержку</a></li>
+            <li><a href="#">Возмещение</a></li>
+          </ul>
+          <div class="drop-menu__exit">Выход</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="login">
+          <div class="login__start">
+            <div class="login__logo">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div class="login__content">
+              <div class="login__inner">
+                <div class="login__header">
+                  <div class="login__title">Войдите или зарегистрируйтесь</div>
+                  <div class="login__tabs-inner">
+                    <div class="login__tabs">
+                      <a href="sign-in.html" class="active"><span>Регистрация</span></a>
+                      <a href="login.html"><span>Вход</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="login__registrs">
+                  <div class="login__registr login__registr-first">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Укажите ваш пол</div>
+                      <div class="login__pols-items">
+                        <div class="login__pols-item">
+                          <input type="radio" name="pols" />
+                          <span>
+                            <svg
+                              width="21"
+                              height="20"
+                              viewBox="0 0 21 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M9.875 12.15C12.4638 12.15 14.5625 10.0514 14.5625 7.46252C14.5625 4.87369 12.4638 2.77502 9.875 2.77502C7.28617 2.77502 5.1875 4.87369 5.1875 7.46252C5.1875 10.0514 7.28617 12.15 9.875 12.15Z"
+                                stroke="black"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.875 12.15V17.15"
+                                stroke="black"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.375 14.9625H12.375"
+                                stroke="black"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            Женский</span
+                          >
+                        </div>
+                        <div class="login__pols-item">
+                          <input type="radio" name="pols" />
+                          <span>
+                            <svg
+                              width="21"
+                              height="20"
+                              viewBox="0 0 21 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.69922 15.9C11.2881 15.9 13.3867 13.8014 13.3867 11.2125C13.3867 8.62369 11.2881 6.52502 8.69922 6.52502C6.11038 6.52502 4.01172 8.62369 4.01172 11.2125C4.01172 13.8014 6.11038 15.9 8.69922 15.9Z"
+                                stroke="white"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M12.4492 4.65002H15.5742V7.77502"
+                                stroke="white"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M12.168 8.05627L15.5742 4.65002"
+                                stroke="white"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            Мужской</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-second">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Укажите ваше имя</div>
+                      <div class="login__registr-input">
+                        <input type="text" placeholder="Введите имя" />
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-third">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Укажите вашу дату рождения</div>
+                      <div class="edit-profile__dates">
+                        <div class="edit-profile__date">
+                          <div class="t-dropdown-block">
+                            <div class="t-dropdown-select">
+                              <input type="text" class="t-dropdown-input" readonly placeholder="День" />
+                            </div>
+                            <div class="t-dropdown-list">
+                              <ul>
+                                <li class="t-dropdown-item">1</li>
+                                <li class="t-dropdown-item">2</li>
+                                <li class="t-dropdown-item">3</li>
+                                <li class="t-dropdown-item">4</li>
+                                <li class="t-dropdown-item">5</li>
+                                <li class="t-dropdown-item">6</li>
+                                <li class="t-dropdown-item">7</li>
+                                <li class="t-dropdown-item">8</li>
+                                <li class="t-dropdown-item">9</li>
+                                <li class="t-dropdown-item">10</li>
+                                <li class="t-dropdown-item">11</li>
+                                <li class="t-dropdown-item">12</li>
+                                <li class="t-dropdown-item">13</li>
+                                <li class="t-dropdown-item">14</li>
+                                <li class="t-dropdown-item">15</li>
+                                <li class="t-dropdown-item">16</li>
+                                <li class="t-dropdown-item">17</li>
+                                <li class="t-dropdown-item">18</li>
+                                <li class="t-dropdown-item">19</li>
+                                <li class="t-dropdown-item">20</li>
+                                <li class="t-dropdown-item">21</li>
+                                <li class="t-dropdown-item">22</li>
+                                <li class="t-dropdown-item">23</li>
+                                <li class="t-dropdown-item">24</li>
+                                <li class="t-dropdown-item">25</li>
+                                <li class="t-dropdown-item">26</li>
+                                <li class="t-dropdown-item">27</li>
+                                <li class="t-dropdown-item">28</li>
+                                <li class="t-dropdown-item">29</li>
+                                <li class="t-dropdown-item">30</li>
+                                <li class="t-dropdown-item">31</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edit-profile__date">
+                          <div class="t-dropdown-block">
+                            <div class="t-dropdown-select">
+                              <input type="text" class="t-dropdown-input" readonly placeholder="Месяц" />
+                            </div>
+                            <div class="t-dropdown-list">
+                              <ul>
+                                <li class="t-dropdown-item">Январь</li>
+                                <li class="t-dropdown-item">Февраль</li>
+                                <li class="t-dropdown-item">Март</li>
+                                <li class="t-dropdown-item">Апрель</li>
+                                <li class="t-dropdown-item">Май</li>
+                                <li class="t-dropdown-item">Июнь</li>
+                                <li class="t-dropdown-item">Июль</li>
+                                <li class="t-dropdown-item">Август</li>
+                                <li class="t-dropdown-item">Сентябрь</li>
+                                <li class="t-dropdown-item">Октябрь</li>
+                                <li class="t-dropdown-item">Ноябрь</li>
+                                <li class="t-dropdown-item">Декабрь</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edit-profile__date">
+                          <div class="t-dropdown-block">
+                            <div class="t-dropdown-select">
+                              <input type="text" class="t-dropdown-input" readonly placeholder="Год" />
+                            </div>
+                            <div class="t-dropdown-list">
+                              <ul>
+                                <li class="t-dropdown-item">2008</li>
+                                <li class="t-dropdown-item">2007</li>
+                                <li class="t-dropdown-item">2006</li>
+                                <li class="t-dropdown-item">2005</li>
+                                <li class="t-dropdown-item">2004</li>
+                                <li class="t-dropdown-item">2003</li>
+                                <li class="t-dropdown-item">2002</li>
+                                <li class="t-dropdown-item">2001</li>
+                                <li class="t-dropdown-item">2000</li>
+                                <li class="t-dropdown-item">1999</li>
+                                <li class="t-dropdown-item">1998</li>
+                                <li class="t-dropdown-item">1997</li>
+                                <li class="t-dropdown-item">1996</li>
+                                <li class="t-dropdown-item">1995</li>
+                                <li class="t-dropdown-item">1994</li>
+                                <li class="t-dropdown-item">1993</li>
+                                <li class="t-dropdown-item">1992</li>
+                                <li class="t-dropdown-item">1991</li>
+                                <li class="t-dropdown-item">1990</li>
+                                <li class="t-dropdown-item">1989</li>
+                                <li class="t-dropdown-item">1988</li>
+                                <li class="t-dropdown-item">1987</li>
+                                <li class="t-dropdown-item">1986</li>
+                                <li class="t-dropdown-item">1985</li>
+                                <li class="t-dropdown-item">1984</li>
+                                <li class="t-dropdown-item">1983</li>
+                                <li class="t-dropdown-item">1982</li>
+                                <li class="t-dropdown-item">1981</li>
+                                <li class="t-dropdown-item">1980</li>
+                                <li class="t-dropdown-item">1979</li>
+                                <li class="t-dropdown-item">1978</li>
+                                <li class="t-dropdown-item">1977</li>
+                                <li class="t-dropdown-item">1976</li>
+                                <li class="t-dropdown-item">1975</li>
+                                <li class="t-dropdown-item">1974</li>
+                                <li class="t-dropdown-item">1973</li>
+                                <li class="t-dropdown-item">1972</li>
+                                <li class="t-dropdown-item">1971</li>
+                                <li class="t-dropdown-item">1970</li>
+                                <li class="t-dropdown-item">1969</li>
+                                <li class="t-dropdown-item">1968</li>
+                                <li class="t-dropdown-item">1967</li>
+                                <li class="t-dropdown-item">1966</li>
+                                <li class="t-dropdown-item">1965</li>
+                                <li class="t-dropdown-item">1964</li>
+                                <li class="t-dropdown-item">1963</li>
+                                <li class="t-dropdown-item">1962</li>
+                                <li class="t-dropdown-item">1961</li>
+                                <li class="t-dropdown-item">1960</li>
+                                <li class="t-dropdown-item">1959</li>
+                                <li class="t-dropdown-item">1958</li>
+                                <li class="t-dropdown-item">1957</li>
+                                <li class="t-dropdown-item">1956</li>
+                                <li class="t-dropdown-item">1955</li>
+                                <li class="t-dropdown-item">1954</li>
+                                <li class="t-dropdown-item">1953</li>
+                                <li class="t-dropdown-item">1952</li>
+                                <li class="t-dropdown-item">1951</li>
+                                <li class="t-dropdown-item">1950</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-foure">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Укажите ваш город</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="t-dropdown-block searchable4">
+                          <div class="t-dropdown-select">
+                            <input
+                              type="text"
+                              class="t-dropdown-input"
+                              onkeyup="filterFunction4(this,event)"
+                              placeholder="Выберите или введите ваш город"
+                            />
+                          </div>
+                          <div class="t-dropdown-list">
+                            <span>Ничего не найдено</span>
+                            <ul>
+                              <li class="t-dropdown-item">Москва</li>
+                              <li class="t-dropdown-item">Ростов-на-Дону</li>
+                              <li class="t-dropdown-item">Воронеж</li>
+                              <li class="t-dropdown-item">Санкт-Петербург</li>
+                              <li class="t-dropdown-item">Тула</li>
+                              <li class="t-dropdown-item">Краснодар</li>
+                              <li class="t-dropdown-item">Сочи</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-five">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Ваш статус отношений</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="t-dropdown-block searchable4">
+                          <div class="t-dropdown-select">
+                            <input
+                              type="text"
+                              class="t-dropdown-input"
+                              onkeyup="filterFunction4(this,event)"
+                              placeholder="Свободен"
+                            />
+                          </div>
+                          <div class="t-dropdown-list">
+                            <span>Ничего не найдено</span>
+                            <ul>
+                              <li class="t-dropdown-item">Свободен</li>
+                              <li class="t-dropdown-item">В активном поиске</li>
+                              <li class="t-dropdown-item">Всё сложно</li>
+                              <li class="t-dropdown-item">Женат</li>
+                              <li class="t-dropdown-item">Свободен</li>
+                              <li class="t-dropdown-item">В активном поиске</li>
+                              <li class="t-dropdown-item">Всё сложно</li>
+                              <li class="t-dropdown-item">Женат</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-six">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Какая цель вашего знакомства</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="t-dropdown-block searchable4">
+                          <div class="t-dropdown-select">
+                            <input
+                              type="text"
+                              class="t-dropdown-input"
+                              onkeyup="filterFunction4(this,event)"
+                              placeholder="Семья"
+                            />
+                          </div>
+                          <div class="t-dropdown-list">
+                            <span>Ничего не найдено</span>
+                            <ul>
+                              <li class="t-dropdown-item">Семья</li>
+                              <li class="t-dropdown-item">Любовь</li>
+                              <li class="t-dropdown-item">Семья</li>
+                              <li class="t-dropdown-item">Любовь</li>
+                              <li class="t-dropdown-item">Семья</li>
+                              <li class="t-dropdown-item">Любовь</li>
+                              <li class="t-dropdown-item">Семья</li>
+                              <li class="t-dropdown-item">Любовь</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-seven">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Какого возраста девушки вам нравятся?</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="saidbar__drop-years">
+                          <p>Возраст</p>
+                          <p>от <span id="range-from">18</span> до <span id="range-to">65</span> лет</p>
+                        </div>
+                        <input type="text" class="js-range-slider js-range-slider-1" name="my_range" value="" />
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-eight">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Ваш рост</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="saidbar__drop-years">
+                          <p>Рост</p>
+                          <p><span id="range-rost"></span> см</p>
+                        </div>
+                        <input type="text" class="js-range-slider js-range-slider-7" name="my_range" value="" />
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-ninth">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Введите ваш E-mail</div>
+                      <div class="login__registr-input">
+                        <input type="email" placeholder="example@mail.com" />
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-ten">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Придумайте пароль</div>
+                      <div class="login__registr-password">
+                        <div class="login__registr-pass">
+                          <div class="login__registr-pass--head">Ваш пароль</div>
+                          <input type="password" placeholder="Ваш пароль" />
+                          <div class="login__registr-pass--see">
+                            <img src="images/pass-see.svg" alt="" />
+                            <img src="images/pass-see-2.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="login__registr-pass">
+                          <div class="login__registr-pass--head">Повторите пароль</div>
+                          <input type="password" placeholder="Повторите пароль" />
+                          <div class="login__registr-pass--see">
+                            <img src="images/pass-see.svg" alt="" />
+                            <img src="images/pass-see-2.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-complate">Далее</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="login__nav">
+            <ul>
+              <li><a href="#">Конфиденциальность</a></li>
+              <li><a href="#">Правила платформы</a></li>
+              <li><a href="#">Управление подпиской</a></li>
+              <li><a href="#">Условия оплаты</a></li>
+              <li><a href="#">Написать в поддержку</a></li>
+              <li><a href="#">Возмещение</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

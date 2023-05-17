@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Standart</title>
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper wrapper-swipe">
+        <header class="header">
+            <div class="container">
+                <div class="header__items">
+                    <a href="#" class="header__like">
+                        <div class="header__line-image">
+                            <img src="images/like-header.svg" alt="" />
+                        </div>
+                        <div class="header__like-value">15</div>
+                    </a>
+                    <a href="#" class="header__logo">
+                        <img src="images/logo.png" alt="" />
+                    </a>
+                    <div class="header__filter">
+                        <div class="search__header-filter--item">
+                            <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_301_5864)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.62499 1.91901H23.809C24.326 1.91901 24.746 2.33901 24.746 2.85601C24.746 3.37401 24.326 3.79401 23.809 3.79401H1.62499C1.10699 3.79401 0.687988 3.37401 0.687988 2.85601C0.687988 2.33901 1.10699 1.91901 1.62499 1.91901Z"
+                                        fill="#797979" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.62499 8.16748H23.809C24.326 8.16748 24.746 8.58748 24.746 9.10448C24.746 9.62248 24.326 10.0425 23.809 10.0425H1.62499C1.10699 10.0425 0.687988 9.62248 0.687988 9.10448C0.687988 8.58748 1.10699 8.16748 1.62499 8.16748Z"
+                                        fill="#797979" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.62499 14.417H23.809C24.326 14.417 24.746 14.836 24.746 15.354C24.746 15.872 24.326 16.292 23.809 16.292H1.62499C1.10699 16.292 0.687988 15.872 0.687988 15.354C0.687988 14.836 1.10699 14.417 1.62499 14.417Z"
+                                        fill="#797979" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.12305 0.917999C4.46805 0.917999 4.74805 1.198 4.74805 1.543V4.667C4.74805 5.13 4.46805 5.292 4.12305 5.292C3.77805 5.292 3.49805 5.13 3.49805 4.667V1.543C3.49805 1.198 3.77805 0.917999 4.12305 0.917999Z"
+                                        fill="#797979" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.123 6.918C14.468 6.918 14.748 7.198 14.748 7.543V10.667C14.748 11.13 14.468 11.292 14.123 11.292C13.778 11.292 13.498 11.13 13.498 10.667V7.543C13.498 7.198 13.778 6.918 14.123 6.918Z"
+                                        fill="#797979" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.49902 13.167C8.84402 13.167 9.12402 13.447 9.12402 13.792V16.916C9.12402 17.262 8.84402 17.541 8.49902 17.541C8.15402 17.541 7.87402 17.262 7.87402 16.916V13.792C7.87402 13.447 8.15402 13.167 8.49902 13.167Z"
+                                        fill="#797979" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_301_5864">
+                                        <rect width="25" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="search__header-drop">
+                            <div class="search__header-drop--head">Фильтр</div>
+                            <form action="#">
+                                <div class="saidbar__drop-item">
+                                    <div class="saidbar__drop-head">Показывать</div>
+                                    <div class="saidbar__drop-pols">
+                                        <div class="saidbar__drop-pol active">
+                                            Женщин
+                                            <input type="radio" name="pols" />
+                                        </div>
+                                        <div class="saidbar__drop-pol">
+                                            Мужчин
+                                            <input type="radio" name="pols" />
+                                        </div>
+                                        <div class="saidbar__drop-pol">
+                                            Всех
+                                            <input type="radio" name="pols" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="saidbar__drop-item">
+                                    <div class="saidbar__drop-photo">
+                                        <input type="checkbox" id="photo" />
+                                        <label for="photo">Только с фото</label>
+                                        <div class="saidbar__drop-ok"></div>
+                                    </div>
+                                    <div class="saidbar__drop-photo">
+                                        <input type="checkbox" id="new-users" />
+                                        <label for="new-users">Новые пользователи</label>
+                                        <div class="saidbar__drop-ok"></div>
+                                    </div>
+                                    <div class="saidbar__drop-photo">
+                                        <input type="checkbox" id="only-online" />
+                                        <label for="only-online">Только онлайн</label>
+                                        <div class="saidbar__drop-ok"></div>
+                                    </div>
+                                </div>
+                                <div class="saidbar__drop-item">
+                                    <div class="saidbar__drop-years">
+                                        <p>Возраст</p>
+                                        <p>от <span id="range-from">18</span> до <span id="range-to">65</span> лет</p>
+                                    </div>
+                                    <input type="text" class="js-range-slider js-range-slider-1" name="my_range"
+                                        value="" />
+                                </div>
+                                <div class="saidbar__drop-item">
+                                    <div class="saidbar__drop-years">
+                                        <p>Дистанция</p>
+                                        <p>до <span id="range-km"></span> км</p>
+                                    </div>
+                                    <input type="text" class="js-range-slider js-range-slider-2" name="my_range"
+                                        value="" />
+                                </div>
+                                <div class="saidbar__drop-end">
+                                    <div class="saidbar__drop-sbros">Сбросить</div>
+                                       <div class="saidbar__drop-btn apply">Применить</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="fixed">
+            <a href="#" class="fixed__item">
+                <img src="images/bottom-fix-1.svg" alt="">
+                <img src="images/bottom-fix-1-active.svg" alt="">
+            </a>
+            <a href="#" class="fixed__item active">
+                <img src="images/bottom-fix-2.svg" alt="">
+                <img src="images/bottom-fix-2-active.svg" alt="">
+            </a>
+            <a href="#" class="fixed__item">
+                <img src="images/bottom-fix-3.svg" alt="">
+                <img src="images/bottom-fix-3-active.svg" alt="">
+            </a>
+            <a href="#" class="fixed__item">
+                <img src="images/bottom-fix-4.svg" alt="">
+                <img src="images/bottom-fix-4-active.svg" alt="">
+            </a>
+
+        </div>
+
+        <div class="drop-menu">
+            <div class="drop-menu__inner">
+                <div class="drop-menu__strong">
+                    <img src="images/burger-strong.svg" alt="" />
+                </div>
+                <ul class="drop-menu__nav">
+                    <li><a href="#">Конфиденциальность</a></li>
+                    <li><a href="#">Правила платформы</a></li>
+                    <li><a href="#">Управление подпиской</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Написать в поддержку</a></li>
+                    <li><a href="#">Возмещение</a></li>
+                </ul>
+                <div class="drop-menu__exit">Выход</div>
+            </div>
+        </div>
+
+        <div class="content content-swap">
+            <div class="container">
+                <div class="content__items">
+                    <div class="saidbar">
+                        <a href="#" class="saidbar__logo">
+                            <img src="images/logo.png" alt="" />
+                        </a>
+                        <div class="saidbar__user">
+                            <div class="saidbar__user-image">
+                                <img src="images/user.png" alt="" />
+                            </div>
+                            <div class="saidbar__user-header">
+                                <div class="saidbar__user-name">Алексей</div>
+                                ,
+                                <div class="saidbar__user-years">24</div>
+                            </div>
+                            <div class="saidbar__user-edit">
+                                <a href="#">Редактировать</a><a href="#">Как видят мой профиль</a>
+                            </div>
+                        </div>
+                        <div class="saidbar__mobile">
+                            <div class="saidbar__mobile-block">
+                                <div class="saidbar__mobile-head">18</div>
+                                <div class="saidbar__mobile-text">Контактов</div>
+                            </div>
+                            <div class="saidbar__mobile-block">
+                                <div class="saidbar__mobile-head">53</div>
+                                <div class="saidbar__mobile-text">Лайков</div>
+                            </div>
+                            <div class="saidbar__mobile-block">
+                                <div class="saidbar__mobile-head">2 <span>мес.</span></div>
+                                <div class="saidbar__mobile-text">Регистрация</div>
+                            </div>
+                        </div>
+                        <a href="#" data-modal="get" class="saidbar__premium">Получить Premium</a>
+                        <div class="saidbar__nav">
+                            <div class="saidbar__nav-filter">
+                                <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_301_5864)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.62499 1.91901H23.809C24.326 1.91901 24.746 2.33901 24.746 2.85601C24.746 3.37401 24.326 3.79401 23.809 3.79401H1.62499C1.10699 3.79401 0.687988 3.37401 0.687988 2.85601C0.687988 2.33901 1.10699 1.91901 1.62499 1.91901Z"
+                                            fill="#797979" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.62499 8.16748H23.809C24.326 8.16748 24.746 8.58748 24.746 9.10448C24.746 9.62248 24.326 10.0425 23.809 10.0425H1.62499C1.10699 10.0425 0.687988 9.62248 0.687988 9.10448C0.687988 8.58748 1.10699 8.16748 1.62499 8.16748Z"
+                                            fill="#797979" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.62499 14.417H23.809C24.326 14.417 24.746 14.836 24.746 15.354C24.746 15.872 24.326 16.292 23.809 16.292H1.62499C1.10699 16.292 0.687988 15.872 0.687988 15.354C0.687988 14.836 1.10699 14.417 1.62499 14.417Z"
+                                            fill="#797979" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.12305 0.917999C4.46805 0.917999 4.74805 1.198 4.74805 1.543V4.667C4.74805 5.13 4.46805 5.292 4.12305 5.292C3.77805 5.292 3.49805 5.13 3.49805 4.667V1.543C3.49805 1.198 3.77805 0.917999 4.12305 0.917999Z"
+                                            fill="#797979" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.123 6.918C14.468 6.918 14.748 7.198 14.748 7.543V10.667C14.748 11.13 14.468 11.292 14.123 11.292C13.778 11.292 13.498 11.13 13.498 10.667V7.543C13.498 7.198 13.778 6.918 14.123 6.918Z"
+                                            fill="#797979" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.49902 13.167C8.84402 13.167 9.12402 13.447 9.12402 13.792V16.916C9.12402 17.262 8.84402 17.541 8.49902 17.541C8.15402 17.541 7.87402 17.262 7.87402 16.916V13.792C7.87402 13.447 8.15402 13.167 8.49902 13.167Z"
+                                            fill="#797979" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_301_5864">
+                                            <rect width="25" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="saidbar__drop">
+                                <form action="#">
+                                    <div class="saidbar__drop-item">
+                                        <div class="saidbar__drop-head">Показывать</div>
+                                        <div class="saidbar__drop-pols">
+                                            <div class="saidbar__drop-pol active">
+                                                Женщин
+                                                <input type="radio" name="pols" />
+                                            </div>
+                                            <div class="saidbar__drop-pol">
+                                                Мужчин
+                                                <input type="radio" name="pols" />
+                                            </div>
+                                            <div class="saidbar__drop-pol">
+                                                Всех
+                                                <input type="radio" name="pols" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saidbar__drop-item">
+                                        <div class="saidbar__drop-photo">
+                                            <input type="checkbox" id="photo" />
+                                            <label for="photo">Только с фото</label>
+                                            <div class="saidbar__drop-ok"></div>
+                                        </div>
+                                    </div>
+                                    <div class="saidbar__drop-item">
+                                        <div class="saidbar__drop-years">
+                                            <p>Возраст</p>
+                                            <p>
+                                                от <span id="range-from">18</span> до
+                                                <span id="range-to">65</span> лет
+                                            </p>
+                                        </div>
+                                        <input type="text" class="js-range-slider js-range-slider-1" name="my_range"
+                                            value="" />
+                                    </div>
+                                    <div class="saidbar__drop-item">
+                                        <div class="saidbar__drop-years">
+                                            <p>Дистанция</p>
+                                            <p>до <span id="range-km"></span> км</p>
+                                        </div>
+                                        <input type="text" class="js-range-slider js-range-slider-2" name="my_range"
+                                            value="" />
+                                    </div>
+                                    <div class="saidbar__drop-end">
+                                        <div class="saidbar__drop-sbros">Сбросить</div>
+                                           <div class="saidbar__drop-btn apply">Применить</div>
+                                    </div>
+                                </form>
+                            </div>
+                            <ul class="saidbar__nav-list">
+                                <li><a href="#">Знакомства</a></li>
+                                <li><a href="#">Поиск по людям</a></li>
+                                <li><a href="#">Сообщения</a></li>
+                                <li><a href="#">Ты нравишься</a></li>
+                                <li><a href="#">Совпадения</a></li>
+                            </ul>
+                        </div>
+                        <div class="saidbar__end">
+                            <div class="saidbar__end-items">
+                                <div class="saidbar__end-item">Premium статус</div>
+                                <div class="saidbar__end-status">Неактивен</div>
+                            </div>
+                            <div class="saidbar__end-exit">Выход</div>
+                        </div>
+                    </div>
+                    <div class="human">
+                        <div class="buddy">
+                            <div class="human__items">
+                                <div class="human__like"><img src="images/like.svg" alt=""></div>
+                                <div class="human__dislike">
+                                    <img src="images/stong.svg" alt="">
+                                </div>
+                                <div class="human__slider">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-pagination">
+                                            <img src="images/photos-icon.svg" alt="" />
+                                        </div>
+                                        <div class="human__events">
+                                            <div class="human__events-item human__events-item-next">
+                                                <span><img src="images/stong.svg" alt="" /></span>
+                                            </div>
+                                            <div class="human__events-item human__events-item-like" data-modal="modal-like">
+                                                <span><img src="images/like.svg" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__chat">
+                                            <span><img src="images/chat.svg" alt="" /></span>
+                                        </div>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery1"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery1"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery1"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery1"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="images/arrow-r.svg" alt="" />
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <img src="images/arrow-l.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="human__content">
+                                    <div class="human__header">
+                                        <div class="human__header-new">
+                                            <div class="human__header-block">
+                                                <div class="human__name">Алина</div>,
+                                                <div class="human__years">20</div>
+                                            </div>
+                                            <div class="human__header-online">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__header-status">Хочет найти любовь</div>
+                                    </div>
+                                    <div class="human__information">
+                                        <div class="human__information-inner">
+                                            <ul class="human__list">
+                                                <li>
+                                                    <span><img src="images/char-1.svg" alt="" /></span>Свободна
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/chat-2.svg" alt="" /></span>Скорпион
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-3.svg" alt="" /></span>170 см
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-4.svg" alt="" /></span>Русский,
+                                                    Английский
+                                                </li>
+                                            </ul>
+                                            <div class="human__about">
+                                                <div class="human__head">Обо мне</div>
+                                                <div class="human__about-text">
+                                                    Looking for a tall dominant MAN who will put up with
+                                                    my attitude😌
+                                                </div>
+                                            </div>
+                                            <div class="human__lichost">
+                                                <div class="human__head">Личная информация</div>
+                                                <div class="human__lichost-blocks">
+                                                    <div class="human__lichost-block">
+                                                        <p>Город:</p>
+                                                        <p>Москва</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Дети:</p>
+                                                        <p>Нет</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Алкоголь:</p>
+                                                        <p>Воздерживаюсь</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Место работы:</p>
+                                                        <p>Инженер</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Образование:</p>
+                                                        <p>МГУ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="human__interes">
+                                                <div class="human__head">Мои интересы</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human__mobile">
+                                        <div class="human__send-massage">Отправить сообщение</div>
+                                        <div class="human__btns">
+                                            <div data-modal="modal-support" class="human__btn">Пожаловаться</div>
+                                            <div class="human__btn">Заблокировать</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buddy">
+                            <div class="human__items">
+                                <div class="human__like"><img src="images/like.svg" alt=""></div>
+                                <div class="human__dislike">
+                                    <img src="images/stong.svg" alt="">
+                                </div>
+                                <div class="human__slider">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-pagination">
+                                            <img src="images/photos-icon.svg" alt="" />
+                                        </div>
+                                        <div class="human__events">
+                                            <div class="human__events-item human__events-item-next">
+                                                <span><img src="images/stong.svg" alt="" /></span>
+                                            </div>
+                                            <div class="human__events-item human__events-item-like" data-modal="modal-like">
+                                                <span><img src="images/like.svg" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__chat">
+                                            <span><img src="images/chat.svg" alt="" /></span>
+                                        </div>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery2"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery2"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery2"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery2"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="images/arrow-r.svg" alt="" />
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <img src="images/arrow-l.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="human__content">
+                                    <div class="human__header">
+                                        <div class="human__header-new">
+                                            <div class="human__header-block">
+                                                <div class="human__name">Евгения</div>,
+                                                <div class="human__years">28</div>
+                                            </div>
+                                            <div class="human__header-online">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__header-status">Хочет найти любовь</div>
+                                    </div>
+                                    <div class="human__information">
+                                        <div class="human__information-inner">
+                                            <ul class="human__list">
+                                                <li>
+                                                    <span><img src="images/char-1.svg" alt="" /></span>Свободна
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/chat-2.svg" alt="" /></span>Скорпион
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-3.svg" alt="" /></span>170 см
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-4.svg" alt="" /></span>Русский,
+                                                    Английский
+                                                </li>
+                                            </ul>
+                                            <div class="human__about">
+                                                <div class="human__head">Обо мне</div>
+                                                <div class="human__about-text">
+                                                    Looking for a tall dominant MAN who will put up with
+                                                    my attitude😌
+                                                </div>
+                                            </div>
+                                            <div class="human__lichost">
+                                                <div class="human__head">Личная информация</div>
+                                                <div class="human__lichost-blocks">
+                                                    <div class="human__lichost-block">
+                                                        <p>Город:</p>
+                                                        <p>Москва</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Дети:</p>
+                                                        <p>Нет</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Алкоголь:</p>
+                                                        <p>Воздерживаюсь</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Место работы:</p>
+                                                        <p>Инженер</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Образование:</p>
+                                                        <p>МГУ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="human__interes">
+                                                <div class="human__head">Мои интересы</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human__mobile">
+                                        <div class="human__send-massage">Отправить сообщение</div>
+                                        <div class="human__btns">
+                                            <div data-modal="modal-support" class="human__btn">Пожаловаться</div>
+                                            <div class="human__btn">Заблокировать</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buddy">
+                            <div class="human__items">
+                                <div class="human__like"><img src="images/like.svg" alt=""></div>
+                                <div class="human__dislike">
+                                    <img src="images/stong.svg" alt="">
+                                </div>
+                                <div class="human__slider">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-pagination">
+                                            <img src="images/photos-icon.svg" alt="" />
+                                        </div>
+                                        <div class="human__events">
+                                            <div class="human__events-item human__events-item-next">
+                                                <span><img src="images/stong.svg" alt="" /></span>
+                                            </div>
+                                            <div class="human__events-item human__events-item-like" data-modal="modal-like">
+                                                <span><img src="images/like.svg" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__chat">
+                                            <span><img src="images/chat.svg" alt="" /></span>
+                                        </div>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery3"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery3"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery3"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery3"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="images/arrow-r.svg" alt="" />
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <img src="images/arrow-l.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="human__content">
+                                    <div class="human__header">
+                                        <div class="human__header-new">
+                                            <div class="human__header-block">
+                                                <div class="human__name">Дарья</div>,
+                                                <div class="human__years">18</div>
+                                            </div>
+                                            <div class="human__header-online">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__header-status">Хочет найти любовь</div>
+                                    </div>
+                                    <div class="human__information">
+                                        <div class="human__information-inner">
+                                            <ul class="human__list">
+                                                <li>
+                                                    <span><img src="images/char-1.svg" alt="" /></span>Свободна
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/chat-2.svg" alt="" /></span>Скорпион
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-3.svg" alt="" /></span>170 см
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-4.svg" alt="" /></span>Русский,
+                                                    Английский
+                                                </li>
+                                            </ul>
+                                            <div class="human__about">
+                                                <div class="human__head">Обо мне</div>
+                                                <div class="human__about-text">
+                                                    Looking for a tall dominant MAN who will put up with
+                                                    my attitude😌
+                                                </div>
+                                            </div>
+                                            <div class="human__lichost">
+                                                <div class="human__head">Личная информация</div>
+                                                <div class="human__lichost-blocks">
+                                                    <div class="human__lichost-block">
+                                                        <p>Город:</p>
+                                                        <p>Москва</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Дети:</p>
+                                                        <p>Нет</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Алкоголь:</p>
+                                                        <p>Воздерживаюсь</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Место работы:</p>
+                                                        <p>Инженер</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Образование:</p>
+                                                        <p>МГУ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="human__interes">
+                                                <div class="human__head">Мои интересы</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human__mobile">
+                                        <div class="human__send-massage">Отправить сообщение</div>
+                                        <div class="human__btns">
+                                            <div data-modal="modal-support" class="human__btn">Пожаловаться</div>
+                                            <div class="human__btn">Заблокировать</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buddy">
+                            <div class="human__items">
+                                <div class="human__like"><img src="images/like.svg" alt=""></div>
+                                <div class="human__dislike">
+                                    <img src="images/stong.svg" alt="">
+                                </div>
+                                <div class="human__slider">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-pagination">
+                                            <img src="images/photos-icon.svg" alt="" />
+                                        </div>
+                                        <div class="human__events">
+                                            <div class="human__events-item human__events-item-next">
+                                                <span><img src="images/stong.svg" alt="" /></span>
+                                            </div>
+                                            <div class="human__events-item human__events-item-like" data-modal="modal-like">
+                                                <span><img src="images/like.svg" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__chat">
+                                            <span><img src="images/chat.svg" alt="" /></span>
+                                        </div>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery4"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery4"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery4"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery4"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="images/arrow-r.svg" alt="" />
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <img src="images/arrow-l.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="human__content">
+                                    <div class="human__header">
+                                        <div class="human__header-new">
+                                            <div class="human__header-block">
+                                                <div class="human__name">Наталья</div>,
+                                                <div class="human__years">24</div>
+                                            </div>
+                                            <div class="human__header-online">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__header-status">Хочет найти любовь</div>
+                                    </div>
+                                    <div class="human__information">
+                                        <div class="human__information-inner">
+                                            <ul class="human__list">
+                                                <li>
+                                                    <span><img src="images/char-1.svg" alt="" /></span>Свободна
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/chat-2.svg" alt="" /></span>Скорпион
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-3.svg" alt="" /></span>170 см
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-4.svg" alt="" /></span>Русский,
+                                                    Английский
+                                                </li>
+                                            </ul>
+                                            <div class="human__about">
+                                                <div class="human__head">Обо мне</div>
+                                                <div class="human__about-text">
+                                                    Looking for a tall dominant MAN who will put up with
+                                                    my attitude😌
+                                                </div>
+                                            </div>
+                                            <div class="human__lichost">
+                                                <div class="human__head">Личная информация</div>
+                                                <div class="human__lichost-blocks">
+                                                    <div class="human__lichost-block">
+                                                        <p>Город:</p>
+                                                        <p>Москва</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Дети:</p>
+                                                        <p>Нет</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Алкоголь:</p>
+                                                        <p>Воздерживаюсь</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Место работы:</p>
+                                                        <p>Инженер</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Образование:</p>
+                                                        <p>МГУ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="human__interes">
+                                                <div class="human__head">Мои интересы</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human__mobile">
+                                        <div class="human__send-massage">Отправить сообщение</div>
+                                        <div class="human__btns">
+                                            <div data-modal="modal-support" class="human__btn">Пожаловаться</div>
+                                            <div class="human__btn">Заблокировать</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buddy">
+                            <div class="human__items">
+                                <div class="human__like"><img src="images/like.svg" alt=""></div>
+                                <div class="human__dislike">
+                                    <img src="images/stong.svg" alt="">
+                                </div>
+                                <div class="human__slider">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-pagination">
+                                            <img src="images/photos-icon.svg" alt="" />
+                                        </div>
+                                        <div class="human__events">
+                                            <div class="human__events-item human__events-item-next">
+                                                <span><img src="images/stong.svg" alt="" /></span>
+                                            </div>
+                                            <div class="human__events-item human__events-item-like" data-modal="modal-like">
+                                                <span><img src="images/like.svg" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__chat">
+                                            <span><img src="images/chat.svg" alt="" /></span>
+                                        </div>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery5"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery5"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery5"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery5"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="images/arrow-r.svg" alt="" />
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <img src="images/arrow-l.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="human__content">
+                                    <div class="human__header">
+                                        <div class="human__header-new">
+                                            <div class="human__header-block">
+                                                <div class="human__name">Анастасия</div>,
+                                                <div class="human__years">24</div>
+                                            </div>
+                                            <div class="human__header-online">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__header-status">Хочет найти любовь</div>
+                                    </div>
+                                    <div class="human__information">
+                                        <div class="human__information-inner">
+                                            <ul class="human__list">
+                                                <li>
+                                                    <span><img src="images/char-1.svg" alt="" /></span>Свободна
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/chat-2.svg" alt="" /></span>Скорпион
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-3.svg" alt="" /></span>170 см
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-4.svg" alt="" /></span>Русский,
+                                                    Английский
+                                                </li>
+                                            </ul>
+                                            <div class="human__about">
+                                                <div class="human__head">Обо мне</div>
+                                                <div class="human__about-text">
+                                                    Looking for a tall dominant MAN who will put up with
+                                                    my attitude😌
+                                                </div>
+                                            </div>
+                                            <div class="human__lichost">
+                                                <div class="human__head">Личная информация</div>
+                                                <div class="human__lichost-blocks">
+                                                    <div class="human__lichost-block">
+                                                        <p>Город:</p>
+                                                        <p>Москва</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Дети:</p>
+                                                        <p>Нет</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Алкоголь:</p>
+                                                        <p>Воздерживаюсь</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Место работы:</p>
+                                                        <p>Инженер</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Образование:</p>
+                                                        <p>МГУ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="human__interes">
+                                                <div class="human__head">Мои интересы</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                                <div class="human__interes-tag">Рыбалка</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human__mobile">
+                                        <div class="human__send-massage">Отправить сообщение</div>
+                                        <div class="human__btns">
+                                            <div data-modal="modal-support" class="human__btn">Пожаловаться</div>
+                                            <div class="human__btn">Заблокировать</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buddy">
+                            <div class="human__items">
+                                <div class="human__like"><img src="images/like.svg" alt=""></div>
+                                <div class="human__dislike">
+                                    <img src="images/stong.svg" alt="">
+                                </div>
+                                <div class="human__slider">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-pagination">
+                                            <img src="images/photos-icon.svg" alt="" />
+                                        </div>
+                                        <div class="human__events">
+                                            <div class="human__events-item human__events-item-next">
+                                                <span><img src="images/stong.svg" alt="" /></span>
+                                            </div>
+                                            <div class="human__events-item human__events-item-like" data-modal="modal-like">
+                                                <span><img src="images/like.svg" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__chat">
+                                            <span><img src="images/chat.svg" alt="" /></span>
+                                        </div>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery6"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery6"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery6"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="images/human.png" data-fancybox="gallery6"
+                                                    class="human__slider-image">
+                                                    <img src="images/human.png" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="images/arrow-r.svg" alt="" />
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <img src="images/arrow-l.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="human__content">
+                                    <div class="human__header">
+                                        <div class="human__header-new">
+                                            <div class="human__header-block">
+                                                <div class="human__name">Светлана</div>,
+                                                <div class="human__years">21</div>
+                                            </div>
+                                            <div class="human__header-online">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="human__header-status">Хочет найти любовь</div>
+                                    </div>
+                                    <div class="human__information">
+                                        <div class="human__information-inner">
+                                            <ul class="human__list">
+                                                <li>
+                                                    <span><img src="images/char-1.svg" alt="" /></span>Свободна
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/chat-2.svg" alt="" /></span>Скорпион
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-3.svg" alt="" /></span>170 см
+                                                </li>
+                                                <li>
+                                                    <span><img src="images/char-4.svg" alt="" /></span>Русский,
+                                                    Английский
+                                                </li>
+                                            </ul>
+                                            <div class="human__about">
+                                                <div class="human__head">Обо мне</div>
+                                                <div class="human__about-text">
+                                                    Looking for a tall dominant MAN who will put up with
+                                                    my attitude😌
+                                                </div>
+                                            </div>
+                                            <div class="human__lichost">
+                                                <div class="human__head">Личная информация</div>
+                                                <div class="human__lichost-blocks">
+                                                    <div class="human__lichost-block">
+                                                        <p>Город:</p>
+                                                        <p>Москва</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Дети:</p>
+                                                        <p>Нет</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Алкоголь:</p>
+                                                        <p>Воздерживаюсь</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Место работы:</p>
+                                                        <p>Инженер</p>
+                                                    </div>
+                                                    <div class="human__lichost-block">
+                                                        <p>Образование:</p>
+                                                        <p>МГУ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="human__interes">
+                                                <div class="human__head">Мои интересы</div>
+                                                <div class="human__interes-tag">Футбол</div>
+                                                <div class="human__interes-tag">Чтение книг</div>
+                                                <div class="human__interes-tag">
+                                                    Кулинарное искусство
+                                                </div>
+                                                <div class="human__interes-tag coincidence">
+                                                    Автомобили
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human__mobile">
+                                        <div class="human__send-massage">Отправить сообщение</div>
+                                        <div class="human__btns">
+                                            <div data-modal="modal-support" class="human__btn">Пожаловаться</div>
+                                            <div class="human__btn">Заблокировать</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="human__links">
+                    <li><a href="#">Конфиденциальность</a></li>
+                    <li><a href="#">Правила платформы</a></li>
+                    <li><a href="#">Управление подпиской</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Написать в поддержку</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" data-modal-window="modal-like">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__photos">
+            <div class="modal__photo">
+              <img src="/images/modal/girl.png" alt="cover">
+            </div>
+            <div class="modal__photo">
+              <img src="/images/modal/man.png" alt="cover">
+            </div>
+            <div class="modal__heart">
+              <img src="/images/modal/hears.svg" alt="cover">
+            </div>
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Это взаимно!</div>
+            <div class="modal__text">Проявите инициативу, напишите — «Привет!» первым</div>
+            <button class="modal__btn">Сказать «Привет!»</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Ваша подписка отключена</div>
+            <div class="modal__text">Ваша подписка на автоматическое продление Premium доступа отключена</div>
+            <button class="modal__btn">На главную</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__photos">
+            <div class="modal__img">
+              <img src="/images/modal/error.svg" alt="cover">
+            </div>
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Ошибка приложения!</div>
+            <div class="modal__text">Обратитесь к администрации</div>
+            <button class="modal__btn">Написать в поддержку</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Для продолжения необходимо согласиться с правилами</div>
+            <div class="modal__main">
+              <div class="modal__item">
+                <div class="modal__checkbox">
+                  <input type="checkbox">
+                </div>
+                <div class="modal__text">Я соглашаюсь с условиями оплаты услуг сайта спомощью реккурентных платежей</div>
+              </div>
+              <div class="modal__item">
+                <div class="modal__checkbox">
+                  <input type="checkbox">
+                </div>
+                <div class="modal__text">Я соглашаюсь c Пользовательским соглашением и Политикой конфиденциальности сайта</div>
+              </div>
+              <div class="modal__item">
+                <div class="modal__checkbox">
+                  <input type="checkbox">
+                </div>
+                <div class="modal__text">Я соглашаюсь что Premium доступ будет продлён на 30 дней автоматически на сумму 2970₽ после окончания выбранного периода. Возможно частичное списание: 1485₽ за 15 дней или 990₽ за 10 дней, или 693₽ за 7 дней, или 495₽ за 5 дней использования Premium доступа.</div>
+              </div>
+            </div>
+            <div class="modal__button">
+              <button class="modal__btn-gray">Продолжить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal__complain" data-modal-window="modal-support">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Отправить жалобу</div>
+            <div class="modal__text">Пожалуйста, подробно опишите причину жалобы</div>
+            <div class="modal__main">
+              <div class="modal__form">
+                <textarea placeholder="Ваша жалоба"></textarea>
+              </div>
+            </div>
+            <div class="modal__button">
+              <button class="modal__btn-gray">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__photos">
+            <div class="modal__img">
+              <img src="/images/modal/break-heart.svg" alt="cover">
+            </div>
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Удалить аккаунт?</div>
+            <div class="modal__text">При удалении аккаунта удалятся все ваши данные с сервера, отменить действие будет нельзя. Вы больше не сможете войти в свой аккаунт.</div>
+            <div class="modal__buttons">
+              <button class="modal__btn-red">Удалить</button>
+              <button class="modal__btn">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__dialog"> 
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__photos">
+            <div class="modal__img">
+              <img src="/images/modal/king.svg" alt="cover">
+            </div>
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Premium доступ активирован!</div>
+            <div class="modal__subtitle">30 дней</div>
+          </div>
+          <div class="modal__inner">
+            <div class="modal__col">
+              <div class="modal__col-img">
+                <div class="modal__col-icon">
+                  <img src="/images/modal/icon-1.svg" alt="cover">
+                </div>
+              </div>
+              <div class="modal__col-text">Постоянный доступ к разделу «Я нравлюсь»</div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__col-img">
+                <div class="modal__col-icon">
+                  <img src="/images/modal/icon-2.svg" alt="cover">
+                </div>
+              </div>
+              <div class="modal__col-text">Можете написать любому пользователю</div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__col-img">
+                <div class="modal__col-icon">
+                  <img src="/images/modal/icon-3.svg" alt="cover">
+                </div>
+              </div>
+              <div class="modal__col-text">Неограниченное количество свайпов в разделе знакомства</div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__col-img">
+                <div class="modal__col-icon">
+                  <img src="/images/modal/icon-4.svg" alt="cover">
+                </div>
+              </div>
+              <div class="modal__col-text">Ваша анкета выше других показывается в поиске</div>
+            </div>
+            <div class="modal__col">
+              <div class="modal__col-img">
+                <div class="modal__col-icon">
+                  <img src="/images/modal/icon-5.svg" alt="cover">
+                </div>
+              </div>
+              <div class="modal__col-text">Можете отправлять и просматривать фото в чате</div>
+            </div>
+          </div>
+          <button class="modal__btn">Начать общение</button>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Для продолжения необходимо согласиться с правилами</div>
+            <div class="modal__main">
+              <div class="modal__item">
+                <div class="modal__checkbox">
+                  <input type="checkbox">
+                </div>
+                <div class="modal__text">Я соглашаюсь с условиями оплаты услуг сайта спомощью реккурентных платежей</div>
+              </div>
+              <div class="modal__item">
+                <div class="modal__checkbox">
+                  <input type="checkbox">
+                </div>
+                <div class="modal__text">Я соглашаюсь c Пользовательским соглашением и Политикой конфиденциальности сайта</div>
+              </div>
+              <div class="modal__item">
+                <div class="modal__checkbox">
+                  <input type="checkbox">
+                </div>
+                <div class="modal__text">Я соглашаюсь что Premium доступ будет продлён на 30 дней автоматически на сумму 2970₽ после окончания выбранного периода. Возможно частичное списание: 1485₽ за 15 дней или 990₽ за 10 дней, или 693₽ за 7 дней, или 495₽ за 5 дней использования Premium доступа.</div>
+              </div>
+            </div>
+            <div class="modal__button">
+              <button class="modal__btn-gray">Продолжить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" data-modal-window="get">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__photos">
+            <div class="modal__img">
+              <img src="/images/modal/premium.svg" alt="cover">
+            </div>
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Premium доступ</div>
+            <div class="modal__text">Чтобы отправлять сообщения, просматривать фотографии в чате и узнать, кто поставил "Лайк", необходимо приобрести Premium доступ</div>
+            <button class="modal__btn">Купить Premium</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__photos">
+            <div class="modal__img">
+              <img src="/images/modal/camera.svg" alt="cover">
+            </div>
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Загрузите фотографию</div>
+            <div class="modal__text">Чтобы другие пользователи видели вас в поиске, могли написать сообщение или поставить "Лайк", нужно загрузить своё фото.Анкеты с несколькими портретными фото более популярны. Постарайтесь, чтобы на фото было видно ваше лицо.</div>
+            <button class="modal__btn">Загрузить фото</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__photos">
+            <div class="modal__img">
+              <img src="/images/modal/Clock.svg" alt="cover">
+            </div>
+          </div>
+          <div class="modal__content">
+            <div class="modal__title">Закончились лайки</div>
+            <div class="modal__text">Чтобы ставить неограниченно лайки, нужно приобрести <a href="#">Premium доступ</a></div>
+            <div class="modal__timer">
+              <div class="modal__timer-element">
+                <div class="modal__timer-col">
+                  <div class="modal__timer-item">2</div>
+                </div>
+                <div class="modal__timer-col">
+                  <div class="modal__timer-item">3</div>
+                </div>
+              </div>
+              <div class="modal__timer-dots">
+                <div class="modal__timer-dot"></div>
+                <div class="modal__timer-dot"></div>
+              </div>
+              <div class="modal__timer-element">
+                <div class="modal__timer-col">
+                  <div class="modal__timer-item">5</div>
+                </div>
+                <div class="modal__timer-col">
+                  <div class="modal__timer-item">8</div>
+                </div>
+              </div>
+              <div class="modal__timer-dots">
+                <div class="modal__timer-dot"></div>
+                <div class="modal__timer-dot"></div>
+              </div>
+              <div class="modal__timer-element">
+                <div class="modal__timer-col">
+                  <div class="modal__timer-item">4</div>
+                </div>
+                <div class="modal__timer-col">
+                  <div class="modal__timer-item">4</div>
+                </div>
+              </div>
+            </div>
+            <button class="modal__btn">Загрузить фото</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal__redact">
+        <div class="modal__dialog">
+          <div class="modal__close">
+            <img src="/images/modal/close.svg" alt="cover">
+          </div>
+          <div class="modal__header">
+            <div class="modal__title">Редактирование фото</div>
+          </div>
+          <div class="modal__redact-body">
+            <div class="modal__redact-photo">
+              <img src="/images/modal/redact.png" alt="cover">
+              <div class="modal__redact-union">
+                <img src="/images/modal/Union.svg" alt="cover">
+              </div>
+            </div>
+            <div class="modal__redact-mobile">
+                <div class="modal__redact-buttons">
+                    <button class="modal__redact-btn">
+                      <div class="modal__redact-btn-text">Отмена</div>
+                    </button>
+                    <button class="modal__btn">На главную</button>
+                </div>
+            </div>
+            <div class="modal__redact-content">
+              <div class="modal__redact-block">
+                <div class="modal__redact-top">
+                  <div class="modal__redact-inner">
+                    <div class="modal__redact-item modal__redact-item--squere">
+                      <img src="/images/modal/redact.png" alt="cover">
+                    </div>
+                    <div class="modal__redact-item modal__redact-item--circle-big">
+                      <img src="/images/modal/redact.png" alt="cover">
+                    </div>
+                    <div class="modal__redact-item modal__redact-item--circle-small">
+                      <img src="/images/modal/redact.png" alt="cover">
+                    </div>
+                  </div>
+                  <div class="modal__text">Так ваша фотография будет выглядеть в поисковой выдаче, аватаре и диалоговом окне</div>
+                </div>
+                <div class="modal__redact-main">
+                  <div class="modal__redact-buttons">
+                    <button class="modal__redact-btn">
+                      <div class="modal__redact-btn-icon">
+                        <img src="images/modal/profile.svg" alt="cover">
+                      </div>
+                      <div class="modal__redact-btn-text">Заменить фото</div>
+                    </button>
+                    <button class="modal__redact-btn-red">
+                      <div class="modal__redact-btn-icon">
+                        <img src="images/modal/Trash.svg" alt="cover">
+                      </div>
+                    </button>
+                  </div>
+                  <div class="modal__redact-element">
+                    <div class="zoom__wrap">
+                      <h1 class="zoom__title">Zoom</h1>
+                      <div class="zoom__input-wrap">
+                          <input type="range" class="zoom" min="0" value="0">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal__redact-element">
+                    <div class="modal__redact-suptitle">Вращать</div>
+                    <div class="modal__redact-spins">
+                      <div class="modal__redact-spin">
+                        <img src="images/modal/Left.svg" alt="cover">
+                      </div>
+                      <div class="modal__redact-spin">
+                        <img src="images/modal/Right.svg" alt="cover">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__redact-bottom">
+                <div class="modal__redact-buttons">
+                  <button class="modal__redact-btn">
+                    <div class="modal__redact-btn-text">Отмена</div>
+                  </button>
+                  <button class="modal__btn">На главную</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        for (let e of document.querySelectorAll('input[type="range"].zoom')) {
+        e.style.setProperty('--value', e.value);
+        e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+        e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+        e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+        }
+
+        let btns = document.querySelectorAll("*[data-modal]");
+let btn = document.querySelectorAll(".modal__close-arrow");
+
+for(let i = 0; i<btns.length; i++) {
+    btns[i].addEventListener('click', function() {
+        let name = btns[i].getAttribute('data-modal');
+        let popup = document.querySelector("[data-modal-window='"+name+"']");
+        let popupBlock = document.querySelectorAll('.modal__filter');
+        let body = document.querySelector('body');
+        popup.style.display = "flex";
+        body.style.overflow = "hidden";
+
+        let close = document.querySelectorAll(".modal__close");
+        let arrowClose = document.querySelectorAll(".arrow__close");
+
+        close.forEach(item => {
+            item.addEventListener('click', event => {
+                popup.style.display = "none";
+                body.style.overflow = "auto";
+            });
+        });
+
+        arrowClose.forEach(item => {
+            item.addEventListener('click', event => {
+                popupBlock.forEach(item => {
+                    item.style.display = "none";
+                });
+            });
+        });
+    });
+}
+    </script>
+
+    <script src="js/main.js"></script>
+       <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+</body>
+
+</html>

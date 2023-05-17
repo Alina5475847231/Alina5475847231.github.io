@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Standart</title>
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper wrapper-swipe">
+      <div class="chat-nav" id="chat-nav">
+        <div class="chat-nav__items">
+          <div class="chat-nav__item chat-nav__answer">
+            <div class="chat-nav__icon">
+              <img src="images/answer.svg" alt="" />
+            </div>
+            <div class="chat-nav__text">Ответить</div>
+          </div>
+          <div class="chat-nav__item chat-nav__copy" onclick="copytext()">
+            <div class="chat-nav__icon">
+              <img src="images/copy.svg" alt="" />
+            </div>
+            <div class="chat-nav__text">Скопировать</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-nav" id="chat-nav-user">
+        <div class="chat-nav__items">
+          <div class="chat-nav__item chat-nav__answer">
+            <div class="chat-nav__icon">
+              <img src="images/answer.svg" alt="" />
+            </div>
+            <div class="chat-nav__text">Ответить</div>
+          </div>
+          <div class="chat-nav__item chat-nav__edit">
+            <div class="chat-nav__icon">
+              <img src="images/edit.svg" alt="" />
+            </div>
+            <div class="chat-nav__text">Редактировать</div>
+          </div>
+          <div class="chat-nav__item chat-nav__copy" onclick="copytext()">
+            <div class="chat-nav__icon">
+              <img src="images/copy.svg" alt="" />
+            </div>
+            <div class="chat-nav__text">Скопировать</div>
+          </div>
+          <div class="chat-nav__item chat-nav__del">
+            <div class="chat-nav__icon">
+              <img src="images/del.svg" alt="" />
+            </div>
+            <div class="chat-nav__text">Удалить</div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="container">
+          <div class="header__items">
+            <a href="#" class="header__like">
+              <div class="header__line-image">
+                <img src="images/like-header.svg" alt="" />
+              </div>
+              <div class="header__like-value">15</div>
+            </a>
+            <a href="#" class="header__logo">
+              <img src="images/logo.png" alt="" />
+            </a>
+            <div class="header__filter">
+              <div class="search__header-filter--item">
+                <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_301_5864)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.62499 1.91901H23.809C24.326 1.91901 24.746 2.33901 24.746 2.85601C24.746 3.37401 24.326 3.79401 23.809 3.79401H1.62499C1.10699 3.79401 0.687988 3.37401 0.687988 2.85601C0.687988 2.33901 1.10699 1.91901 1.62499 1.91901Z"
+                      fill="#797979"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.62499 8.16748H23.809C24.326 8.16748 24.746 8.58748 24.746 9.10448C24.746 9.62248 24.326 10.0425 23.809 10.0425H1.62499C1.10699 10.0425 0.687988 9.62248 0.687988 9.10448C0.687988 8.58748 1.10699 8.16748 1.62499 8.16748Z"
+                      fill="#797979"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.62499 14.417H23.809C24.326 14.417 24.746 14.836 24.746 15.354C24.746 15.872 24.326 16.292 23.809 16.292H1.62499C1.10699 16.292 0.687988 15.872 0.687988 15.354C0.687988 14.836 1.10699 14.417 1.62499 14.417Z"
+                      fill="#797979"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.12305 0.917999C4.46805 0.917999 4.74805 1.198 4.74805 1.543V4.667C4.74805 5.13 4.46805 5.292 4.12305 5.292C3.77805 5.292 3.49805 5.13 3.49805 4.667V1.543C3.49805 1.198 3.77805 0.917999 4.12305 0.917999Z"
+                      fill="#797979"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.123 6.918C14.468 6.918 14.748 7.198 14.748 7.543V10.667C14.748 11.13 14.468 11.292 14.123 11.292C13.778 11.292 13.498 11.13 13.498 10.667V7.543C13.498 7.198 13.778 6.918 14.123 6.918Z"
+                      fill="#797979"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.49902 13.167C8.84402 13.167 9.12402 13.447 9.12402 13.792V16.916C9.12402 17.262 8.84402 17.541 8.49902 17.541C8.15402 17.541 7.87402 17.262 7.87402 16.916V13.792C7.87402 13.447 8.15402 13.167 8.49902 13.167Z"
+                      fill="#797979"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_301_5864">
+                      <rect width="25" height="18" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="search__header-drop">
+                <div class="search__header-drop--head">Фильтр</div>
+                <form action="#">
+                  <div class="saidbar__drop-item">
+                    <div class="saidbar__drop-head">Показывать</div>
+                    <div class="saidbar__drop-pols">
+                      <div class="saidbar__drop-pol active">
+                        Женщин
+                        <input type="radio" name="pols" />
+                      </div>
+                      <div class="saidbar__drop-pol">
+                        Мужчин
+                        <input type="radio" name="pols" />
+                      </div>
+                      <div class="saidbar__drop-pol">
+                        Всех
+                        <input type="radio" name="pols" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="saidbar__drop-item">
+                    <div class="saidbar__drop-photo">
+                      <input type="checkbox" id="photo" />
+                      <label for="photo">Только с фото</label>
+                      <div class="saidbar__drop-ok"></div>
+                    </div>
+                    <div class="saidbar__drop-photo">
+                      <input type="checkbox" id="new-users" />
+                      <label for="new-users">Новые пользователи</label>
+                      <div class="saidbar__drop-ok"></div>
+                    </div>
+                    <div class="saidbar__drop-photo">
+                      <input type="checkbox" id="only-online" />
+                      <label for="only-online">Только онлайн</label>
+                      <div class="saidbar__drop-ok"></div>
+                    </div>
+                  </div>
+                  <div class="saidbar__drop-item">
+                    <div class="saidbar__drop-years">
+                      <p>Возраст</p>
+                      <p>от <span id="range-from">18</span> до <span id="range-to">65</span> лет</p>
+                    </div>
+                    <input type="text" class="js-range-slider js-range-slider-1" name="my_range" value="" />
+                  </div>
+                  <div class="saidbar__drop-item">
+                    <div class="saidbar__drop-years">
+                      <p>Дистанция</p>
+                      <p>до <span id="range-km"></span> км</p>
+                    </div>
+                    <input type="text" class="js-range-slider js-range-slider-2" name="my_range" value="" />
+                  </div>
+                  <div class="saidbar__drop-end">
+                    <div class="saidbar__drop-sbros">Сбросить</div>
+                       <div class="saidbar__drop-btn apply">Применить</div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="fixed">
+        <a href="#" class="fixed__item">
+          <img src="images/bottom-fix-1.svg" alt="" />
+          <img src="images/bottom-fix-1-active.svg" alt="" />
+        </a>
+        <a href="#" class="fixed__item">
+          <img src="images/bottom-fix-2.svg" alt="" />
+          <img src="images/bottom-fix-2-active.svg" alt="" />
+        </a>
+        <a href="#" class="fixed__item active">
+          <img src="images/bottom-fix-3.svg" alt="" />
+          <img src="images/bottom-fix-3-active.svg" alt="" />
+          <span>12</span>
+        </a>
+        <a href="#" class="fixed__item">
+          <img src="images/bottom-fix-4.svg" alt="" />
+          <img src="images/bottom-fix-4-active.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="drop-menu">
+        <div class="drop-menu__inner">
+          <div class="drop-menu__strong">
+            <img src="images/burger-strong.svg" alt="" />
+          </div>
+          <ul class="drop-menu__nav">
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Правила платформы</a></li>
+            <li><a href="#">Управление подпиской</a></li>
+            <li><a href="#">Условия оплаты</a></li>
+            <li><a href="#">Написать в поддержку</a></li>
+            <li><a href="#">Возмещение</a></li>
+          </ul>
+          <div class="drop-menu__exit">Выход</div>
+        </div>
+      </div>
+
+      <div class="content content-profile">
+        <div class="container">
+          <div class="content__items">
+            <div class="saidbar">
+              <a href="#" class="saidbar__logo">
+                <img src="images/logo.png" alt="" />
+              </a>
+              <div class="saidbar__user">
+                <div class="saidbar__user-image">
+                  <img src="images/user.png" alt="" />
+                </div>
+                <div class="saidbar__user-header">
+                  <div class="saidbar__user-name">Алексей</div>
+                  ,
+                  <div class="saidbar__user-years">24</div>
+                </div>
+                <div class="saidbar__user-edit"><a href="#">Редактировать</a><a href="#">Как видят мой профиль</a></div>
+              </div>
+              <div class="saidbar__mobile">
+                <div class="saidbar__mobile-block">
+                  <div class="saidbar__mobile-head">18</div>
+                  <div class="saidbar__mobile-text">Контактов</div>
+                </div>
+                <div class="saidbar__mobile-block">
+                  <div class="saidbar__mobile-head">53</div>
+                  <div class="saidbar__mobile-text">Лайков</div>
+                </div>
+                <div class="saidbar__mobile-block">
+                  <div class="saidbar__mobile-head">2 <span>мес.</span></div>
+                  <div class="saidbar__mobile-text">Регистрация</div>
+                </div>
+              </div>
+              <a href="#" class="saidbar__premium">Получить Premium</a>
+              <div class="saidbar__nav">
+                <div class="saidbar__nav-filter">
+                  <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_301_5864)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.62499 1.91901H23.809C24.326 1.91901 24.746 2.33901 24.746 2.85601C24.746 3.37401 24.326 3.79401 23.809 3.79401H1.62499C1.10699 3.79401 0.687988 3.37401 0.687988 2.85601C0.687988 2.33901 1.10699 1.91901 1.62499 1.91901Z"
+                        fill="#797979"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.62499 8.16748H23.809C24.326 8.16748 24.746 8.58748 24.746 9.10448C24.746 9.62248 24.326 10.0425 23.809 10.0425H1.62499C1.10699 10.0425 0.687988 9.62248 0.687988 9.10448C0.687988 8.58748 1.10699 8.16748 1.62499 8.16748Z"
+                        fill="#797979"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.62499 14.417H23.809C24.326 14.417 24.746 14.836 24.746 15.354C24.746 15.872 24.326 16.292 23.809 16.292H1.62499C1.10699 16.292 0.687988 15.872 0.687988 15.354C0.687988 14.836 1.10699 14.417 1.62499 14.417Z"
+                        fill="#797979"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.12305 0.917999C4.46805 0.917999 4.74805 1.198 4.74805 1.543V4.667C4.74805 5.13 4.46805 5.292 4.12305 5.292C3.77805 5.292 3.49805 5.13 3.49805 4.667V1.543C3.49805 1.198 3.77805 0.917999 4.12305 0.917999Z"
+                        fill="#797979"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.123 6.918C14.468 6.918 14.748 7.198 14.748 7.543V10.667C14.748 11.13 14.468 11.292 14.123 11.292C13.778 11.292 13.498 11.13 13.498 10.667V7.543C13.498 7.198 13.778 6.918 14.123 6.918Z"
+                        fill="#797979"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.49902 13.167C8.84402 13.167 9.12402 13.447 9.12402 13.792V16.916C9.12402 17.262 8.84402 17.541 8.49902 17.541C8.15402 17.541 7.87402 17.262 7.87402 16.916V13.792C7.87402 13.447 8.15402 13.167 8.49902 13.167Z"
+                        fill="#797979"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_301_5864">
+                        <rect width="25" height="18" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="saidbar__drop">
+                  <form action="#">
+                    <div class="saidbar__drop-item">
+                      <div class="saidbar__drop-head">Показывать</div>
+                      <div class="saidbar__drop-pols">
+                        <div class="saidbar__drop-pol active">
+                          Женщин
+                          <input type="radio" name="pols" />
+                        </div>
+                        <div class="saidbar__drop-pol">
+                          Мужчин
+                          <input type="radio" name="pols" />
+                        </div>
+                        <div class="saidbar__drop-pol">
+                          Всех
+                          <input type="radio" name="pols" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="saidbar__drop-item">
+                      <div class="saidbar__drop-photo">
+                        <input type="checkbox" id="photo" />
+                        <label for="photo">Только с фото</label>
+                        <div class="saidbar__drop-ok"></div>
+                      </div>
+                    </div>
+                    <div class="saidbar__drop-item">
+                      <div class="saidbar__drop-years">
+                        <p>Возраст</p>
+                        <p>от <span id="range-from-2">18</span> до <span id="range-to-2">65</span> лет</p>
+                      </div>
+                      <input type="text" class="js-range-slider js-range-slider-3" name="my_range" value="" />
+                    </div>
+                    <div class="saidbar__drop-item">
+                      <div class="saidbar__drop-years">
+                        <p>Дистанция</p>
+                        <p>до <span id="range-km-2"></span> км</p>
+                      </div>
+                      <input type="text" class="js-range-slider js-range-slider-4" name="my_range" value="" />
+                    </div>
+                    <div class="saidbar__drop-end">
+                      <div class="saidbar__drop-sbros">Сбросить</div>
+                         <div class="saidbar__drop-btn apply">Применить</div>
+                    </div>
+                  </form>
+                </div>
+                <ul class="saidbar__nav-list">
+                  <li><a href="#">Знакомства</a></li>
+                  <li><a href="#">Поиск по людям</a></li>
+                  <li><a href="#">Сообщения</a></li>
+                  <li><a href="#">Ты нравишься</a></li>
+                  <li><a href="#">Совпадения</a></li>
+                </ul>
+              </div>
+              <div class="saidbar__end">
+                <div class="saidbar__end-items">
+                  <div class="saidbar__end-item">Premium статус</div>
+                  <div class="saidbar__end-status">Неактивен</div>
+                </div>
+                <div class="saidbar__end-exit">Выход</div>
+              </div>
+            </div>
+            <div class="chat">
+              <div class="chat__header">
+                <div class="chat__header-title">Сообщения</div>
+                <div class="chat__header-all">
+                  <div class="t-dropdown-block">
+                    <div class="t-dropdown-select">
+                      <input type="text" class="t-dropdown-input" readonly placeholder="Все" />
+                    </div>
+                    <div class="t-dropdown-list">
+                      <ul>
+                        <li class="t-dropdown-item">Все</li>
+                        <li class="t-dropdown-item">Новые</li>
+                        <li class="t-dropdown-item">Онлайн</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chat__items">
+                <div class="chat__item">
+                  <div class="chat__search">
+                    <input type="text" placeholder="Поиск по имени" onkeyup="filterFunction3(this,event)" />
+                  </div>
+                  <div class="chat__tabs">
+                    <span class="chat__tabs-zero">Ничего не найдено</span>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-value">12</div>
+                        <div class="chat__tab-image">
+                          <img src="images/chat-1.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">Александра</div>
+                          <div class="chat__tab-text">Как дела?</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab chat__tab-online active">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-2.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Екатерина <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">Привет!</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-3.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Карина <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">Так выглядит длинный текст, если сообщение длинное</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab chat__tab-online">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-4.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Вероника <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи.
+                            Восприятие текста изучается в рамках лингвистики текста и психолингвистики.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab chat__tab-online">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-5.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Алина <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-6.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Дарина <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-7.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Софья <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-8.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Амелия <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-9.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Радмила <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">Знакомства</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-7.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Софья <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-8.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Амелия <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-9.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Радмила <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">Знакомства</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-7.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Софья <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-8.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Амелия <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-9.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Радмила <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">Знакомства</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-7.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Софья <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-8.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Амелия <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">
+                            Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем
+                            плане связная и полная последовательность символов. Существуют две основные трактовки
+                            понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная (более
+                            частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                            нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                            как особой формы представления знаний о внешней тексту действительности.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__tab">
+                      <div class="chat__tab-inner">
+                        <div class="chat__tab-image">
+                          <img src="images/chat-9.png" alt="" />
+                        </div>
+                        <div class="chat__tab-block">
+                          <div class="chat__tab-name">
+                            Радмила <span><b></b></span>
+                          </div>
+                          <div class="chat__tab-text">Знакомства</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__content">
+                  <div class="chat__content-header">
+                    <div class="chat__back">
+                      <img src="images/chat-back.svg" alt="" />
+                    </div>
+                    <div class="chat__content-image">
+                      <img src="images/chat-2.png" alt="" />
+                    </div>
+                    <div class="chat__content-block">
+                      <div class="chat__content-name">
+                        Екатерина <span><b></b></span>
+                      </div>
+                      <div class="chat__content-status">Хочет найти любовь</div>
+                    </div>
+                  </div>
+                  <div class="chat__dialog">
+                    <div class="chat__dialog-inner">
+                      <div class="chat__date">11 февраля 2023</div>
+                      <div class="chat__massages">
+                        <div class="chat__massage partner-massage">
+                          <div class="chat__massage-items">
+                            <div class="chat__massage-item">
+                              <div class="chat__massage-text">Привет. Как настроение?</div>
+                              <div class="chat__massage-answer">
+                                <div class="chat__massage-answer--inner" title="Ответить">
+                                  <img src="images/answer.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="chat__massage-item">
+                              <div class="chat__massage-text">Если сообщения отправлены подряд</div>
+                              <div class="chat__massage-answer">
+                                <div class="chat__massage-answer--inner"><img src="images/answer.svg" alt="" /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat__massage-time">16:32</div>
+                        </div>
+                        <div class="chat__massage partner-massage">
+                          <div class="chat__massage-items">
+                            <div class="chat__massage-item">
+                              <div class="chat__reposted">
+                                <div class="chat__reposted-name">Екатерина</div>
+                                <div class="chat__reposted-text">Привет. Как настроение?</div>
+                              </div>
+                              <div class="chat__massage-text">Так выглядит цитата от собеседника</div>
+                              <div class="chat__massage-answer">
+                                <div class="chat__massage-answer--inner" title="Ответить">
+                                  <img src="images/answer.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat__massage-time">16:32</div>
+                        </div>
+                        <div class="chat__massage my-massage">
+                          <div class="chat__massage-items">
+                            <div class="chat__massage-item">
+                              <div class="chat__massage-text">Так выглядит ответ от юзера</div>
+                              <div class="chat__massage-nav">
+                                <div class="chat__massage-nav--inner">
+                                  <div class="chat__massage-nav--item chat__massage-del" title="Удалить">
+                                    <img src="images/del.svg" alt="" />
+                                  </div>
+                                  <div class="chat__massage-nav--item chat__massage-edit" title="Редактировать">
+                                    <img src="images/edit-massage.svg" alt="" />
+                                  </div>
+                                  <div class="chat__massage-nav--item chat__massage-repost" title="Ответить">
+                                    <img src="images/answer.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat__massage-time">
+                            21:32
+                            <div class="chat__massage-see check">
+                              <img src="images/see-1.svg" alt="" /><img src="images/see-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="chat__massage partner-massage">
+                          <div class="chat__massage-items">
+                            <div class="chat__massage-item">
+                              <div class="chat__massage-text">
+                                Так выгляди сообщение если оно очень длинное. Оно переносится в размере 300px
+                              </div>
+                              <div class="chat__massage-answer">
+                                <div class="chat__massage-answer--inner"><img src="images/answer.svg" alt="" /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat__massage-time">16:32</div>
+                        </div>
+                        <div class="chat__massage my-massage">
+                          <div class="chat__massage-items">
+                            <div class="chat__massage-item">
+                              <div class="chat__massage-text">
+                                Отлично! Спасибо за точные размеры! Кстати, между сообщениями расстояние в 8px. Отлично!
+                                Спасибо за точные размеры! Кстати, между сообщениями расстояние в 8px.
+                              </div>
+                              <div class="chat__massage-nav">
+                                <div class="chat__massage-nav--inner">
+                                  <div class="chat__massage-nav--item chat__massage-del" title="Удалить">
+                                    <img src="images/del.svg" alt="" />
+                                  </div>
+                                  <div class="chat__massage-nav--item chat__massage-edit" title="Редактировать">
+                                    <img src="images/edit-massage.svg" alt="" />
+                                  </div>
+                                  <div class="chat__massage-nav--item chat__massage-repost" title="Ответить">
+                                    <img src="images/answer.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat__massage-time">
+                            16:32
+                            <div class="chat__massage-see check">
+                              <img src="images/see-1.svg" alt="" /><img src="images/see-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="chat__massage partner-massage">
+                          <div class="chat__massage-items">
+                            <div class="chat__massage-item">
+                              <div class="chat__massage-text">
+                                <img src="images/chat-image.png" alt="" />
+                              </div>
+                              <div class="chat__massage-answer">
+                                <div class="chat__massage-answer--inner"><img src="images/answer.svg" alt="" /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat__massage-time">16:32</div>
+                        </div>
+                        <div class="chat__massage my-massage">
+                          <div class="chat__massage-items">
+                            <div class="chat__massage-item">
+                              <div class="chat__reposted">
+                                <div class="chat__reposted-name">Екатерина</div>
+                                <div class="chat__reposted-text">Привет. Как настроение?</div>
+                              </div>
+                              <div class="chat__massage-text">
+                                <img src="images/chat-image.png" alt="" />
+                                Отлично! Спасибо за точные размеры! Кстати, между сообщениями расстояние в 8px.
+                              </div>
+                              <div class="chat__massage-nav">
+                                <div class="chat__massage-nav--inner">
+                                  <div class="chat__massage-nav--item chat__massage-del" title="Удалить">
+                                    <img src="images/del.svg" alt="" />
+                                  </div>
+                                  <div class="chat__massage-nav--item chat__massage-edit" title="Редактировать">
+                                    <img src="images/edit-massage.svg" alt="" />
+                                  </div>
+                                  <div class="chat__massage-nav--item chat__massage-repost" title="Ответить">
+                                    <img src="images/answer.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="chat__massage-item">
+                              <div class="chat__massage-text">
+                                <img src="images/chat-image.png" alt="" />
+                                Отлично! Спасибо за точные размеры! Кстати, между сообщениями расстояние в 8px.
+                              </div>
+                              <div class="chat__massage-nav">
+                                <div class="chat__massage-nav--inner">
+                                  <div class="chat__massage-nav--item chat__massage-del" title="Удалить">
+                                    <img src="images/del.svg" alt="" />
+                                  </div>
+                                  <div class="chat__massage-nav--item chat__massage-edit" title="Редактировать">
+                                    <img src="images/edit-massage.svg" alt="" />
+                                  </div>
+                                  <div class="chat__massage-nav--item chat__massage-repost" title="Ответить">
+                                    <img src="images/answer.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat__massage-time">
+                            16:32
+                            <div class="chat__massage-see">
+                              <img src="images/see-1.svg" alt="" /><img src="images/see-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat__form">
+                    <div class="chat__ans">
+                      <div class="chat__ans-items">
+                        <div class="chat__ans-start">
+                          <div class="chat__ans-name"></div>
+                          <div class="chat__ans-text"></div>
+                        </div>
+                        <div class="chat__ans-strong">
+                          <img src="images/chat-strong.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <textarea class="chat__form-area" placeholder="Твоё сообщение..."></textarea>
+                    <div class="chat__form-items">
+                      <div class="chat__form-item">
+                        <img src="images/smile.svg" alt="" />
+                      </div>
+                      <div class="chat__form-item">
+                        <img src="images/file.svg" alt="" />
+                        <input type="file" />
+                      </div>
+                      <div class="chat__form-item">
+                        <img src="images/send.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="human__links">
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Правила платформы</a></li>
+            <li><a href="#">Управление подпиской</a></li>
+            <li><a href="#">Условия оплаты</a></li>
+            <li><a href="#">Написать в поддержку</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
