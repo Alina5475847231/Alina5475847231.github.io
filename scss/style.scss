@@ -60,6 +60,10 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 button,
 input,
 textarea {
@@ -80,7 +84,6 @@ body {
   font-family: 'Mont';
   font-weight: 400;
   color: #000;
-  overflow-x: hidden;
 
   &.fixed {
     position: relative;
