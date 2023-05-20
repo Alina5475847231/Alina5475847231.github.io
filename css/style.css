@@ -7201,14 +7201,14 @@ ul {
 .modal__item:last-child {
   margin-bottom: 0;
 }
-.modal__item.show .modal__checkbox:before {
+.modal__item.active .modal__checkbox:before {
   border-color: #7237EC;
 }
-.modal__item.show .modal__checkbox:after {
+.modal__item.active .modal__checkbox:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.modal__item.show .modal__text {
+.modal__item.active .modal__text {
   color: #000;
 }
 
@@ -8057,6 +8057,10 @@ input[type=range].zoom::-webkit-slider-runnable-track {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   opacity: 0;
+}
+.notifications.swipe .notifications__body {
+  -webkit-filter: none;
+          filter: none;
 }
 .notifications.show {
   display: block;

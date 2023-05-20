@@ -6676,7 +6676,7 @@ ul {
     margin-bottom: 0;
   }
 
-  &.show {
+  &.active {
     .modal__checkbox {
       &:before {
         border-color: #7237EC;
@@ -7426,6 +7426,10 @@ background: #5f33d0;
   &.swipe {
     transform: translateX(100%);
     opacity: 0;
+
+    .notifications__body {
+      filter: none;
+    }
   }
 
   &.show {
