@@ -8059,6 +8059,8 @@ input[type=range].zoom::-webkit-slider-runnable-track {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   opacity: 0;
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
 }
 .notifications.show {
   display: block;
