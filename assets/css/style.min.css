@@ -3065,21 +3065,6 @@ body {
   flex-wrap: wrap;
   max-width: 139rem;
 }
-@media (max-width: 1400px) {
-  .buy__header-inner {
-    max-width: 120rem;
-  }
-}
-@media (max-width: 1200px) {
-  .buy__header-inner {
-    max-width: 90rem;
-  }
-}
-@media (max-width: 1024px) {
-  .buy__header-inner {
-    max-width: 70rem;
-  }
-}
 
 .buy__dropdown {
   display: block;
