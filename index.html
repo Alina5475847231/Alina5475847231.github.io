@@ -1,1023 +1,804 @@
 <!DOCTYPE html>
-<html lang="ru" class="popup-show lock">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width#device-width" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css">
-  </head>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
 
+    <div class="wrapper">
+            <header class="header" id="header">
+                <div class="header__container">
+                    <div class="header__top">
+                        <a href="#" class="header__logo">
+                            <div class="header__logo-photo">
+                                <img src="assets/img/header/logo.svg" alt="cover">
+                            </div>
+                            <div class="header__text"><span>>Мы строим</span>
+                                <span>для вас</span></div>
+                        </a>
+                        <div class="header__right">
+                            <div class="header__rate">
+                                <div class="header__rate-value">
+                                    <img src="assets/img/header/rating.svg" alt="cover">
+                                </div>
+                                <div class="header__text"><span><b>Рейтинг в Яндекс</b> на</span>
+                                    <span>основании 236 отзывов</span></div>
+                            </div>
+                            <div class="header__socials">
+                                <div class="header__socials-top">
+                                    <span class="header__socials-dot"></span>
+                                    <div class="header__text">Пишите, мы онлайн</div>
+                                </div>
+                                <div class="header__socials-body">
+                                    <a href="#" class="header__social">
+                                        <img src="assets/img/header/whatsapp.svg" alt="cover">
+                                    </a>
+                                    <a href="#" class="header__social">
+                                        <img src="assets/img/header/telegram.svg" alt="cover">
+                                    </a>
+                                    <a href="#" class="header__social">
+                                        <img src="assets/img/header/mail.svg" alt="cover">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__contacts">
+                                <div class="header__text">Мы на связи с 10:00-19:00
+                                </div>
+                                <a href="telto:+7 (495) 324-01-58" class="header__contacts-phone">+7 (495) 324-01-58</a>
+                                <a href="#" class="header__contacts-link">Заказать звонок
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <span></span>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <div class="header__container">
+                        <ul class="header__list">
+                            <li>
+                                <a href="#" class="header__link">Проекты и цены</a>
 
-<div class="wrapper">
-  <body>
-    <ul>
-      <li></li>
-      <li><a href="standart.html">Standart</a></li>
-      <li><a href="premium.html">Premium</a></li>
-      <li><a href="swap-catalog.html">Swap Catalog</a></li>
-      <li><a href="search-catalog.html">Search Catalog</a></li>
-      <li><a href="edit-profile.html">Edit Profile</a></li>
-      <li><a href="search.html">Search</a></li>
-      <li><a href="match.html">Match</a></li>
-      <li><a href="payment.html">Payment</a></li>
-      <li><a href="likes.html">Likes</a></li>
-      <li><a href="chat.html">Chat</a></li>
-      <li><a href="chat-zero.html">Chat 0</a></li>
-      <li><a href="search-contacts.html">Search contacts</a></li>
-      <br><br>
-      <!-- <li><a href="sign-in.html">Sign In</a></li> -->
-      <li><a href="login.html">Log In</a></li>
-    </ul>
+                                <ul class="subnav">
+                                    <div class="subnav__body">
+                                        <ul class="subnav__menu">
+                                            <li><a href="#" class="subnav__title">Каркасные дома</a></li>
+                                            <li><a href="#" class="subnav__link">Одноэтажные</a></li>
+                                            <li><a href="#" class="subnav__link">Двухэтажные</a></li>
+                                        </ul>
+                                        <ul class="subnav__menu">
+                                            <li><a href="#" class="subnav__title">Брусовые дома</a></li>
+                                            <li><a href="#" class="subnav__link">Премиум</a></li>
+                                            <li><a href="#" class="subnav__link">Эконом</a></li>
+                                        </ul>
+                                        <ul class="subnav__menu">
+                                            <li><a href="#" class="subnav__title">Серия Эконом</a></li>
+                                            <li><a href="#" class="subnav__link">Каркасно-щитовые</a></li>
+                                            <li><a href="#" class="subnav__link">Дачные</a></li>
+                                            <li><a href="#" class="subnav__link">Дача 1 этаж</a></li>
+                                            <li><a href="#" class="subnav__link">Малые формы= </a></li>
+                                        </ul>
+                                        <ul class="subnav__menu">
+                                            <li><a href="#" class="subnav__title">Современные дома</a></li>
+                                            <li><a href="#" class="subnav__link">Барн</a></li>
+                                            <li><a href="#" class="subnav__link">Альфа</a></li>
+                                            <li><a href="#" class="subnav__link">Скандик</a></li>
+                                            <li><a href="#" class="subnav__link">Ранчо</a></li>
+                                            <li><a href="#" class="subnav__link">Форестер</a></li>
+                                            <li><a href="#" class="subnav__link">Премиум</a></li>
+                                        </ul>
+                                        <ul class="subnav__menu">
+                                            <li><a href="#" class="subnav__title">Каменные дома</a></li>
+                                        </ul>
+                                        <ul class="subnav__menu">
+                                            <li><a href="#" class="subnav__title">Бани</a></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">
+                                Услуги
+                                </a>
 
-    <button data-modal="#modal-like">Модалка 1</button>
-    <button data-modal="#modal-subscribe">Модалка 2</button>
-    <button data-modal="#modal-administraition">Модалка 3</button>
-    <button data-modal="#modal-agree">Модалка 4</button>
-    <button data-modal="#modal-complain">Модалка 5</button>
-    <button data-modal="#modal-delete">Модалка 6</button>
-    <button data-modal="#modal-premium">Модалка 7</button>
-    <button data-modal="#modal-rules">Модалка 8</button>
-    <button data-modal="#modal-buyPremium">Модалка 9</button>
-    <button data-modal="#modal-load">Модалка 10</button>
-    <button data-modal="#modal-likes">Модалка 11</button>
-    <button data-modal="#modal-redaction">Модалка 12</button>
-    <button data-popup="#popup-1">Модалка 13</button>
-    <button data-popup="#popup-2">Модалка 14</button>
-    <button data-notification="#notification-1">Уведомление 1</button>
-    <button data-notification="#notification-2">Уведомление 2</button>
-    <button data-notification="#notification-3">Уведомление 3</button>
-    <button data-notification="#notification-4">Уведомление 4</button>
-    <button data-notification="#notification-5">Уведомление 5</button>
-
-    <div class="modal" id="modal-like">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__photos">
-          <div class="modal__photo">
-            <img src="/images/modal/girl.png" alt="cover">
-          </div>
-          <div class="modal__photo">
-            <img src="/images/modal/man.png" alt="cover">
-          </div>
-          <div class="modal__heart">
-            <img src="/images/modal/hears.svg" alt="cover">
-          </div>
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Это взаимно!</div>
-          <div class="modal__text">Проявите инициативу, напишите — «Привет!» первым</div>
-          <button class="modal__btn">Сказать «Привет!»</button>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
+                                <ul class="subnav">
+                                    <div class="subnav__body">
+                                        <ul class="subnav__menu">
+                                            <li><a href="#" class="subnav__link">Коммуникации</a></li>
+                                            <li><a href="#" class="subnav__link">Доп. опции к проекту</a></li>
+                                            <li><a href="#" class="subnav__link">Продажа бруса</a></li>
+                                            <li><a href="#" class="subnav__link">Производство окон ПВХ</a></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="header__link">Акции</a></li>
+                            <li><a href="#" class="header__link">Отзывы</a></li>
+                            <li><a href="#" class="header__link">Выставочные центры</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main class="main">
+                <section class="intro">
+                    <div class="intro__container">
+                        <h1 class="intro__title">
+                            <b>Строим дома для</b> <span>счастливой жизни</span> за городом
+                           </h1>
+                        <div class="intro__subtitle">сроком эксплуатации  <span>до 100 лет</span></div>
+                        <div class="intro__btn">
+                            <button class="btn">
+                                Рассчитать стоимость строительства дома
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="sphere">
+                    <div class="sphere__container">
+                        <h2 class="sphere__title title-block"><span>Сфера применения</span>  мягких окон</h2>
+                        <div class="sphere__body">
+                            <ul class="sphere__tabs">
+                                <li class="sphere__tab tab active" data-tab-name="tab-1"><a href="#" class="sphere__link">Для беседки</a></li>
+                                <li class="sphere__tab tab" data-tab-name="tab-2"><a href="#" class="sphere__link">Для веранды</a></li>
+                                <li class="sphere__tab tab" data-tab-name="tab-3"><a href="#" class="sphere__link">Для террасы</a></li>
+                                <li class="sphere__tab tab" data-tab-name="tab-4"><a href="#" class="sphere__link">Для кафе</a></li>
+                            </ul>
+                            <div class="sphere__content">
+                                <div class="sphere__panel content tab-1 active">
+                                    <div class="sphere__photo">
+                                        <img src="assets/img/sphere/house.webp" alt="cover">
+                                    </div>
+                                    <div class="sphere__info">
+                                        <div class="sphere__suptitle">Гибкие прозрачные шторы для беседок</div>
+                                        <div class="sphere__text">
+                                            <p>После того, как установили гибкое остекление, данное место становится островком комфорта в любую непогоду, даже зимой! А если ненастье прошло, шторы можно за считанные минуты свернуть и вновь наслаждаться солнцем. Кроме того на существующие крепления изделия легко устанавливается москитная сетка, благодаря которой можно сохранить проветривание и защиту от насекомых.</p>
+                                        </div>
+                                        <div class="sphere__buttons">
+                                            <button class="sphere__btn">ПОДРОБНЕЕ</button>
+                                            <button class="sphere__btn">ПОЗВОНИТЬ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sphere__panel content tab-2">
+                                    <div class="sphere__photo">
+                                        <img src="assets/img/sphere/house.webp" alt="cover">
+                                    </div>
+                                </div>
+                                <div class="sphere__panel content tab-3">
+                                    <div class="sphere__photo">
+                                        <img src="assets/img/sphere/house.webp" alt="cover">
+                                    </div>
+                                    <div class="sphere__info">
+                                        <div class="sphere__suptitle">Гибкие прозрачные шторы для беседок</div>
+                                        <div class="sphere__text">
+                                            <p>После того, как установили гибкое остекление, данное место становится островком комфорта в любую непогоду, даже зимой! А если ненастье прошло, шторы можно за считанные минуты свернуть и вновь наслаждаться солнцем. Кроме того на существующие крепления изделия легко устанавливается москитная сетка, благодаря которой можно сохранить проветривание и защиту от насекомых.</p>
+                                        </div>
+                                        <div class="sphere__buttons">
+                                            <button class="sphere__btn">ПОДРОБНЕЕ</button>
+                                            <button class="sphere__btn">ПОЗВОНИТЬ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sphere__panel content tab-4">
+                                    <div class="sphere__photo">
+                                        <img src="assets/img/sphere/house.webp" alt="cover">
+                                    </div>
+                                    <div class="sphere__info">
+                                        <div class="sphere__suptitle">Гибкие прозрачные шторы для беседок</div>
+                                        <div class="sphere__text">
+                                            <p>После того, как установили гибкое остекление, данное место становится островком комфорта в любую непогоду, даже зимой! А если ненастье прошло, шторы можно за считанные минуты свернуть и вновь наслаждаться солнцем. Кроме того на существующие крепления изделия легко устанавливается москитная сетка, благодаря которой можно сохранить проветривание и защиту от насекомых.</p>
+                                        </div>
+                                        <div class="sphere__buttons">
+                                            <button class="sphere__btn">ПОДРОБНЕЕ</button>
+                                            <button class="sphere__btn">ПОЗВОНИТЬ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="kinds">
+                    <div class="kinds__container">
+                        <h2 class="kinds__title title-block"><span>Виды крепежа</span> для остекления террасы
+                        </h2>
+                        <div class="kinds__body">
+                            <div class="kinds__tabs scroll">
+                                <div class="kinds__tab tab active" data-tab-name="tab-content-1">Мягкие окна с отверстиями</div>
+                                <div class="kinds__tab tab" data-tab-name="tab-content-2">Стальной люверс 10 мм</div>
+                                <div class="kinds__tab tab" data-tab-name="tab-content-3">Поворотные замки</div>
+                                <div class="kinds__tab tab" data-tab-name="tab-content-4">Крепление скоба-ремень</div>
+                                <div class="kinds__tab tab" data-tab-name="tab-content-5">Ремни для скрутки</div>
+                                <div class="kinds__tab tab" data-tab-name="tab-content-6">Молнии для мягких окон</div>
+                            </div>
+                            <div class="kinds__content content tab-content-1 active">
+                                <h3 class="kinds__content-title">Мягкие окна с отверстиями
+                                </h3>
+                                <div class="kinds__content-text">Выполняем в полотне монтажные отверстия по контуру диаметром 5 мм под крепление на саморезы (кровельные или с пресс-шайбой). Применяется для стационарной установки без последующего демонтажа.
     
-    <div class="modal" id="modal-subscribe">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Ваша подписка отключена</div>
-          <div class="modal__text">Ваша подписка на автоматическое продление Premium доступа отключена</div>
-          <button class="modal__btn">На главную</button>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-administraition">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__photos">
-          <div class="modal__img">
-            <img src="/images/modal/error.svg" alt="cover">
-          </div>
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Ошибка приложения!</div>
-          <div class="modal__text">Обратитесь к администрации</div>
-          <button class="modal__btn">Написать в поддержку</button>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-agree">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Для продолжения необходимо согласиться с правилами</div>
-          <div class="modal__main">
-            <div class="modal__item">
-              <div class="modal__checkbox">
-                <input type="checkbox">
-              </div>
-              <div class="modal__text">Я соглашаюсь с условиями оплаты услуг сайта спомощью реккурентных платежей</div>
-            </div>
-            <div class="modal__item">
-              <div class="modal__checkbox">
-                <input type="checkbox">
-              </div>
-              <div class="modal__text">Я соглашаюсь c Пользовательским соглашением и Политикой конфиденциальности сайта</div>
-            </div>
-            <div class="modal__item">
-              <div class="modal__checkbox">
-                <input type="checkbox">
-              </div>
-              <div class="modal__text">Я соглашаюсь что Premium доступ будет продлён на 30 дней автоматически на сумму 2970₽ после окончания выбранного периода. Возможно частичное списание: 1485₽ за 15 дней или 990₽ за 10 дней, или 693₽ за 7 дней, или 495₽ за 5 дней использования Premium доступа.</div>
-            </div>
-          </div>
-          <div class="modal__button">
-            <button class="modal__btn-gray">Продолжить</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-complain">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Отправить жалобу</div>
-          <div class="modal__text">Пожалуйста, подробно опишите причину жалобы</div>
-          <div class="modal__main">
-            <div class="modal__form">
-              <textarea placeholder="Ваша жалоба"></textarea>
-            </div>
-          </div>
-          <div class="modal__button">
-            <button class="modal__btn-gray">Отправить</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-delete">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__photos">
-          <div class="modal__img">
-            <img src="/images/modal/break-heart.svg" alt="cover">
-          </div>
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Удалить аккаунт?</div>
-          <div class="modal__text">При удалении аккаунта удалятся все ваши данные с сервера, отменить действие будет нельзя. Вы больше не сможете войти в свой аккаунт.</div>
-          <div class="modal__buttons">
-            <button class="modal__btn-red">Удалить</button>
-            <button class="modal__btn">Отмена</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-premium">
-      <div class="modal__dialog"> 
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__photos">
-          <div class="modal__img">
-            <img src="/images/modal/king.svg" alt="cover">
-          </div>
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Premium доступ активирован!</div>
-          <div class="modal__subtitle">30 дней</div>
-        </div>
-        <div class="modal__inner">
-          <div class="modal__col">
-            <div class="modal__col-img">
-              <div class="modal__col-icon">
-                <img src="/images/modal/icon-1.svg" alt="cover">
-              </div>
-            </div>
-            <div class="modal__col-text">Постоянный доступ к разделу «Я нравлюсь»</div>
-          </div>
-          <div class="modal__col">
-            <div class="modal__col-img">
-              <div class="modal__col-icon">
-                <img src="/images/modal/icon-2.svg" alt="cover">
-              </div>
-            </div>
-            <div class="modal__col-text">Можете написать любому пользователю</div>
-          </div>
-          <div class="modal__col">
-            <div class="modal__col-img">
-              <div class="modal__col-icon">
-                <img src="/images/modal/icon-3.svg" alt="cover">
-              </div>
-            </div>
-            <div class="modal__col-text">Неограниченное количество свайпов в разделе знакомства</div>
-          </div>
-          <div class="modal__col">
-            <div class="modal__col-img">
-              <div class="modal__col-icon">
-                <img src="/images/modal/icon-4.svg" alt="cover">
-              </div>
-            </div>
-            <div class="modal__col-text">Ваша анкета выше других показывается в поиске</div>
-          </div>
-          <div class="modal__col">
-            <div class="modal__col-img">
-              <div class="modal__col-icon">
-                <img src="/images/modal/icon-5.svg" alt="cover">
-              </div>
-            </div>
-            <div class="modal__col-text">Можете отправлять и просматривать фото в чате</div>
-          </div>
-        </div>
-        <div class="modal__but">
-          <button class="modal__btn">Начать общение</button>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-rules">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Для продолжения необходимо согласиться с правилами</div>
-          <div class="modal__main">
-            <div class="modal__item">
-              <div class="modal__checkbox">
-                <input type="checkbox">
-              </div>
-              <div class="modal__text">Я соглашаюсь с условиями оплаты услуг сайта спомощью реккурентных платежей</div>
-            </div>
-            <div class="modal__item">
-              <div class="modal__checkbox">
-                <input type="checkbox">
-              </div>
-              <div class="modal__text">Я соглашаюсь c Пользовательским соглашением и Политикой конфиденциальности сайта</div>
-            </div>
-            <div class="modal__item">
-              <div class="modal__checkbox">
-                <input type="checkbox">
-              </div>
-              <div class="modal__text">Я соглашаюсь что Premium доступ будет продлён на 30 дней автоматически на сумму 2970₽ после окончания выбранного периода. Возможно частичное списание: 1485₽ за 15 дней или 990₽ за 10 дней, или 693₽ за 7 дней, или 495₽ за 5 дней использования Premium доступа.</div>
-            </div>
-          </div>
-          <div class="modal__button">
-            <button class="modal__btn-gray">Продолжить</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-buyPremium">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__photos">
-          <div class="modal__img">
-            <img src="/images/modal/premium.svg" alt="cover">
-          </div>
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Premium доступ</div>
-          <div class="modal__text">Чтобы отправлять сообщения, просматривать фотографии в чате и узнать, кто поставил "Лайк", необходимо приобрести Premium доступ</div>
-          <button class="modal__btn">Купить Premium</button>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-load">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__photos">
-          <div class="modal__img">
-            <img src="/images/modal/camera.svg" alt="cover">
-          </div>
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Загрузите фотографию</div>
-          <div class="modal__text">Чтобы другие пользователи видели вас в поиске, могли написать сообщение или поставить "Лайк", нужно загрузить своё фото.Анкеты с несколькими портретными фото более популярны. Постарайтесь, чтобы на фото было видно ваше лицо.</div>
-          <button class="modal__btn">Загрузить фото</button>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal" id="modal-likes">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__photos">
-          <div class="modal__img">
-            <img src="/images/modal/Clock.svg" alt="cover">
-          </div>
-        </div>
-        <div class="modal__content">
-          <div class="modal__title">Закончились лайки</div>
-          <div class="modal__text">Чтобы ставить неограниченно лайки, нужно приобрести <a href="#">Premium доступ</a></div>
-          <div class="modal__timer">
-            <div class="modal__timer-element">
-              <div class="modal__timer-col">
-                <div class="modal__timer-item">2</div>
-              </div>
-              <div class="modal__timer-col">
-                <div class="modal__timer-item">3</div>
-              </div>
-            </div>
-            <div class="modal__timer-dots">
-              <div class="modal__timer-dot"></div>
-              <div class="modal__timer-dot"></div>
-            </div>
-            <div class="modal__timer-element">
-              <div class="modal__timer-col">
-                <div class="modal__timer-item">5</div>
-              </div>
-              <div class="modal__timer-col">
-                <div class="modal__timer-item">8</div>
-              </div>
-            </div>
-            <div class="modal__timer-dots">
-              <div class="modal__timer-dot"></div>
-              <div class="modal__timer-dot"></div>
-            </div>
-            <div class="modal__timer-element">
-              <div class="modal__timer-col">
-                <div class="modal__timer-item">4</div>
-              </div>
-              <div class="modal__timer-col">
-                <div class="modal__timer-item">4</div>
-              </div>
-            </div>
-          </div>
-          <button class="modal__btn">Загрузить фото</button>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-    <div class="modal modal__redact" id="modal-redaction">
-      <div class="modal__dialog">
-        <div class="modal__close" data-close>
-          <img src="/images/modal/close.svg" alt="cover">
-        </div>
-        <div class="modal__header">
-          <div class="modal__title">Редактирование фото</div>
-        </div>
-        <div class="modal__redact-body">
-          <div class="modal__redact-photo" data-move="frame-cut">
-            <div class="modal__redact-cut draggable" data-move="cut">
-              <div id="block">
-                <img src="/images/modal/Union.svg" alt="cover">
-                <div id="block_resize"></div>
-              </div>
-              <div class="modal__redact-cut-block"></div>
-            </div>
-            <img src="/images/modal/redact.png" alt="cover">
-            <div class="modal__redact-subtitle">
-              <div class="modal__redact-icon">
-                <img src="/images/modal/move.svg" alt="cover">
-              </div>
-              <div class="modal__redact-subtitle-text">Двигать</div>
-            </div>
-          </div>
-          <div class="modal__redact-content">
-            <div class="modal__redact-block">
-              <div class="modal__redact-top">
-                <div class="modal__redact-inner">
-                  <div class="modal__redact-item modal__redact-item--squere">
-                    <img src="/images/modal/redact.png" alt="cover">
-                  </div>
-                  <div class="modal__redact-item modal__redact-item--circle-big">
-                    <img src="/images/modal/redact.png" alt="cover">
-                  </div>
-                  <div class="modal__redact-item modal__redact-item--circle-small">
-                    <img src="/images/modal/redact.png" alt="cover">
-                  </div>
-                </div>
-                <div class="modal__text">Так ваша фотография будет выглядеть в поисковой выдаче, аватаре и диалоговом окне</div>
-              </div>
-              <div class="modal__redact-main">
-                <div class="modal__redact-buttons">
-                  <button class="modal__redact-btn">
-                    <div class="modal__redact-btn-icon">
-                      <img src="images/modal/profile.svg" alt="cover">
-                    </div>
-                    <div class="modal__redact-btn-text">Заменить фото</div>
-                  </button>
-                  <button class="modal__redact-btn-red">
-                    <div class="modal__redact-btn-icon">
-                      <img src="images/modal/Trash.svg" alt="cover">
-                    </div>
-                  </button>
-                </div>
-                <div class="modal__redact-element">
-                  <div class="zoom__wrap">
-                    <h1 class="zoom__title">Zoom</h1>
-                    <div class="zoom__input-wrap">
-                        <input type="range" class="zoom" min="0" value="0">
-                    </div>
-                </div>
-                </div>
-                <div class="modal__redact-element">
-                  <div class="modal__redact-suptitle">Вращать</div>
-                  <div class="modal__redact-spins">
-                    <div class="modal__redact-spin">
-                      <img src="images/modal/Left.svg" alt="cover">
-                    </div>
-                    <div class="modal__redact-spin">
-                      <img src="images/modal/Right.svg" alt="cover">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal__redact-bottom">
-              <div class="modal__redact-buttons">
-                <button class="modal__redact-btn">
-                  <div class="modal__redact-btn-text">Отмена</div>
-                </button>
-                <button class="modal__btn">На главную</button>
-              </div>
-            </div>
-          </div>
-          <div class="modal__redact-buttons-mobile">
-            <div class="modal__redact-mobile-btn modal__redact-mobile-btn--gray">Отмена</div>
-            <div class="modal__redact-mobile-btn modal__redact-mobile-btn--violet">Сохранить</div>
-          </div>
-        </div>
-      </div>
-      <div class="modal__close-entry"></div>
-    </div>
-
-    <div class="popup" id="popup-1">
-      <div class="popup__dialog">
-        <div class="popup__inner">
-          <a href="#" class="popup__item">
-            <div class="popup__icon">
-              <img src="/images/popup/ImagesSquare.svg" alt="cover">
-            </div>
-            <div class="popup__text">Загрузить из медиатеки</div>
-          </a>
-          <a href="#" class="popup__item">
-            <div class="popup__icon">
-              <img src="/images/popup/Camera Fill.svg" alt="cover">
-            </div>
-            <div class="popup__text">Сделать селфи</div>
-          </a>
-        </div>
-      </div>
-      <div class="popup__close-entry"></div>
-    </div>
-    <div class="popup" id="popup-2">
-      <div class="popup__dialog">
-        <div class="popup__inner">
-          <a href="#" class="popup__item">
-            <div class="popup__icon">
-              <img src="/images/popup/Pencil.svg" alt="cover">
-            </div>
-            <div class="popup__text">Редактировать фото</div>
-          </a>
-          <a href="#" class="popup__item">
-            <div class="popup__icon">
-              <img src="/images/popup/Profile.svg" alt="cover">
-            </div>
-            <div class="popup__text">Заменить фото</div>
-          </a>
-          <a href="#" class="popup__item">
-            <div class="popup__icon">
-              <img src="/images/popup/Trash.svg" alt="cover">
-            </div>
-            <div class="popup__text">Удалить фото</div>
-          </a>
-        </div>
-      </div>
-      <div class="popup__close-entry"></div>
-    </div>
-
-    <div class="notifications swipe" id="notification-1">
-      <div class="notifications__body">
-        <div class="notifications__inner">
-          <div class="notifications__icon" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false">
-            <img src="/images/notifications/2 hearts.svg" alt="cover">
-          </div>
-          <div class="notifications__content">
-            <div class="notifications__text">У вас <span>1 новый лайк</span> 🔥</div>
-            <div class="notifications__text">Вы кому-то понравились</div>
-          </div>
-          <div class="notifications__close" data-close-notification>
-            <img src="/images/modal/close.svg" alt="cover">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="notifications swipe" id="notification-2">
-      <div class="notifications__body">
-        <div class="notifications__inner">
-          <div class="notifications__icon" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false">
-            <img src="/images/notifications/2 hearts.svg" alt="cover">
-          </div>
-          <div class="notifications__content">
-            <div class="notifications__text">У вас <span>10 новых лайков</span></div>
-            <div class="notifications__text">Вы понравились нескольким людям🔥</div>
-          </div>
-          <div class="notifications__close" data-close-notification>
-            <img src="/images/modal/close.svg" alt="cover">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="notifications swipe" id="notification-3">
-      <div class="notifications__body">
-        <div class="notifications__inner">
-          <div class="notifications__icon" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false">
-            <img src="/images/notifications/2 hearts.svg" alt="cover">
-          </div>
-          <div class="notifications__content">
-            <div class="notifications__text"><span>Марина</span> написала вам</div>
-            <div class="notifications__text"><span>Новое сообщение</span></div>
-          </div>
-          <div class="notifications__close" data-close-notification>
-            <img src="/images/modal/close.svg" alt="cover">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="notifications swipe" id="notification-4">
-      <div class="notifications__body">
-        <div class="notifications__inner">
-          <div class="notifications__icon" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false">
-            <img src="/images/notifications/2 hearts.svg" alt="cover">
-          </div>
-          <div class="notifications__content">
-            <div class="notifications__text">У Вас <span>10 новых сообщений</span></div>
-            <div class="notifications__text">посмотрите их скорее!</div>
-          </div>
-          <div class="notifications__close" data-close-notification>
-            <img src="/images/modal/close.svg" alt="cover">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="notifications swipe" id="notification-5">
-      <div class="notifications__body">
-        <div class="notifications__inner">
-          <div class="notifications__icon" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false">
-            <img src="/images/notifications/2 hearts.svg" alt="cover">
-          </div>
-          <div class="notifications__content">
-            <div class="notifications__text">У вас  <span>2 непрочитанных</span></div>
-            <div class="notifications__text"><span>уведомления</span></div>
-          </div>
-          <div class="notifications__close" data-close-notification>
-            <img src="/images/modal/close.svg" alt="cover">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      $(document).ready(function() {
-        // $("#draggable").draggable();
-        
-            const modalCall = $("[data-popup]");
-          const modalClose = $("[data-close]");
-          const popupCloseEntry = $('.popup__close-entry');
-
-        modalCall.on("click", function() {
-            let $this = $(this);
-            let modalId = $(this).data('popup');
-
-            $(modalId).addClass('show');
-            $("body").addClass('no-scroll');
-
-            setTimeout(function() {
-              $(modalId).css({
-                opacity: '1'
-              });
-                $(modalId).find(".popup__dialog").css({
-                  transform: "translate(0)"
-                });
-            }, 300);
-        });
-
-        modalClose.on("click", function() {
-            let $this = $(this);
-            let popupParent = $(this).parents('.popup');
-
-            popupParent.css({
-              opacity: '0'
-            });
-            popupParent.find(".popup__dialog").css({
-              transform: "translate(100%)"
-            });
-
-            setTimeout(function() {
-              popupParent.removeClass('show');
-                $("body").removeClass('no-scroll');
-            }, 300);
-        });
-
-        popupCloseEntry.on("click", function() {
-            let $this = $(this);
-            let popupParent = $(this).parents('.popup');
-
-            popupParent.css({
-              opacity: '0'
-            });
-            popupParent.find(".popup__dialog").css({
-              transform: "translateY(100%)"
-            });
-
-            setTimeout(function() {
-              popupParent.removeClass('show');
-                $("body").removeClass('no-scroll');
-            }, 300);
-        });
-      });
-    </script>
-
-    <style>
-      #block {
- min-height: 160px;
-  min-width: 160px;
-  position: relative;
-  height: 249px;
-  width: 249px;
-  max-width: 250px;
-  max-height: 250px;
-}
-#block:after {
-  content: "";
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    background-blend-mode: overlay;
-    backdrop-filter: brightness(140%);
-    width: 90%;
-    height: 90%;
-}
-#block_resize {
-  bottom: 0;
-  cursor: se-resize;
-  height: 12px;
-  margin-top: 9px;
-  position: absolute;
-  right: 0;
-  width: 12px;
-}
-
-    </style>
-
-    <script>
-      document.addEventListener('touchstart', handleTouchStart, false);
-      document.addEventListener('touchmove', handleTouchMove, false);
-
-      const logBlock = document.querySelectorAll('.notifications');
-
-      let x1 = null;
-      let y1 = null;
-
-      function handleTouchStart(event) {
-        const firstTouch = event.touches[0];
-        x1 = firstTouch.clientX;
-        y1 = firstTouch.clientY;
-
-        console.log(x1, y1);
-      }
-
-      function handleTouchMove(event) {
-        if (!x1 || !y1) {
-          return false;
-        }
-
-        let x2 = event.touches[0].clientX;
-        let y2 = event.touches[0].clientY;
-        let xDiff = x2 - x1;
-        let yDiff = y2 - y1;
-
-        if (Math.abs(xDiff) > Math.abs(yDiff)) {
-          if(xDiff > 0) {
-            logBlock.forEach((item) => {
-              item.classList.add('swipe');
-          });
-          }
-        }
-        x1 = null;
-        y1 = null;
-
-        console.log(x2, y2);
-      }
-      
-    </script>
-
-<script>
-  $(document).ready(function() {
-          // $("#draggable").draggable();
-          
-          const notifCall = $("[data-notification]");
-        const notifClose = $("[data-close-notification]");
-  
-        notifCall.on("click", function() {
-          let $this = $(this);
-          let notifId = $(this).data('notification');
-  
-          $(notifId).removeClass('swipe');
-      });
-  
-      notifClose.on("click", function() {
-          let $this = $(this);
-          let notifParent = $(this).parents('.notifications');
-  
-          notifParent.addClass('swipe');
-      });
-    });
-      </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/overcast/jquery-ui.css" />
-
-<script type="text/javascript">
-  var ie = 0;
-  var op = 0;
-  var ff = 0;
-  var block; // Основной блок
-  var block_r; // Блок для изменения размеров
-  var delta_w = 0; // Изменение по ширине
-  var delta_h = 0; // Изменение по высоте
-  /* После загрузки страницы */
-  onload = function () {
-    /* Определяем браузер */
-    var browser = navigator.userAgent;
-    if (browser.indexOf("Opera") != -1) op = 1;
-    else {
-      if (browser.indexOf("MSIE") != -1) ie = 1;
-      else {
-        if (browser.indexOf("Firefox") != -1) ff = 1;
-      }
-    }
-    block = document.getElementById("block"); // Получаем основной блок
-    block_r = document.getElementById("block_resize"); // Получаем блок для изменения размеров
-    document.onmouseup = clearXY; // Ставим обработку на отпускание кнопки мыши
-    block_r.onmousedown = saveWH; // Ставим обработку на нажатие кнопки мыши
-  }
-  /* Функция для получения текущих координат курсора мыши */
-  function getXY(obj_event) {
-    if (obj_event) {
-      x = obj_event.pageX;
-      y = obj_event.pageY;
-    }
-    else {
-      x = window.event.clientX;
-      y = window.event.clientY;
-      if (ie) {
-        y -= 2;
-        x -= 2;
-      }
-    }
-    return new Array(x, y);
-  }
-  function saveWH(obj_event) {
-    var point = getXY(obj_event);
-    w_block = block.clientWidth; // Текущая ширина блока
-    h_block = block.clientHeight; // Текущая высота блока
-    delta_w = w_block - point[0]; // Измеряем текущую разницу между шириной и x-координатой мыши
-    delta_h = h_block - point[1]; // Измеряем текущую разницу между высотой и y-координатой мыши
-    /* Ставим обработку движения мыши для разных браузеров */
-    document.onmousemove = resizeBlock;
-    if (op || ff) document.addEventListener("onmousemove", resizeBlock, false);
-    return false; // Отключаем стандартную обработку нажатия мыши
-  }
-  /* Функция для измерения ширины окна */
-  function clientWidth() {
-    return document.documentElement.clientWidth == 0 ? document.body.clientWidth : document.documentElement.clientWidth;
-  }
-  /* Функция для измерения высоты окна */
-  function clientHeight() {
-    return document.documentElement.clientHeight == 0 ? document.body.clientHeight : document.documentElement.clientHeight;
-  }
-  /* При отпускании кнопки мыши отключаем обработку движения курсора мыши */
-  function clearXY() {
-    document.onmousemove = null;
-  }
-  function resizeBlock(obj_event) {
-    var point = getXY(obj_event);
-    new_w = delta_w + point[0]; // Изменяем новое приращение по ширине
-    new_h = delta_h + point[1]; // Изменяем новое приращение по высоте
-    block.style.width = new_w + "px"; // Устанавливаем новую ширину блока
-    block.style.height = new_h + "px"; // Устанавливаем новую высоту блока
-    /* Если блок выходит за пределы экрана, то устанавливаем максимальные значения для ширины и высоты */
-    if (block.offsetLeft + block.clientWidth > clientWidth()) block.style.width = (clientWidth() - block.offsetLeft) + "px";
-    if (block.offsetTop + block.clientHeight > clientHeight()) block.style.height = (clientHeight() - block.offsetTop) + "px";
-  }
-</script>
-
-    <script>
-
-(function ($) {
-    // Detect touch support
-    $.support.touch = 'ontouchend' in document;
-    // Ignore browsers without touch support
-    if (!$.support.touch) {
-    return;
-    }
-    var mouseProto = $.ui.mouse.prototype,
-        _mouseInit = mouseProto._mouseInit,
-        touchHandled;
-
-    function simulateMouseEvent (event, simulatedType) { //use this function to simulate mouse event
-    // Ignore multi-touch events
-        if (event.originalEvent.touches.length > 1) {
-        return;
-        }
-    event.preventDefault(); //use this to prevent scrolling during ui use
-
-    var touch = event.originalEvent.changedTouches[0],
-        simulatedEvent = document.createEvent('MouseEvents');
-    // Initialize the simulated mouse event using the touch event's coordinates
-    simulatedEvent.initMouseEvent(
-        simulatedType,    // type
-        true,             // bubbles                    
-        true,             // cancelable                 
-        window,           // view                       
-        1,                // detail                     
-        touch.screenX,    // screenX                    
-        touch.screenY,    // screenY                    
-        touch.clientX,    // clientX                    
-        touch.clientY,    // clientY                    
-        false,            // ctrlKey                    
-        false,            // altKey                     
-        false,            // shiftKey                   
-        false,            // metaKey                    
-        0,                // button                     
-        null              // relatedTarget              
-        );
-
-    // Dispatch the simulated event to the target element
-    event.target.dispatchEvent(simulatedEvent);
-    }
-    mouseProto._touchStart = function (event) {
-    var self = this;
-    // Ignore the event if another widget is already being handled
-    if (touchHandled || !self._mouseCapture(event.originalEvent.changedTouches[0])) {
-        return;
-        }
-    // Set the flag to prevent other widgets from inheriting the touch event
-    touchHandled = true;
-    // Track movement to determine if interaction was a click
-    self._touchMoved = false;
-    // Simulate the mouseover event
-    simulateMouseEvent(event, 'mouseover');
-    // Simulate the mousemove event
-    simulateMouseEvent(event, 'mousemove');
-    // Simulate the mousedown event
-    simulateMouseEvent(event, 'mousedown');
-    };
-
-    mouseProto._touchMove = function (event) {
-    // Ignore event if not handled
-    if (!touchHandled) {
-        return;
-        }
-    // Interaction was not a click
-    this._touchMoved = true;
-    // Simulate the mousemove event
-    simulateMouseEvent(event, 'mousemove');
-    };
-    mouseProto._touchEnd = function (event) {
-    // Ignore event if not handled
-    if (!touchHandled) {
-        return;
-    }
-    // Simulate the mouseup event
-    simulateMouseEvent(event, 'mouseup');
-    // Simulate the mouseout event
-    simulateMouseEvent(event, 'mouseout');
-    // If the touch interaction did not move, it should trigger a click
-    if (!this._touchMoved) {
-      // Simulate the click event
-      simulateMouseEvent(event, 'click');
-    }
-    // Unset the flag to allow other widgets to inherit the touch event
-    touchHandled = false;
-    };
-    mouseProto._mouseInit = function () {
-    var self = this;
-    // Delegate the touch handlers to the widget's element
-    self.element
-        .on('touchstart', $.proxy(self, '_touchStart'))
-        .on('touchmove', $.proxy(self, '_touchMove'))
-        .on('touchend', $.proxy(self, '_touchEnd'));
-
-    // Call the original $.ui.mouse init method
-    _mouseInit.call(self);
-    };
-})(jQuery);
-
-$('.draggable').draggable({containment : '.modal__redact-photo'});
-
-      for (let e of document.querySelectorAll('input[type="range"].zoom')) {
-      e.style.setProperty('--value', e.value);
-      e.style.setProperty('--min', e.min == '' ? '0' : e.min);
-      e.style.setProperty('--max', e.max == '' ? '100' : e.max);
-      e.addEventListener('input', () => e.style.setProperty('--value', e.value));
-      }
-
-      $(document).ready(function() {
-        // $("#draggable").draggable();
-        
-        const modalCall = $("[data-modal]");
-      const modalClose = $("[data-close]");
-      const modalCloseEntry = $('.modal__close-entry');
-
-    modalCall.on("click", function() {
-        let $this = $(this);
-        let modalId = $(this).data('modal');
-
-        $(modalId).addClass('show');
-        $("body").addClass('no-scroll');
-
-        setTimeout(function() {
-          $(modalId).css({
-            opacity: '1'
-          });
-            $(modalId).find(".modal__dialog").css({
-              transform: "scale(1)"
-            });
-        }, 300);
-    });
-
-    modalClose.on("click", function() {
-        let $this = $(this);
-        let modalParent = $(this).parents('.modal');
-
-        modalParent.css({
-          opacity: '0'
-        });
-        modalParent.find(".modal__dialog").css({
-          transform: "scale(0)"
-        });
-
-        setTimeout(function() {
-            modalParent.removeClass('show');
-            $("body").removeClass('no-scroll');
-        }, 300);
-    });
-
-    modalCloseEntry.on("click", function() {
-        let $this = $(this);
-        let modalParent = $(this).parents('.modal');
-
-        modalParent.css({
-          opacity: '0'
-        });
-        modalParent.find(".modal__dialog").css({
-          transform: "scale(0)"
-        });
-
-        setTimeout(function() {
-            modalParent.removeClass('show');
-            $("body").removeClass('no-scroll');
-        }, 300);
-    });
-
-    $.each($('.modal__item'), function(index, val) {
-        if($(this).find('input').prop("checked")==true){
-            $(this).addClass('active');
-        }
-    });
-
-    $(document).on("click", '.modal__item', function(event) {
-        if($(this).hasClass('active')){
-            $(this).find('input').prop("checked", false);
-        }else{
-            $(this).find('input').prop("checked", true);
-        }
-        $(this).toggleClass('active');
-
-        return false;
-    });
-    });
-  </script>
-<script src="js/main.js"></script>
-<script src="js/jquery.touch.js"></script>
+                                </div>
+                                <div class="kinds__inner">
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kinds__content content tab-content-2">
+                                <h3 class="kinds__content-title">Мягкие окна с отверстиями
+                                </h3>
+                                <div class="kinds__content-text">Выполняем в полотне монтажные отверстия по контуру диаметром 5 мм под крепление на саморезы (кровельные или с пресс-шайбой). Применяется для стационарной установки без последующего демонтажа.
     
+                                </div>
+                                <div class="kinds__inner">
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kinds__content content tab-content-3">
+                                <h3 class="kinds__content-title">Мягкие окна с отверстиями
+                                </h3>
+                                <div class="kinds__content-text">Выполняем в полотне монтажные отверстия по контуру диаметром 5 мм под крепление на саморезы (кровельные или с пресс-шайбой). Применяется для стационарной установки без последующего демонтажа.
+    
+                                </div>
+                                <div class="kinds__inner">
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kinds__content content tab-content-4">
+                                <h3 class="kinds__content-title">Мягкие окна с отверстиями
+                                </h3>
+                                <div class="kinds__content-text">Выполняем в полотне монтажные отверстия по контуру диаметром 5 мм под крепление на саморезы (кровельные или с пресс-шайбой). Применяется для стационарной установки без последующего демонтажа.
+    
+                                </div>
+                                <div class="kinds__inner">
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kinds__content content tab-content-5">
+                                <h3 class="kinds__content-title">Мягкие окна с отверстиями
+                                </h3>
+                                <div class="kinds__content-text">Выполняем в полотне монтажные отверстия по контуру диаметром 5 мм под крепление на саморезы (кровельные или с пресс-шайбой). Применяется для стационарной установки без последующего демонтажа.
+    
+                                </div>
+                                <div class="kinds__inner">
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kinds__content content tab-content-6">
+                                <h3 class="kinds__content-title">Мягкие окна с отверстиями
+                                </h3>
+                                <div class="kinds__content-text">Выполняем в полотне монтажные отверстия по контуру диаметром 5 мм под крепление на саморезы (кровельные или с пресс-шайбой). Применяется для стационарной установки без последующего демонтажа.
+    
+                                </div>
+                                <div class="kinds__inner">
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                    <div class="kinds__item">
+                                        <div class="kinds__photo">
+                                            <img src="assets/img/kinds/v1.webp" alt="cover">
+                                        </div>
+                                        <div class="kinds__subtitle">Окно с отверстиями 5 мм
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="advantages">
+                    <div class="advantages__container">
+                        <h2 class="advantages__title title-block"><span>ПРЕИМУЩЕСТВА</span> Мягких окнон</h2>
+                        <div class="advantages__inner">
+                            <div class="advantages__item">
+                                <div class="advantages__item-top">
+                                    <div class="advantages__icon">
+                                        <img src="assets/img/advantages/icon-1.webp" alt="cover">
+                                    </div>
+                                    <div class="advantages__subtitle">НАДЕЖНОСТЬ</div>
+                                </div>
+                                <div class="advantages__text">И в жару (до +70 °С), и в мороз (до -45 °С) не деформируются, сохраняя внешний вид.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-top">
+                                    <div class="advantages__icon">
+                                        <img src="assets/img/advantages/icon-2.webp" alt="cover">
+                                    </div>
+                                    <div class="advantages__subtitle">ЗАЩИТА</div>
+                                </div>
+                                <div class="advantages__text">Предохраняют вас и вашу постройку от насекомых, пыли, ветра, дождя и снега 24/7.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-top">
+                                    <div class="advantages__icon">
+                                        <img src="assets/img/advantages/icon-3.webp" alt="cover">
+                                    </div>
+                                    <div class="advantages__subtitle">ЛЕГКО МОЮТСЯ</div>
+                                </div>
+                                <div class="advantages__text">Изделия легко отмываются от грязи простыми моющими средствами, которые найдутся у всех.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-top">
+                                    <div class="advantages__icon">
+                                        <img src="assets/img/advantages/icon-4.webp" alt="cover">
+                                    </div>
+                                    <div class="advantages__subtitle">ДОЛГОВЕЧНОСТЬ</div>
+                                </div>
+                                <div class="advantages__text">Срок службы более 20 лет. Их легко снять и убрать на хранение при необходимости.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-top">
+                                    <div class="advantages__icon">
+                                        <img src="assets/img/advantages/icon-5.webp" alt="cover">
+                                    </div>
+                                    <div class="advantages__subtitle">ЭКОНОМИЯ</div>
+                                </div>
+                                <div class="advantages__text">Стоимость изделий сильно отличается от стоимости стеклопакета в меньшую сторону.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-top">
+                                    <div class="advantages__icon">
+                                        <img src="assets/img/advantages/icon-6.webp" alt="cover">
+                                    </div>
+                                    <div class="advantages__subtitle">БЕЗОПАСНОСТЬ</div>
+                                </div>
+                                <div class="advantages__text">Гибкие мягкие окна не разобьются и не причинят вреда, т.к. они абсолютно безопасные.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="works">
+                    <div class="works__container">
+                        <h2 class="works__title title-block"><span>Наши</span> работы
+                        </h2>
+                        <div class="works__inner">
+                            <div class="works__item image__wrapper">
+                                <img class="minimized" src="assets/img/works/work-1.webp" alt="cover">
+                            </div>
+                            <div class="works__item image__wrapper">
+                                <img class="minimized" src="assets/img/works/work-1.webp" alt="cover">
+                            </div>
+                            <div class="works__item image__wrapper">
+                                <img class="minimized" src="assets/img/works/work-1.webp" alt="cover">
+                            </div>
+                            <div class="works__item image__wrapper">
+                                <img class="minimized" src="assets/img/works/work-1.webp" alt="cover">
+                            </div>
+                            <div class="works__item image__wrapper">
+                                <img class="minimized" src="assets/img/works/work-1.webp" alt="cover">
+                            </div>
+                            <div class="works__item image__wrapper">
+                                <img class="minimized" src="assets/img/works/work-1.webp" alt="cover">
+                            </div>
+                        </div>
+                        <a href="#" class="works__link">Посмотреть больше наших работ</a>
+                        <div class="works__videos">
+                            <div class="works__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4puoqzx_btg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="works__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4puoqzx_btg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="works__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4puoqzx_btg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="works__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4puoqzx_btg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="how">
+                    <div class="how__container">
+                        <div class="how__title title-block">КАК КУПИТЬ МЯГКИЕ ОКНА ОТ <span>ПРОИЗВОДИТЕЛЯ</span></div>
+                        <div class="how__text">
+                            <p>Мягкие окна от производителя – это прежде всего низкая стоимость и высочайшая надежность. В отличие от классических стеклянных окон в твердой раме, данное изделие не так-то просто повредить, и стоят они в <b>3-4 РАЗА ДЕШЕВЛЕ</b>. А простота сворачивания/разворачивания делает их просто незаменимыми для обеспечения комфортного микроклимата в открытых помещениях, а также для консервации таких помещений на зиму.</p>
+                            <p>ФМО "Кристалл" устанавливает гибкие окна из ПВХ не только в Москве, но и в Московской области. Для наших клиентов всегда действует низкая цена на изделия, а также быстрые изготовление и монтаж в удобное для Вас время!</p>
+                            <p>Чтобы купить и установить гибкие окна из прозрачной поливинилхлоридной ткани у себя дома необходимо выполнить <b>четыре простых шага:</b></p>
+                        </div>
+                        <div class="how__body">
+                            <div class="how__item">
+                                <div class="how__value">
+                                    <div class="how__value-number">1.</div>
+                                </div>
+                                <div class="how__item-text">Оставляете заявку на сайте или звоните по номеру +7 (495) 797-73-12</div>
+                            </div>
+                            <div class="how__item">
+                                <div class="how__value">
+                                    <div class="how__value-number">2.</div>
+                                </div>
+                                <div class="how__item-text">К Вам выезжает специалист, предлагает материалы и составляет смету</div>
+                            </div>
+                            <div class="how__item">
+                                <div class="how__value">
+                                    <div class="how__value-number">3.</div>
+                                </div>
+                                <div class="how__item-text">Делаете выбор материалов, заключаем договор</div>
+                            </div>
+                            <div class="how__item">
+                                <div class="how__value">
+                                    <div class="how__value-number">4.</div>
+                                </div>
+                                <div class="how__item-text">Производим монтаж, даем гарантию на изделие и работу</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="cities">
+                    <div class="cities__container">
+                        <h2 class="cities__title title-block">География работы компании <span>«Окна-Тент»</span></h2>
+                        <div class="cities__top">
+                            <div class="cities__col">
+                                <div class="cities__value">500</div>
+                                <div class="cities__subtitle">городов</div>
+                            </div>
+                            <div class="cities__col">
+                                <div class="cities__value">150</div>
+                                <div class="cities__subtitle">менеджеров</div>
+                            </div>
+                            <div class="cities__col">
+                                <div class="cities__value">2500 км</div>
+                                <div class="cities__subtitle">окон установлено</div>
+                            </div>
+                        </div>
+                        <div class="cities__inner">
+                            <div class="cities__item">
+                                <a href="#" class="cities__link">МОСКВА</a>
+                                <a href="#" class="cities__link">КАЗАНЬ</a>
+                                <a href="#" class="cities__link">ОМСК</a>
+                                <a href="#" class="cities__link">ВОРОНЕЖ</a>
+                                <a href="#" class="cities__link">САРАТОВ</a>
+                                <a href="#" class="cities__link">БАРНАУЛ</a>
+                                <a href="#" class="cities__link">ЯРОСЛАВЛЬ</a>
+                                <a href="#" class="cities__link">ОРЕНБУРГ</a>
+                                <a href="#" class="cities__link">НАБЕРЕЖНЫЕ ЧЕЛНЫ</a>
+                                <a href="#" class="cities__link">СЫКТЫВКАР
+                                </a>
+                            </div>
+                            <div class="cities__item">
+                                <a href="#" class="cities__link">МОСКВА</a>
+                                <a href="#" class="cities__link">КАЗАНЬ</a>
+                                <a href="#" class="cities__link">ОМСК</a>
+                                <a href="#" class="cities__link">ВОРОНЕЖ</a>
+                                <a href="#" class="cities__link">САРАТОВ</a>
+                                <a href="#" class="cities__link">БАРНАУЛ</a>
+                                <a href="#" class="cities__link">ЯРОСЛАВЛЬ</a>
+                                <a href="#" class="cities__link">ОРЕНБУРГ</a>
+                                <a href="#" class="cities__link">НАБЕРЕЖНЫЕ ЧЕЛНЫ</a>
+                                <a href="#" class="cities__link">СЫКТЫВКАР
+                                </a>
+                            </div>
+                            <div class="cities__item">
+                                <a href="#" class="cities__link">МОСКВА</a>
+                                <a href="#" class="cities__link">КАЗАНЬ</a>
+                                <a href="#" class="cities__link">ОМСК</a>
+                                <a href="#" class="cities__link">ВОРОНЕЖ</a>
+                                <a href="#" class="cities__link">САРАТОВ</a>
+                                <a href="#" class="cities__link">БАРНАУЛ</a>
+                                <a href="#" class="cities__link">ЯРОСЛАВЛЬ</a>
+                                <a href="#" class="cities__link">ОРЕНБУРГ</a>
+                                <a href="#" class="cities__link">НАБЕРЕЖНЫЕ ЧЕЛНЫ</a>
+                                <a href="#" class="cities__link">СЫКТЫВКАР
+                                </a>
+                            </div>
+                            <div class="cities__item">
+                                <a href="#" class="cities__link">МОСКВА</a>
+                                <a href="#" class="cities__link">КАЗАНЬ</a>
+                                <a href="#" class="cities__link">ОМСК</a>
+                                <a href="#" class="cities__link">ВОРОНЕЖ</a>
+                                <a href="#" class="cities__link">САРАТОВ</a>
+                                <a href="#" class="cities__link">БАРНАУЛ</a>
+                                <a href="#" class="cities__link">ЯРОСЛАВЛЬ</a>
+                                <a href="#" class="cities__link">ОРЕНБУРГ</a>
+                                <a href="#" class="cities__link">НАБЕРЕЖНЫЕ ЧЕЛНЫ</a>
+                                <a href="#" class="cities__link">СЫКТЫВКАР
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cities__btn">
+                            <button class="cities__button">Смотреть все города</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__body">
+                        <div class="footer__item">
+                            <div class="footer__main">
+                                <div class="footer__top">
+                                    <div class="footer__logo">
+                                        <img src="assets/img/header/logo.svg" alt="cover">
+                                    </div>
+                                    <div class="footer__rate">
+                                        <img src="assets/img/header/rating.svg" alt="cover">
+                                    </div>
+                                </div>
+                                <div class="footer__text">Мы строим для вас
+                                </div>
+                            </div>
+                            <div class="footer__bottom">
+                                <a href="#" class="footer__bottom-link">Отправить проект на просчёт</a>
+                                <a href="#" class="footer__bottom-link">Калькулятор стоимости</a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__title">Навигация</div>
+                            <ul class="footer__list">
+                                <li><a href="#" class="footer__link">Главная</a></li>
+                                <li><a href="#" class="footer__link">О компании</a></li>
+                                <li><a href="#" class="footer__link">Проекты и цены</a></li>
+                                <li><a href="#" class="footer__link">Услуги</a></li>
+                                <li><a href="#" class="footer__link">Акции</a></li>
+                                <li><a href="#" class="footer__link">Отзывы</a></li>
+                                <li><a href="#" class="footer__link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__title">Преимущества</div>
+                            <ul class="footer__list">
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/mark.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">Создаем индивидуальный проект</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/mark.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">Собственное производство</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/mark.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">Собственные бригады</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/mark.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">
+                                        Строим в кредит и с использованием материнского капитала</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/mark.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">
+                                        Строим с использованием федеральных и региональных программ и фондов</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/mark.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">
+                                        Бесплатная доставка в радиусе 100км от нашей производственной базы
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__title">Преимущества</div>
+                            <ul class="footer__list">
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/map.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">Создаем индивидуальный проект</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/map.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">Собственное производство</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/map.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">Собственные бригады</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/map.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">
+                                        Строим в кредит и с использованием материнского капитала</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/map.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">
+                                        Строим с использованием федеральных и региональных программ и фондов</div>
+                                </li>
+                                <li>
+                                    <div class="footer__list-icon">
+                                        <img src="assets/img/footer/map.svg" alt="">
+                                    </div>
+                                    <div class="footer__link">
+                                        Бесплатная доставка в радиусе 100км от нашей производственной базы
+                                    </div>
+                                </li>
+                                <div class="footer__list-photos">
+                                    <div class="footer__list-photo">
+                                        <img src="assets/img/footer/photo-1.jpg" alt="cover">
+                                    </div>
+                                    <div class="footer__list-photo">
+                                        <img src="assets/img/footer/photo-1.jpg" alt="cover">
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__title">Контакты</div>
+                            <div class="footer__item-block">
+                                <div class="footer__item-main">
+                                    <div class="header__socials-top">
+                                        <span class="header__socials-dot"></span>
+                                        <div class="header__text">Мы на связи с 10:00-19:00</div>
+                                    </div>
+                                    <a href="telto:+7 (495) 324-01-58" class="header__contacts-phone">+7 (495) 324-01-58</a>
+                                    <a href="#" class="header__contacts-link">Заказать звонок
+                                    </a>
+                                </div>
+                                <div class="footer__item-bottom">
+                                    <div class="header__socials">
+                                        <div class="header__socials-top">
+                                            <span class="header__socials-dot"></span>
+                                            <div class="header__text">Пишите, мы онлайн</div>
+                                        </div>
+                                        <div class="header__socials-body">
+                                            <a href="#" class="header__social">
+                                                <img src="assets/img/header/whatsapp.svg" alt="cover">
+                                            </a>
+                                            <a href="#" class="header__social">
+                                                <img src="assets/img/header/telegram.svg" alt="cover">
+                                            </a>
+                                            <a href="#" class="header__social">
+                                                <img src="assets/img/header/mail.svg" alt="cover">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copy">
+                        <div class="footer__copy-item">
+                            <div class="footer__copy-text">ООО "Мастер"</div>
+                            <div class="footer__copy-text">ИНН: 5040069664</div>
+                            <div class="footer__copy-text">КПП: 504001001</div>
+                            <div class="footer__copy-text">ОГРН: 1065040003610</div>
+                            <a href="#" class="footer__copy-link">Политика конфиденциальности</a>
+                        </div>
+                        <div class="footer__copy-item">
+                            <div class="footer__copy-text">
+                                Материалы защищены законом об авторских и смежных правах. <br> 
+                                Копирование запрещено. Сайт не является договором оферты.
+                            </div>
+                        </div>
+                        <div class="footer__copy-item">
+                            <div class="footer__copy-text">Разработано</div>
+                            <div class="footer__copy-subtitle">oko.agency</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </div>
-  </body>
-</div>
+
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.min.js"></script>
+</body>
 </html>
