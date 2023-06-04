@@ -1,0 +1,41 @@
+.products {
+}
+.products__container {
+}
+.contacts__header {
+}
+.contacts__header-link {
+}
+.contacts__header-text {
+}
+.products__header {
+}
+.products__title {
+    text-align: left !important;
+    margin-top: 2rem;
+}
+.title-block {
+}
+.products__body {
+    margin-top: 5.5rem;
+
+    @media (max-width: 992px) {
+        margin-top: 3rem;
+    }
+}
+.products__text {
+    p {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        font-size: 16px;
+        font-family: 'Lato', Helvetica, sans-serif;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 14px;
+        }
+    }
+}
