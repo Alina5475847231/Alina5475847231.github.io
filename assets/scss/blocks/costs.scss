@@ -1,0 +1,122 @@
+.costs {
+}
+.cost__container {
+}
+.contacts__header {
+}
+.costs__title {
+    clear: both;
+    font-weight: 700;
+    color: #282828;
+    font-size: 36px;
+    margin: 22px 0;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.costs__inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+}
+.costs__header {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.cost__header-title {
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 26px;
+    margin: 14px 0;
+    color: #282828;
+    clear: both;
+    border-bottom-width: 3px !important;
+    padding-bottom: 10px !important;
+    border-bottom-color: #1e73be !important;
+    border-bottom-style: solid !important;
+}
+.costs__body {
+    display: flex;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+.costs__col {
+    padding: 15px;
+    width: 50%;
+
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0;
+    }
+}
+.costs__item {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+    &:nth-child(even) {
+        background-color: #f3f3f3;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 1rem;
+    }
+}
+.costs__element {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.costs__left {
+    display: flex;
+    align-items: center;
+}
+.costs__photo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 13.5rem;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 10rem;
+    }
+}
+.costs__info {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.costs__name {
+    font-size: 18px;
+    margin-top: 0;
+    line-height: 1;
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+    }
+}
+.costs__text {
+    margin-top: 2rem;
+}
